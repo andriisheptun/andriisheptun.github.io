@@ -5,18 +5,18 @@
 }
 
 table {
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   margin: auto;
   border: 2px solid black;
 }
 
 td {
-  width: 100px;
-  height: 100px;
+  width: 74.5px;
+  height: 74.5px;
   border: 1px solid white;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 tr:nth-of-type(odd) td:nth-of-type(even) {
