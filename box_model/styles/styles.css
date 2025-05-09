@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 60px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+
+}
+
+.div-1 {
+    padding: 100px;
+    box-shadow: 0px 0px 0px 50px yellow inset,
+        0px 0px 0px 50px blue;
+}
+
+.div-2 {
+    margin-top: 160px;
+    padding: 50px;
+
+}
+
+.div-2:before,
+.div-2:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 50px solid;
+}
+
+.div-2:before {
+    padding: 50px;
+    border-color: yellow;
+}
+
+.div-2:after {
+    padding: 100px;
+    border-color: blue;
+}
