@@ -30,20 +30,28 @@ body {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2.25rem;
   font-weight: bold;
   padding-bottom: 30px;
   border-bottom: 2px solid lightgray;
 }
 
-.info-header1 {
-  font-size: 1.5em;
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h2,
+h3 {
   padding-bottom: 20px;
   font-weight: bold;
   border-bottom: 1px solid lightgrey;
 }
 
-.info-header2 {
+.info-row {
   margin-top: 20px;
 }
 
@@ -89,7 +97,7 @@ h1 {
   background-color: white;
 }
 
-.contact {
+.personal {
   margin-top: 30px;
 }
 
@@ -97,18 +105,18 @@ span {
   display: block;
 }
 
-.contact-header2 {
+.personal-title {
   font-size: 1.2em;
   padding-bottom: 20px;
   font-weight: bold;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 
-.contact-item {
+.personal-item {
   margin-top: 20px;
 }
 
-div.contact ul {
+div.personal ul {
   padding-right: 20px;
 
 }
