@@ -1,0 +1,248 @@
+/*
+* Background Images - Practice
+* CSS Styles
+*
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+
+body {
+    width: 1350px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 1350px;
+    margin: 0 auto;
+    padding: 0 150px 0 150px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    background-image: url('../img/bg-01.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+}
+
+
+
+#topbar {
+    background-color: #00000075;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+li a {
+    display: inline-block;
+    height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #b91a3410;
+}
+
+li:hover {
+    background-color: #b91a34;
+}
+
+h1 {
+    font-family: 'Metal Mania', sans-serif;
+    font-size: 6rem;
+    line-height: 350px;
+    text-align: center;
+    padding-bottom: 160px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 160px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.button {
+    min-width: 160px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b91a34;
+    text-align: center;
+}
+
+.button:hover {
+    /* transform: translateX(-50%); */
+    transform: translateX(-50%) scale(1.05);
+}
+
+
+
+/* Tour */
+
+#tour {
+    position: relative;
+    background-color: #373737;
+}
+
+.tour-card {
+
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 4 - 15px);
+    height: 300px;
+    margin: 5px;
+    padding: 40px 15px;
+    text-align: left;
+    background-repeat: round;
+    box-shadow: 0px 300px 0px 0px rgba(0, 0, 0, 0.45) inset,
+        0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.tour-town {
+    font-size: 1.2rem;
+    line-height: 35px;
+}
+
+.tour-place {
+    font-size: 1rem;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+
+.tour-date {
+    font-size: 0.8rem;
+    line-height: 25px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.madrid {
+
+    background-image: url('../img/tour/madrid.jpg');
+
+}
+
+.turin {
+    background-image: url('../img/tour/turin.jpg');
+}
+
+.hamburg {
+    background-image: url('../img/tour/hamburg.jpg');
+}
+
+.krakow {
+    background-image: url('../img/tour/krakow.jpg');
+}
+
+
+/* Gallery */
+
+#gallery {
+    background-color: #373737;
+}
+
+div#gallery div {
+    text-align: justify;
+    /* text-align-last: justify; */
+}
+
+div#gallery div:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.photo {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+/* Subscribe */
+
+#subscribe {
+    background-image: url('../img/bg-02.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 400px 0px 0px rgba(0, 0, 0, 0.45) inset;
+}
+
+div.pitch p {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+button {
+    min-width: 160px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #b91a34;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+form {
+    display: inline-block;
+    justify-content: center;
+    line-height: 50px;
+}
+
+input[type="email"] {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+
+}
+
+/* Footer */
+
+.social {
+    line-height: 70px;
+}
+
+.social a {
+    padding: 15px 5px;
+    color: #373737;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    padding-bottom: 25px;
+    color: #373737;
+}
