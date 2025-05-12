@@ -59,15 +59,15 @@ h3 {
   margin-top: 12px;
 }
 
-/* .info a {
-  display: inline-block;
-} */
+div.info {
+  text-align: justify;
+  text-align-last: justify;
+}
 
 .btn {
   display: inline-block;
   padding: 5px 20px;
   margin-bottom: 10px;
-  line-height: 40px;
   text-align: center;
   background-color: #3f6592;
   color: white;
@@ -82,7 +82,7 @@ h3 {
   color: black;
   border: 1px solid black;
   transition: all 0.3s ease;
-  transform: scale(1.05);
+  transform: scaleX(1.05);
 }
 
 /* -----End of Main Page Styles-----  */
