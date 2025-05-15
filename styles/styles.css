@@ -61,7 +61,6 @@ h3 {
 
 div.info {
   text-align: justify;
-  text-align-last: justify;
 }
 
 .btn {
@@ -136,7 +135,6 @@ div.personal ul {
 
 address {
   font-style: normal;
-  /* text-decoration: none; */
 }
 
 a {
@@ -158,6 +156,9 @@ a {
 
 .d-flex {
   display: flex;
+}
+
+.space-between {
   justify-content: space-between;
 }
 
