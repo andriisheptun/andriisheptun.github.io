@@ -206,7 +206,7 @@ address {
 .btn__fill-red:hover {
   background-color: var(--white-color);
   color: var(--main-color);
-  border: 1px solid var(--main-color);
+  box-shadow: 0px 0px 0px 2px var(--main-color);
 }
 
 .header-section-content {
