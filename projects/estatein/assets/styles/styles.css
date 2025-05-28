@@ -797,9 +797,7 @@ p {
   }
 
   .sticker {
-    position: absolute;
-    top: -30px;
-    right: -60px;
+    top: -20px;
     transform: scale(1.25);
   }
 
@@ -863,9 +861,7 @@ p {
   }
 
   .sticker {
-    position: absolute;
-    top: -30px;
-    right: -60px;
+    top: -10px;
     transform: scale(1.5);
   }
 
