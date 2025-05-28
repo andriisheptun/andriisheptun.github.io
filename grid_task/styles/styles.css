@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ----------------------- Task 1 ----------------------- */
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.item1 {
+    grid-area: item-1;
+}
+
+.item2 {
+    grid-area: item-2;
+}
+
+.item3 {
+    grid-area: item-3;
+}
+
+.item4 {
+    grid-area: item-4;
+}
+
+.item5 {
+    grid-area: item-5;
+}
+
+.item6 {
+    grid-area: item-6;
+}
+
+.item7 {
+    grid-area: item-7;
+}
+
+.alisayed {
+    width: 420px;
+    height: 704px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2"
+        "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2"
+        "item-3 item-3 item-3 item-3 item-4 item-4 item-4 item-4 item-4"
+        "item-3 item-3 item-3 item-3 item-5 item-5 item-5 item-5 item-5"
+        "item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7"
+        "item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7";
+}
+
+/* ----------------------- End of Task 1 ----------------------- */
+
+
+/* ----------------------- Task 2 ----------------------- */
+
+div[class*="wall"] {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABTSURBVHjaYtwtw/efAQ84mlLEwMDAwGA9pw+rPBMDhYDlj+cPkjSgq6fYBQNvAGNDQ8P/AXUBC4yBK57p5wJc8Tz4o5F6YQDLdXR3AQAAAP//AwBJ4RFBmp/j6AAAAABJRU5ErkJggg==);
+}
+
+div[class*="wood"] {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADJSURBVHja7JZBCsIwEEVfpOuCh2qhHsMT9AQVXVvoCTyGLryTQtdCXEhAh4bacZGA81cJ5MOfn0nmO+89AK6vXwuBcrwCMJYVAN22AGC/Prv3c1r+isRwHCs/pbhtGwAOp8eH8they8/PgRiCYgnpwFJ+cgcK2aUxxcNwmezmX/n59UBQFhSHbpaQFWn5+TgQ+7HmEF6Blp/ege7WfPUPzN2plp/egTANd/eNX1KxnIZafj4OWB6wPGB5wPKA5QHLA5YH/jYPPAcAszrgcS5B14sAAAAASUVORK5CYII=);
+}
+
+div[class*="steel"] {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABASURBVHjaYjxw4MB/BgoAEwOFgIVcjQcOHKCRC+zt7fFqaGxspG4YjBowGAxgIRTP9HMBLG3TPQwAAAAA//8DAPltC6q3KNe8AAAAAElFTkSuQmCC);
+}
+
+.wall1 {
+    grid-area: wall1;
+}
+
+.wall2 {
+    grid-area: wall2;
+}
+
+.wall3 {
+    grid-area: wall3;
+}
+
+.wall4 {
+    grid-area: wall4;
+}
+
+.wall5 {
+    grid-area: wall5;
+}
+
+.wall6 {
+    grid-area: wall6;
+}
+
+.wall7 {
+    grid-area: wall7;
+}
+
+.wall8 {
+    grid-area: wall8;
+}
+
+.wall9 {
+    grid-area: wall9;
+}
+
+.wall10 {
+    grid-area: wall10;
+}
+
+.wall11 {
+    grid-area: wall11;
+}
+
+.wall12 {
+    grid-area: wall12;
+}
+
+.wall13 {
+    grid-area: wall13;
+}
+
+.wall14 {
+    grid-area: wall14;
+}
+
+.wall15 {
+    grid-area: wall15;
+}
+
+.wall16 {
+    grid-area: wall16;
+}
+
+.wall17 {
+    grid-area: wall17;
+}
+
+.wall18 {
+    grid-area: wall18;
+}
+
+.wall19 {
+    grid-area: wall19;
+}
+
+.wall20 {
+    grid-area: wall20;
+}
+
+.wall21 {
+    grid-area: wall21;
+}
+
+.wall22 {
+    grid-area: wall22;
+}
+
+.wall23 {
+    grid-area: wall23;
+}
+
+.wall24 {
+    grid-area: wall24;
+}
+
+.wall25 {
+    grid-area: wall25;
+}
+
+.wood1 {
+    grid-area: wood1;
+}
+
+.wood2 {
+    grid-area: wood2;
+}
+
+.wood3 {
+    grid-area: wood3;
+}
+
+.wood4 {
+    grid-area: wood4;
+}
+
+.wood5 {
+    grid-area: wood5;
+}
+
+.steel1 {
+    grid-area: steel1;
+}
+
+.steel2 {
+    grid-area: steel2;
+}
+
+.steel3 {
+    grid-area: steel3;
+}
+
+.steel4 {
+    grid-area: steel4;
+}
+
+.steel5 {
+    grid-area: steel5;
+}
+
+.steel6 {
+    grid-area: steel6;
+}
+
+.steel7 {
+    grid-area: steel7;
+}
+
+.steel8 {
+    grid-area: steel8;
+}
+
+.steel9 {
+    grid-area: steel9;
+}
+
+.steel10 {
+    grid-area: steel10;
+}
+
+.steel11 {
+    grid-area: steel11;
+}
+
+.tank-enemy {
+    grid-area: enemy;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADpSURBVHja7FdBDoIwEJyaJv7Cm/EvPAS9GeI7DPGmPIS/GG/+wtN6gCHYWKiKdI3MrRvCzi6zs8WICGJihsiYCFgAMPm8EsJqU0XPR4xxluxmpk8QnYAREb8GhgLfS2jSgCUTAFjjKgBQOEyHqphgPj0+4CJNdnjoRA/4PFHky88IBCcq9y8lTrNLpfxyKwAgyUGJCCm+PrBCVtKIq+5ME/+5ZXTCwrzTCXfcQjXQ1pLOMQw2GE+Fvk4wrt+ION/u3Af7hTMNXdpQso5rZxobKpyw+0LyD5dS+3QN1wy/fdYzBdN/QUzcBwAAT45Fd/0p2QAAAABJRU5ErkJggg==);
+}
+
+.tank-player {
+    grid-area: player;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADySURBVHja7FYhEsIwENwwnanFgeQ5xeGw8ANQ8ISi6A+KxdXBc5DgaquCIZ3mSEoSRJNM12XmZud2s5cc45zDFa9mywFglpbMlWOCgTE2MDYwNsC670BzXUqPQr2aQzXn+xPjAHDcbQAA0+oJAEjXN6nOhM8vB4QyU1AHhEKKvLhI5/OB++NAInW6yGSFj7ta0aeu/kEunGnrFQ6FlQHqkA5CqXCAOhl+BqhSeufazPiYgcRGMa3Lq6x3/r94C5GBEnFkwBTxZcAW8WaATkOQGXDaB3R/QusIUez1PtC7E/47FbqNKbydsHtnNjDhG9yB9wC1mor7QrCddwAAAABJRU5ErkJggg==);
+}
+
+.base {
+    grid-area: base;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADHSURBVHja3JfRDcMgDERNxFZdJxNkAWCBTtB1Mhf54qNRrjaWKp/wJzKBezobJ/XeJTI2CY7cWvtCUEpJ/zzwfl44gTQ8YCVxz7OSQ9+PJ1Br/VkGGonX5y0iIud+POYjYjxVMG6s3RQFUq4FjQeypny2T1hJjjyePqC52xtalfB2QqTAq5y2CqAHZpVZSdF5IHs7n3WdfiJKaCbU3n3UIWfnBV4PeGfD2X28HvC+dusR8E5KViLhBDaPoidVaH29Klju7/gaAE2xjW515SutAAAAAElFTkSuQmCC);
+}
+
+
+
+
+.battle-tank {
+    width: 416px;
+    height: 416px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(26, 16px);
+    grid-template-rows: repeat(26, 16px);
+    grid-template-areas:
+        "enemy enemy . . . . steel1 steel1 . . . . . . steel2 steel2 . . . . . . . . . ."
+        "enemy enemy . . . . steel1 steel1 . . . . . . steel2 steel2 . . . . . . . . . ."
+        ". . wall1 wall1 . . steel1 steel1 . . . . . . wall2 wall2 . . wall3 wall3 . . wall4 wall4 . ."
+        ". . wall1 wall1 . . steel1 steel1 . . . . . . wall2 wall2 . . wall3 wall3 . . wall4 wall4 . ."
+        ". . wall1 wall1 . . . . . . . . wall5 wall5 wall5 wall5 . . wall3 wall3 steel3 steel3 wall4 wall4 . ."
+        ". . wall1 wall1 . . . . . . . . wall5 wall5 wall5 wall5 . . wall3 wall3 steel3 steel3 wall4 wall4 . ."
+        ". . . . . . wall6 wall6 . . . . . . . . . . steel4 steel4 . . . . . ."
+        ". . . . . . wall6 wall6 . . . . . . . . . . steel4 steel4 . . . . . ."
+        "wood1 wood1 . . . . wall6 wall6 . . . . steel5 steel5 . . . . wall7 wall7 wood3 wood3 wall8 wall8 steel6 steel6"
+        "wood1 wood1 . . . . wall6 wall6 . . . . steel5 steel5 . . . . wall7 wall7 wood3 wood3 wall8 wall8 steel6 steel6"
+        "wood2 wood2 wood2 wood2 . . . . . . wall9 wall9 . . . . steel7 steel7 . . wood3 wood3 . . . ."
+        "wood2 wood2 wood2 wood2 . . . . . . wall9 wall9 . . . . steel7 steel7 . . wood3 wood3 . . . ."
+        ". . wall10 wall10 wall10 wall10 wall10 wall10 wood4 wood4 wood4 wood4 wood4 wood4 steel8 steel8 . . . . wood3 wood3 wall11 wall11 . ."
+        ". . wall10 wall10 wall10 wall10 wall10 wall10 wood4 wood4 wood4 wood4 wood4 wood4 steel8 steel8 . . . . wood3 wood3 wall11 wall11 . ."
+        ". . . . . . steel9 steel9 wood5 wood5 wall12 wall12 . . wall13 wall13 . . wall14 wall14 . . wall11 wall11 . ."
+        ". . . . . . steel9 steel9 wood5 wood5 wall12 wall12 . . wall13 wall13 . . wall14 wall14 . . wall11 wall11 . ."
+        "steel10 steel10 wall15 wall15 . . steel9 steel9 . . wall12 wall12 . . wall13 wall13 . . . . . . wall11 wall11 . ."
+        "steel10 steel10 wall15 wall15 . . steel9 steel9 . . wall12 wall12 . . wall13 wall13 . . . . . . wall11 wall11 . ."
+        ". . wall15 wall15 . . wall16 wall16 . . wall17 wall17 wall17 wall17 wall17 wall17 . . wall18 wall18 steel11 steel11 wall11 wall11 . ."
+        ". . wall15 wall15 . . wall16 wall16 . . wall17 wall17 wall17 wall17 wall17 wall17 . . wall18 wall18 steel11 steel11 wall11 wall11 . ."
+        ". . wall15 wall15 . . wall16 wall16 . . wall17 wall17 wall17 wall17 wall17 wall17 . . . . . . . . . ."
+        ". . wall15 wall15 . . wall16 wall16 . . wall17 wall17 wall17 wall17 wall17 wall17 . . . . . . . . . ."
+        ". . wall15 wall15 . . . . . . . . . . . . . . wall23 wall23 . . wall24 wall24 . ."
+        ". . wall15 wall15 . . . . . . . wall20 wall20 wall20 wall20 . . . wall23 wall23 . . wall24 wall24 . ."
+        ". . wall15 wall15 . . wall19 wall19 player player . wall21 base base wall22 . . . wall25 wall25 wall25 wall25 wall25 wall25 . ."
+        ". . wall15 wall15 . . wall19 wall19 player player . wall21 base base wall22 . . . wall25 wall25 wall25 wall25 wall25 wall25 . .";
+    background-color: black;
+}
+
+
+/* ----------------------- End of Task 2 ----------------------- */
