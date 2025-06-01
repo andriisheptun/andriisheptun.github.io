@@ -236,7 +236,7 @@ div.header-menu-hide {
 
 .btn {
   width: 100%;
-  min-width: 160px;
+  /* min-width: 170px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,9 +397,18 @@ p {
   transform: rotate(45deg);
 }
 
+
+/* ------------------------ End of Hero Section ---------------------------- */
+
+/* --------------------------- Main Section ------------------------------- */
+
 .main-section {
   position: relative;
   margin-top: 80px;
+}
+
+.main-section-subtitle p {
+  max-width: 70%;
 }
 
 .stars {
@@ -418,13 +427,14 @@ p {
   margin-top: 40px;
 }
 
-
-.swiper-slide {
+.swiper1-slide {
   padding: 24px;
-  flex-direction: column;
-  height: max-content;
   gap: 16px;
   border-radius: 12px;
+}
+
+.swiper-slide {
+  flex-direction: column;
   border: 1px solid var(--grey-shade__15);
 }
 
@@ -488,13 +498,68 @@ div[class*=swipe-button]:hover {
 }
 
 /* ------------------ End of Swiper-------------- */
+
+.swiper2-slide {
+  padding: 30px;
+  gap: 24px;
+  border-radius: 10px;
+}
+
+.rating {
+  gap: 8px;
+}
+
+.shape {
+  transform: scale(.75);
+}
+
+.shapes {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--grey-shade__15);
+}
+
+.swiper2-content {
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+
+  overflow: auto;
+}
+
+.swiper2-profile {
+  gap: 10px;
+}
+
+.swiper2-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.swiper2-photo1 {
+  background-image: url(../images/swiper2-photo1.png);
+}
+
+.swiper2-photo2 {
+  background-image: url(../images/swiper2-photo2.png);
+}
+
+.swiper2-photo3 {
+  background-image: url(../images/swiper2-photo3.png);
+}
+
+
+/* --------------------------- End of Main Section ------------------------------- */
+
 .next {
   width: 100%;
   height: 500px;
   background-color: lightgreen;
 }
 
-/* ------------------------ End of Hero Section ---------------------------- */
+
 
 
 
@@ -506,6 +571,12 @@ div[class*=swipe-button]:hover {
 @media all and (max-width: 374px) {
   .banner {
     font-size: .6rem;
+  }
+
+  .main-section .btn {
+    padding: 8px 10px;
+    width: fit-content;
+    min-width: 100px;
   }
 
   .block-footer-item p:last-child {
@@ -1003,6 +1074,16 @@ div[class*=swipe-button]:hover {
     transform: scale(1);
   }
 
+  .shape {
+    transform: scale(.85);
+  }
+
+
+  .shapes {
+    width: 38px;
+    height: 38px;
+  }
+
 }
 
 @media all and (1200px <=width <=1320px) {
@@ -1081,6 +1162,19 @@ div[class*=swipe-button]:hover {
     font-size: 2.225rem;
   }
 
+  .swiper1-slide {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .swiper2-slide {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .swiper2-content {
+    height: 242px;
+  }
 
 }
 
@@ -1110,6 +1204,11 @@ div[class*=swipe-button]:hover {
     font-size: 2.5rem;
   }
 
+  .swiper1-slide {
+    padding: 40px;
+    gap: 30px;
+  }
+
   .swiper-properties-item {
     padding: 8px 14px;
     font-size: 1.125rem;
@@ -1118,6 +1217,30 @@ div[class*=swipe-button]:hover {
   .swiper-properties-item svg {
     transform: scale(1.2);
   }
+
+  .rating {
+    gap: 10px;
+  }
+
+  .shape {
+    transform: scale(1);
+  }
+
+  .shapes {
+    width: 44px;
+    height: 44px;
+    ;
+  }
+
+  .swiper2-slide {
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .swiper2-content {
+    height: 282px;
+  }
+
 }
 
 
