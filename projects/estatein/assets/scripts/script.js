@@ -31,3 +31,32 @@ headerMenu.addEventListener("click", () => {
   iconClose.classList.toggle("hide");
   headerMenu.classList.toggle("header-menu-hide");
 });
+
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swipe-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swipe-button-next",
+    prevEl: ".swipe-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});

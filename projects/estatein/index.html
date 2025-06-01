@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 
@@ -156,8 +157,195 @@
       </div>
     </div>
   </section>
+  <main>
+    <section class="main-section content-wrap">
+      <!-- <div> -->
+      <svg class="stars" width="69px" height="30px">
+        <use xlink:href="assets/images/sprite.svg#mainSectAbstract"></use>
+      </svg>
+      <!-- </div> -->
+      <header>
+        <h2 class="accent-font-weight">Featured Properties</h2>
+        <div class="d-flex space-between">
 
-  <div class="next"></div>
+          <p class="subtitle obscured-text">
+            Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional
+            homes
+            and investments available through Estatein.
+          </p>
+
+          <a href="#" class="btn btn-fill__black hide-mobile">View All Properties</a>
+
+        </div>
+      </header>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide d-flex">
+
+            <img src="assets/images/slider1-image1.png" alt="House">
+
+            <div class="swiper-content">
+              <h3 class="accent-font-weight">Seaside Serenity Villa</h3>
+              <p class="obscured-text">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...
+                <a href="#">Read More</a>
+              </p>
+            </div>
+
+            <div class="swiper-properties d-flex">
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#bedroom"></use>
+                </svg>
+                <span>4-Bedroom</span>
+              </div>
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#bathroom"></use>
+                </svg>
+                <span>3-Bathroom</span>
+              </div>
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#villa"></use>
+                </svg>
+                <span>Villa</span>
+              </div>
+            </div>
+
+            <div class="swiper-price d-flex items-center space-between">
+              <div class="price-item d-flex">
+                <p class="obscured-text">Price</p>
+                <h3 class="accent-font-weight">$125,550,000</h3>
+              </div>
+              <a href="#" class="btn btn-fill__main-color">View Property Details</a>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide d-flex items-center">
+
+            <img src="assets/images/slider1-image2.png" alt="House">
+
+            <div class="swiper-content">
+              <h3 class="accent-font-weight">Metropolitan Haven</h3>
+              <p class="obscured-text">A chic and fully-furnished 2-bedroom apartment with panoramic city views...
+                <a href="#">Read More</a>
+              </p>
+            </div>
+
+            <div class="swiper-properties d-flex">
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#bedroom"></use>
+                </svg>
+                <span>2-Bedroom</span>
+              </div>
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#bathroom"></use>
+                </svg>
+                <span>2-Bathroom</span>
+              </div>
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#villa"></use>
+                </svg>
+                <span>Villa</span>
+              </div>
+            </div>
+
+            <div class="swiper-price d-flex items-center space-between">
+              <div class="price-item d-flex">
+                <p class="obscured-text">Price</p>
+                <h3 class="accent-font-weight">$550,000</h3>
+              </div>
+              <a href="#" class="btn btn-fill__main-color">View Property Details</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide d-flex items-center">
+
+            <img src="assets/images/slider1-image3.png" alt="House">
+
+            <div class="swiper-content">
+              <h3 class="accent-font-weight">Rustic Retreat Cottage</h3>
+              <p class="obscured-text">An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
+                <a href="#">Read More</a>
+              </p>
+            </div>
+
+            <div class="swiper-properties d-flex">
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#bedroom"></use>
+                </svg>
+                <span>3-Bedroom</span>
+              </div>
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#bathroom"></use>
+                </svg>
+                <span>3-Bathroom</span>
+              </div>
+              <div class="swiper-properties-item d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#villa"></use>
+                </svg>
+                <span>Villa</span>
+              </div>
+            </div>
+
+            <div class="swiper-price d-flex items-center space-between">
+              <div class="price-item d-flex">
+                <p class="obscured-text">Price</p>
+                <h3 class="accent-font-weight">$550,000</h3>
+              </div>
+              <a href="#" class="btn btn-fill__main-color">View Property Details</a>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide d-flex items-center">Slide 4</div>
+
+          <div class="swiper-slide d-flex items-center">Slide 5</div>
+
+          <div class="swiper-slide d-flex items-center">Slide 6</div>
+
+          <div class="swiper-slide d-flex items-center">Slide 7</div>
+
+          <div class="swiper-slide d-flex items-center">Slide 8</div>
+
+          <div class="swiper-slide d-flex items-center">Slide 9</div>
+
+          <div class="swiper-slide d-flex items-center">Slide 10</div>
+
+        </div>
+
+        <div class="swipe-controls d-flex align-center">
+          <a href="#" class="btn btn-fill__black hide-desktop">View All Properties</a>
+
+          <div class="swipe-controls-mobile d-flex align-center">
+            <div class="swipe-button-prev d-flex items-center">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swipe-pagination">
+
+            </div>
+            <div class="swipe-button-next d-flex items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="next">
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/scripts/script.js"></script>
 </body>
 
