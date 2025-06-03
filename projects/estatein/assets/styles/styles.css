@@ -735,9 +735,12 @@ input[type="email"]::placeholder {
 
 .footer-social {
   padding: 20px 0;
+  background-color: var(--grey-shade__10);
+}
+
+.footer-social-container {
   flex-direction: column;
   gap: 20px;
-  background-color: var(--grey-shade__10);
 }
 
 .icon-container {
@@ -751,14 +754,13 @@ input[type="email"]::placeholder {
   background-color: var(--grey-shade__08);
 }
 
+.social-subcontainer {
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* --------------------------- End of Footer ------------------------------- */
 
-
-.test {
-  width: 100%;
-  height: 500px;
-  background-color: lightblue;
-}
 
 /* --------------------------- Media Queries ------------------------------------ */
 
@@ -1191,6 +1193,27 @@ input[type="email"]::placeholder {
     grid-column: 4 / 5;
     grid-row: 1 / 2;
   }
+
+  .footer-social {
+    padding: 14px 0;
+  }
+
+  .footer-social-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .item-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  div.social-subcontainer {
+    flex-direction: row;
+    gap: 20px;
+    font-size: .875rem;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -1224,11 +1247,6 @@ input[type="email"]::placeholder {
 
   .head {
     height: 99px;
-  }
-
-  .logo {
-    width: 160px;
-    height: 48px;
   }
 
   .header-menu {
@@ -1354,7 +1372,6 @@ input[type="email"]::placeholder {
     grid-column: 4 / 5;
     grid-row: 1 / 4;
   }
-
 
 }
 
@@ -1594,6 +1611,11 @@ input[type="email"]::placeholder {
 
 @media all and (min-width: 1920px) {
 
+  .logo {
+    width: 160px;
+    height: 48px;
+  }
+
   .title {
     font-size: 3.75rem;
   }
@@ -1610,7 +1632,8 @@ input[type="email"]::placeholder {
     font-size: 1.5rem;
   }
 
-  .hero-footer-item p {
+  /* .hero-footer-item */
+  p {
     font-size: 1.125rem;
   }
 
@@ -1664,6 +1687,14 @@ input[type="email"]::placeholder {
     height: 70px;
   }
 
+  .footer-social-container {
+    font-size: 1.125rem;
+  }
+
+  .item-icon {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 
