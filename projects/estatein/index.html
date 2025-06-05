@@ -8,7 +8,7 @@
   <title>Estatein</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="apple-touch-icon" href="assets/images/apple-icon.png">
-  <link rel="stylesheet" href="assets/images/sprite.svg">
+  <!-- <link rel="stylesheet" href="assets/images/sprite.svg"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,9 +19,9 @@
 <body>
 
   <section id="heroSection" class="hero-section">
-    <header class="main-header">
+    <header class="main-header  align-center">
 
-      <div id="banner" class="banner border-bottom d-flex align-center">
+      <div id="banner" class="banner border-bottom d-flex align-center bg-cover">
 
         <div class="banner-content d-flex">
           <span>✨Discover Your Dream Property with Estatein
@@ -35,127 +35,120 @@
 
       </div>
 
-      <nav>
+      <nav class="head d-flex align-center border-bottom">
 
-        <div id="head" class="head d-flex align-center border-bottom">
-          <div class="content-wrap d-flex space-between align-center">
+        <div class="content-wrap d-flex space-between align-center">
 
-            <img class="logo" src="assets/images/logo.svg" alt="Logo Estatein">
+          <img class="logo" src="assets/images/logo.svg" alt="Logo Estatein">
 
-            <div class="menu-container">
+          <div class="menu-container">
 
-              <div class="burger-icons">
-                <svg id="iconOpen" width="28px" height="28px" class="burger-icon">
-                  <use xlink:href="assets/images/sprite.svg#burgerOpen"></use>
-                </svg>
-                <svg id="iconClose" width="28px" height="28px" class="burger-icon hide">
-                  <use xlink:href="assets/images/sprite.svg#burgerClose"></use>
-                </svg>
-              </div>
-
-              <div id="headerMenu" class="d-flex header-menu header-menu-hide items-center">
-                <ul class="menu-list d-flex items-center">
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#">Properties</a>
-                  </li>
-                  <li>
-                    <a href="#">Services</a>
-                  </li>
-                </ul>
-                <a class="btn btn-fill__black hide-desktop" href="#">Contact Us</a>
-              </div>
+            <div class="burger-icons">
+              <svg id="iconOpen" width="28px" height="28px" class="burger-icon">
+                <use xlink:href="assets/images/sprite.svg#burgerOpen"></use>
+              </svg>
+              <svg id="iconClose" width="28px" height="28px" class="burger-icon hide">
+                <use xlink:href="assets/images/sprite.svg#burgerClose"></use>
+              </svg>
             </div>
 
-            <a class="btn btn-fill__black hide-mobile" href="#">Contact Us</a>
-
+            <div id="headerMenu" class="d-flex header-menu header-menu-hide items-center">
+              <ul class="menu-list d-flex items-center">
+                <li>
+                  <a href="#" class="active-item">Home</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Properties</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+              </ul>
+              <a class="btn btn-fill__black hide-desktop" href="#">Contact Us</a>
+            </div>
           </div>
+
+          <a class="btn btn-fill__black hide-mobile" href="#">Contact Us</a>
+
         </div>
       </nav>
+
     </header>
 
-    <div class="hero-section-content">
+    <div class="hero-image bg-cover"></div>
 
-      <div class="desktop-container">
+    <div class="hero-content-block d-flex">
+      <div class="hero-content d-flex">
 
-        <div class="hero-image bg-cover">
-          <img src="assets/images/header-image.png" alt="Building">
+        <div class="sticker">
+          <img src="assets/images/sticker.png" alt="Sticker">
         </div>
 
-        <div class="hero-content-block">
+        <h1 class="accent-font-weight">
+          Discover Your Dream<br> Property with Estatein
+        </h1>
 
-          <div class="sticker">
-            <img src="assets/images/sticker.png" alt="Sticker">
-          </div>
+        <p class="obscured-text">
+          Your journey to finding the perfect property begins here. Explore our listings to find the home that matches
+          your dreams.
+        </p>
+      </div>
 
-          <h1 class="title accent-font-weight">
-            Discover Your Dream Property with Estatein
-          </h1>
+      <div class="btn-container d-flex">
+        <a class="btn btn-fill__black" href="#">Learn More</a>
+        <a class="btn btn-fill__main-color" href="#">Browse Properties</a>
+      </div>
 
-          <p class="subtitle obscured-text">
-            Your journey to finding the perfect property begins here. Explore our listings to find the home that matches
-            your dreams.
-          </p>
-
-          <div class="btn-container d-flex">
-            <a class="btn btn-fill__black" href="#">Learn More</a>
-            <a class="btn btn-fill__main-color" href="#">Browse Properties</a>
-          </div>
-
-          <div class="content-block-footer-items d-flex">
-            <div class="block-footer-item">
-              <p class="hero-accent">200+</p>
-              <p class="obscured-text">Happy Customers</p>
-            </div>
-            <div class="block-footer-item">
-              <p class="hero-accent">10k+</p>
-              <p class="obscured-text">Properties For Clients</p>
-            </div>
-            <div class="block-footer-item">
-              <p class="hero-accent">6+</p>
-              <p class="obscured-text">Years of Experience</p>
-            </div>
-          </div>
+      <div class="content-block-footer-items d-flex">
+        <div class="block-footer-item">
+          <p class="hero-accent">200+</p>
+          <p class="obscured-text">Happy Customers</p>
+        </div>
+        <div class="block-footer-item">
+          <p class="hero-accent">10k+</p>
+          <p class="obscured-text">Properties For Clients</p>
+        </div>
+        <div class="block-footer-item">
+          <p class="hero-accent">6+</p>
+          <p class="obscured-text">Years of Experience</p>
         </div>
       </div>
+    </div>
 
-      <div class="hero-footer d-flex">
+    <div class="hero-footer d-flex">
 
-        <a href="#" class="hero-footer-item d-flex">
-          <div>
-            <img src="assets/images/hero-footer-icon1.png" alt="icon">
-          </div>
-          <p class="accent-font-weight">Find Your Dream Home</p>
-          <i class="fa-solid fa-arrow-up"></i>
-        </a>
-        <a href="#" class="hero-footer-item d-flex">
-          <div>
-            <img src="assets/images/hero-footer-icon2.png" alt="icon">
-          </div>
-          <p class="accent-font-weight">Unlock Property Value</p>
-          <i class="fa-solid fa-arrow-up"></i>
-        </a>
-        <a href="#" class="hero-footer-item d-flex">
-          <div>
-            <img src="assets/images/hero-footer-icon3.png" alt="icon">
-          </div>
-          <p class="accent-font-weight">Effortless Property Management</p>
-          <i class="fa-solid fa-arrow-up"></i>
-        </a>
-        <a href="#" class="hero-footer-item d-flex">
-          <div>
-            <img src="assets/images/hero-footer-icon4.png" alt="icon">
-          </div>
-          <p class="accent-font-weight">Smart Investments, Informed Decisions</p>
-          <i class="fa-solid fa-arrow-up"></i>
-        </a>
+      <a href="#" class="hero-footer-item d-flex">
+        <div>
+          <img src="assets/images/hero-footer-icon1.png" alt="icon">
+        </div>
+        <p class="accent-font-weight">Find Your Dream Home</p>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+      <a href="#" class="hero-footer-item d-flex">
+        <div>
+          <img src="assets/images/hero-footer-icon2.png" alt="icon">
+        </div>
+        <p class="accent-font-weight">Unlock Property Value</p>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+      <a href="#" class="hero-footer-item d-flex">
+        <div>
+          <img src="assets/images/hero-footer-icon3.png" alt="icon">
+        </div>
+        <p class="accent-font-weight">Effortless Property Management</p>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+      <a href="#" class="hero-footer-item d-flex">
+        <div>
+          <img src="assets/images/hero-footer-icon4.png" alt="icon">
+        </div>
+        <p class="accent-font-weight">Smart Investments, Informed Decisions</p>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
 
-      </div>
     </div>
   </section>
 
@@ -164,11 +157,11 @@
     <!-- ------------------------ First Swiper Section -------------------------------- -->
 
     <section class="main-section content-wrap">
-      <!-- <div> -->
+
       <svg class="stars" width="69px" height="30px">
         <use xlink:href="assets/images/sprite.svg#mainSectAbstract"></use>
       </svg>
-      <!-- </div> -->
+
       <header>
         <h2 class="accent-font-weight">Featured Properties</h2>
         <div class="main-section-subtitle d-flex space-between">
@@ -352,11 +345,11 @@
 
 
     <section class="main-section content-wrap">
-      <!-- <div> -->
+
       <svg class="stars" width="69px" height="30px">
         <use xlink:href="assets/images/sprite.svg#mainSectAbstract"></use>
       </svg>
-      <!-- </div> -->
+
       <header>
         <h2 class="accent-font-weight">What Our Clients Say</h2>
         <div class="main-section-subtitle d-flex space-between">
@@ -555,11 +548,11 @@
 
 
     <section class="main-section content-wrap">
-      <!-- <div> -->
+
       <svg class="stars" width="69px" height="30px">
         <use xlink:href="assets/images/sprite.svg#mainSectAbstract"></use>
       </svg>
-      <!-- </div> -->
+
       <header>
         <h2 class="accent-font-weight">Frequently Asked Questions</h2>
         <div class="main-section-subtitle d-flex space-between">
@@ -672,10 +665,18 @@
       <div class="footer-content">
         <div class="mail-input">
           <img class="logo" src="assets/images/logo.svg" alt="Logo Estatein">
+
           <div class="input-container">
-            <input type="email" name="" id="mailMe" placeholder="Enter Your Email">
-            <input type="submit" for="mailMe" value="">
+            <form action="server.html" method="get" name="user-email">
+
+              <input type="email" name="" id="mailMe" placeholder="Enter Your Email">
+              <div class="placeholder-icon"></div>
+              <label class="submit-button">
+                <input type="submit" value="">
+              </label>
+            </form>
           </div>
+
         </div>
 
         <div class="footer-link-container">
