@@ -290,9 +290,17 @@ p a {
   cursor: pointer;
 }
 
+.logo-container {
+  gap: 6px;
+}
+
 .logo {
-  width: 94px;
+  width: 28px;
   height: 28px;
+}
+
+.logo-text {
+  fill: var(--absolute-white);
 }
 
 .burger-icons {
@@ -361,6 +369,10 @@ div.header-menu-hide {
   background-color: var(--grey-shade__08);
   cursor: default;
   pointer-events: none;
+}
+
+.menu-list li a:not(.active-item) {
+  border: 1px solid transparent;
 }
 
 .btn {
@@ -440,15 +452,133 @@ h3 {
 /* --------------------------- Main Section ------------------------------- */
 
 .main-section {
-  position: relative;
   margin-top: 80px;
+}
+
+.main-section header {
+  position: relative;
 }
 
 .stars {
   position: absolute;
   top: -20px;
-  left: 0px;
-  transform: scale(0.7);
+  left: -8px;
+  gap: 4px;
+}
+
+div[class^="star1"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+div[class^="star2"] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+div[class^="star3"] {
+  width: 5.6px;
+  height: 5.6px;
+  border-radius: 50%;
+}
+
+.star1 {
+  position: relative;
+  background-color: var(--grey-shade__40);
+}
+
+.star1 div {
+  position: absolute;
+  background-color: var(--grey-shade__08);
+  transform: translate(-50%, -50%);
+}
+
+.star1-1 {
+  top: 0;
+  left: 0;
+}
+
+.star1-2 {
+  top: 0;
+  left: 100%;
+}
+
+.star1-3 {
+  top: 100%;
+  left: 100%;
+}
+
+.star1-4 {
+  top: 100%;
+  left: 0;
+}
+
+
+
+.star2 {
+  position: relative;
+  background-color: var(--grey-shade__20);
+}
+
+.star2 div {
+  position: absolute;
+  background-color: var(--grey-shade__08);
+  transform: translate(-50%, -50%);
+}
+
+.star2-1 {
+  top: 0;
+  left: 0;
+}
+
+.star2-2 {
+  top: 0;
+  left: 100%;
+}
+
+.star2-3 {
+  top: 100%;
+  left: 100%;
+}
+
+.star2-4 {
+  top: 100%;
+  left: 0;
+}
+
+
+
+.star3 {
+  position: relative;
+  background-color: var(--grey-shade__20);
+}
+
+.star3 div {
+  position: absolute;
+  background-color: var(--grey-shade__08);
+  transform: translate(-50%, -50%);
+}
+
+.star3-1 {
+  top: 0;
+  left: 0;
+}
+
+.star3-2 {
+  top: 0;
+  left: 100%;
+}
+
+.star3-3 {
+  top: 100%;
+  left: 100%;
+}
+
+.star3-4 {
+  top: 100%;
+  left: 0;
 }
 
 /* ------------------Swiper-------------- */
@@ -475,8 +605,18 @@ h3 {
   border-radius: 10px;
 }
 
+.swiper-content {
+  flex-direction: column;
+  gap: 2px;
+}
+
+.swiper-content p {
+  height: 42px;
+}
+
 .swiper-properties {
   flex-wrap: wrap;
+  margin: 4px 0;
 }
 
 .swiper-properties-item {
@@ -497,6 +637,7 @@ h3 {
 
 .swiper-price a {
   width: 100%;
+  padding: 14px 6px;
 }
 
 .swipe-controls {
@@ -551,11 +692,12 @@ div[class*=swipe-button]:hover {
 
 .swiper2-content {
   flex-direction: column;
-  justify-content: center;
-  height: 150px;
+  gap: 6px;
+  /* height: 150px; */
 }
 
 .swiper2-content p {
+  height: 84px;
   overflow: auto;
 }
 
@@ -782,7 +924,7 @@ input[type="email"]::placeholder {
   gap: 8px;
 }
 
-.item-icon {
+.social-item {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -795,6 +937,12 @@ input[type="email"]::placeholder {
 }
 
 /* --------------------------- End of Footer ------------------------------- */
+
+.test {
+  width: 100%;
+  height: 200px;
+  background-color: lightblue;
+}
 
 
 /* --------------------------- Media Queries ------------------------------------ */
@@ -817,6 +965,10 @@ input[type="email"]::placeholder {
   .services-block a i {
     top: 15px;
     right: 15px;
+  }
+
+  .swiper-content p {
+    font-size: .7rem;
   }
 
   .swiper-price a {
@@ -1034,7 +1186,7 @@ input[type="email"]::placeholder {
     width: auto;
   }
 
-  .menu-list li:not(:first-child):hover {
+  .menu-list li a:not(.active-item):hover {
     border-radius: 8px;
     border: 1px solid var(--grey-shade__15);
     background-color: var(--grey-shade__08);
@@ -1101,12 +1253,6 @@ input[type="email"]::placeholder {
 
   .main-section {
     margin-top: 120px;
-  }
-
-  .stars {
-    top: -30px;
-    left: 10px;
-    transform: scale(0.85);
   }
 
   .main-section-subtitle {
@@ -1206,7 +1352,7 @@ input[type="email"]::placeholder {
     gap: 0px;
   }
 
-  .item-icon {
+  .social-item {
     width: 40px;
     height: 40px;
   }
@@ -1266,10 +1412,6 @@ input[type="email"]::placeholder {
   .about-us-block div {
     padding: 14px 16px;
     text-align: left;
-  }
-
-  .stars {
-    left: 16px;
   }
 
   .footer-link-container {
@@ -1440,9 +1582,17 @@ input[type="email"]::placeholder {
     gap: 50px
   }
 
+  .logo-container {
+    gap: 12px;
+  }
+
   .logo {
-    width: 114px;
+    width: 34px;
     height: 34px;
+  }
+
+  .logo-text {
+    transform: scale(1.2);
   }
 
   .sticker {
@@ -1480,8 +1630,22 @@ input[type="email"]::placeholder {
 
   .stars {
     top: -30px;
-    left: 50px;
-    transform: scale(1);
+    gap: 4.8px;
+  }
+
+  div[class^="star1"] {
+    width: 24px;
+    height: 24px;
+  }
+
+  div[class^="star2"] {
+    width: 14px;
+    height: 14px;
+  }
+
+  div[class^="star3"] {
+    width: 6.72px;
+    height: 6.72px;
   }
 
   .swiper-slide img {
@@ -1493,13 +1657,25 @@ input[type="email"]::placeholder {
     gap: 20px;
   }
 
+  .swiper-content {
+    gap: 4px;
+  }
+
+  .swiper-content p {
+    height: 48px;
+  }
+
   .swiper2-slide {
     padding: 40px;
     gap: 30px;
   }
 
   .swiper2-content {
-    height: 242px;
+    gap: 10px;
+  }
+
+  .swiper2-content p {
+    height: 96px;
   }
 
   .swiper3-slide {
@@ -1576,9 +1752,17 @@ input[type="email"]::placeholder {
       url(../images/banner-bg_desktop.png);
   }
 
+  .logo-container {
+    gap: 30px;
+  }
+
   .logo {
-    width: 160px;
+    width: 48px;
     height: 48px;
+  }
+
+  .logo-text {
+    transform: scale(1.7);
   }
 
   .menu-list {
@@ -1612,8 +1796,24 @@ input[type="email"]::placeholder {
   }
 
   .stars {
-    top: -40px;
-    left: -10px;
+    top: -30px;
+    left: -12px;
+    gap: 6px;
+  }
+
+  div[class^="star1"] {
+    width: 30px;
+    height: 30px;
+  }
+
+  div[class^="star2"] {
+    width: 18px;
+    height: 18px;
+  }
+
+  div[class^="star3"] {
+    width: 8.4px;
+    height: 8.4px;
   }
 
   .swiper-slide img {
@@ -1623,6 +1823,14 @@ input[type="email"]::placeholder {
   .swiper1-slide {
     padding: 40px;
     gap: 30px;
+  }
+
+  .swiper-content {
+    gap: 6px;
+  }
+
+  .swiper-content p {
+    height: 54px;
   }
 
   .swiper-properties-item {
@@ -1636,6 +1844,10 @@ input[type="email"]::placeholder {
 
   .swiper-price {
     gap: 50px;
+  }
+
+  .swiper-price a {
+    padding: 18px 6px;
   }
 
   .rating {
@@ -1658,7 +1870,11 @@ input[type="email"]::placeholder {
   }
 
   .swiper2-content {
-    height: 282px;
+    gap: 14px;
+  }
+
+  .swiper2-content p {
+    height: 108px;
   }
 
   .swiper3-slide {
@@ -1670,9 +1886,13 @@ input[type="email"]::placeholder {
     height: 70px;
   }
 
-  .item-icon {
+  .social-item {
     width: 52px;
     height: 52px;
+  }
+
+  .social-icon {
+    transform: scale(1.2);
   }
 
   .footer-link-item a:first-child {
