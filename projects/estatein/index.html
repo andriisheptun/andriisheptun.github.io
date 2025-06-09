@@ -24,8 +24,8 @@
       <div id="banner" class="banner border-bottom d-flex align-center bg-cover">
 
         <div class="banner-content d-flex">
-          <span>✨Discover Your Dream Property with Estatein
-            <a href="#">Learn More</a>
+          <span>
+            ✨Discover Your Dream Property with Estatein <a href="#">Learn More</a>
           </span>
         </div>
 
@@ -70,11 +70,11 @@
                 <a href="#">Services</a>
               </li>
             </ul>
-            <a class="btn btn-fill__black hide-desktop" href="#">Contact Us</a>
+            <a class="btn btn-fill__black hide-desktop" href="contact.html">Contact Us</a>
           </div>
         </div>
 
-        <a class="btn btn-fill__black hide-mobile" href="#">Contact Us</a>
+        <a class="btn btn-fill__black hide-mobile" href="contact.html">Contact Us</a>
 
       </nav>
 
@@ -105,50 +105,58 @@
       </div>
 
       <div class="about-us-block">
-        <div class="about-us-1">
+        <div class="grid-item-1">
           <p class="hero-accent">200+</p>
           <p class="obscured-text">Happy Customers</p>
         </div>
-        <div class="about-us-2">
+        <div class="grid-item-2">
           <p class="hero-accent">10k+</p>
           <p class="obscured-text">Properties For Clients</p>
         </div>
-        <div class="about-us-3">
+        <div class="grid-item-3">
           <p class="hero-accent">6+</p>
           <p class="obscured-text">Years of Experience</p>
         </div>
       </div>
     </div>
 
-    <div class="services-block">
+    <div class="big-btn-block">
 
-      <a href="#" class="services-1 d-flex">
+      <a href="#" class="grid-item-1 d-flex">
         <div>
           <img src="assets/images/hero-footer-icon1.png" alt="icon">
         </div>
         <p class="accent-font-weight">Find Your Dream Home</p>
-        <i class="fa-solid fa-arrow-up"></i>
+        <svg>
+          <use xlink:href="assets/images/sprite.svg#arrow"></use>
+        </svg>
       </a>
-      <a href="#" class="services-2 d-flex">
+      <a href="#" class="grid-item-2 d-flex">
         <div>
           <img src="assets/images/hero-footer-icon2.png" alt="icon">
         </div>
         <p class="accent-font-weight">Unlock Property Value</p>
-        <i class="fa-solid fa-arrow-up"></i>
+        <svg>
+          <use xlink:href="assets/images/sprite.svg#arrow"></use>
+        </svg>
       </a>
-      <a href="#" class="services-3 d-flex">
+      <a href="#" class="grid-item-3 d-flex">
         <div>
           <img src="assets/images/hero-footer-icon3.png" alt="icon">
         </div>
         <p class="accent-font-weight">Effortless Property Management</p>
-        <i class="fa-solid fa-arrow-up"></i>
+        <svg>
+          <use xlink:href="assets/images/sprite.svg#arrow"></use>
+        </svg>
       </a>
-      <a href="#" class="services-4 d-flex">
+      <a href="#" class="grid-item-4 d-flex">
         <div>
           <img src="assets/images/hero-footer-icon4.png" alt="icon">
         </div>
         <p class="accent-font-weight">Smart Investments, Informed Decisions</p>
-        <i class="fa-solid fa-arrow-up"></i>
+        <svg>
+          <use xlink:href="assets/images/sprite.svg#arrow"></use>
+        </svg>
       </a>
 
     </div>
@@ -158,44 +166,44 @@
 
     <!-- ------------------------ First Swiper Section -------------------------------- -->
 
-    <section class="main-section content-wrap">
+    <section class="main-section d-flex content-wrap">
+      <div class="main-section-btn d-flex space-between">
+        <div class="main-section-title d-flex">
 
-      <header>
-
-        <div class="stars d-flex items-center">
-          <div class="star1">
-            <div class="star1-1"></div>
-            <div class="star1-2"></div>
-            <div class="star1-3"></div>
-            <div class="star1-4"></div>
+          <div class="shapes d-flex items-center">
+            <div class="shape1">
+              <div class="shape1-1"></div>
+              <div class="shape1-2"></div>
+              <div class="shape1-3"></div>
+              <div class="shape1-4"></div>
+            </div>
+            <div class="shape2">
+              <div class="shape2-1"></div>
+              <div class="shape2-2"></div>
+              <div class="shape2-3"></div>
+              <div class="shape2-4"></div>
+            </div>
+            <div class="shape3">
+              <div class="shape3-1"></div>
+              <div class="shape3-2"></div>
+              <div class="shape3-3"></div>
+              <div class="shape3-4"></div>
+            </div>
           </div>
-          <div class="star2">
-            <div class="star2-1"></div>
-            <div class="star2-2"></div>
-            <div class="star2-3"></div>
-            <div class="star2-4"></div>
-          </div>
-          <div class="star3">
-            <div class="star3-1"></div>
-            <div class="star3-2"></div>
-            <div class="star3-3"></div>
-            <div class="star3-4"></div>
-          </div>
-        </div>
 
-        <h2 class="accent-font-weight">Featured Properties</h2>
-        <div class="main-section-subtitle d-flex space-between">
-
-          <p class="subtitle obscured-text">
+          <h2 class="accent-font-weight">Featured Properties</h2>
+          <p class="obscured-text">
             Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional
             homes
             and investments available through Estatein.
           </p>
 
-          <a href="#" class="btn btn-fill__black hide-mobile">View All Properties</a>
-
         </div>
-      </header>
+        <a href="#" class="btn btn-fill__black hide-mobile">View All Properties</a>
+      </div>
+
+
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
 
@@ -205,25 +213,25 @@
 
             <div class="swiper-content">
               <h3 class="accent-font-weight">Seaside Serenity Villa</h3>
-              <p class="obscured-text">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...
-                <a href="#">Read More</a>
+              <p class="obscured-text">
+                A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#">Read More</a>
               </p>
             </div>
 
-            <div class="swiper-properties d-flex">
-              <div class="swiper-properties-item d-flex">
+            <div class="icon-boxes d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#bedroom"></use>
                 </svg>
                 <span>4-Bedroom</span>
               </div>
-              <div class="swiper-properties-item d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#bathroom"></use>
                 </svg>
                 <span>3-Bathroom</span>
               </div>
-              <div class="swiper-properties-item d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#villa"></use>
                 </svg>
@@ -247,25 +255,25 @@
 
             <div class="swiper-content">
               <h3 class="accent-font-weight">Metropolitan Haven</h3>
-              <p class="obscured-text">A chic and fully-furnished 2-bedroom apartment with panoramic city views...
-                <a href="#">Read More</a>
+              <p class="obscured-text">
+                A chic and fully-furnished 2-bedroom apartment with panoramic city views... <a href="#">Read More</a>
               </p>
             </div>
 
-            <div class="swiper-properties d-flex">
-              <div class="swiper-properties-item d-flex">
+            <div class="icon-boxes d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#bedroom"></use>
                 </svg>
                 <span>2-Bedroom</span>
               </div>
-              <div class="swiper-properties-item d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#bathroom"></use>
                 </svg>
                 <span>2-Bathroom</span>
               </div>
-              <div class="swiper-properties-item d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#villa"></use>
                 </svg>
@@ -288,25 +296,25 @@
 
             <div class="swiper-content">
               <h3 class="accent-font-weight">Rustic Retreat Cottage</h3>
-              <p class="obscured-text">An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
-                <a href="#">Read More</a>
+              <p class="obscured-text">
+                An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="#">Read More</a>
               </p>
             </div>
 
-            <div class="swiper-properties d-flex">
-              <div class="swiper-properties-item d-flex">
+            <div class="icon-boxes d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#bedroom"></use>
                 </svg>
                 <span>3-Bedroom</span>
               </div>
-              <div class="swiper-properties-item d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#bathroom"></use>
                 </svg>
                 <span>3-Bathroom</span>
               </div>
-              <div class="swiper-properties-item d-flex">
+              <div class="icon-boxes-item d-flex">
                 <svg width="20px" height="20px">
                   <use xlink:href="assets/images/sprite.svg#villa"></use>
                 </svg>
@@ -356,7 +364,7 @@
           </div>
         </div>
       </div>
-      </div>
+
     </section>
 
     <!-- ------------------------ End of First Swiper Section -------------------------------- -->
@@ -364,77 +372,80 @@
     <!-- ------------------------ Second Swiper Section -------------------------------- -->
 
 
-    <section class="main-section content-wrap">
+    <section class="main-section d-flex content-wrap">
 
-      <header>
+      <div class="main-section-btn d-flex space-between">
 
-        <div class="stars d-flex items-center">
-          <div class="star1">
-            <div class="star1-1"></div>
-            <div class="star1-2"></div>
-            <div class="star1-3"></div>
-            <div class="star1-4"></div>
+        <div class="main-section-title d-flex">
+
+          <div class="shapes d-flex items-center">
+            <div class="shape1">
+              <div class="shape1-1"></div>
+              <div class="shape1-2"></div>
+              <div class="shape1-3"></div>
+              <div class="shape1-4"></div>
+            </div>
+            <div class="shape2">
+              <div class="shape2-1"></div>
+              <div class="shape2-2"></div>
+              <div class="shape2-3"></div>
+              <div class="shape2-4"></div>
+            </div>
+            <div class="shape3">
+              <div class="shape3-1"></div>
+              <div class="shape3-2"></div>
+              <div class="shape3-3"></div>
+              <div class="shape3-4"></div>
+            </div>
           </div>
-          <div class="star2">
-            <div class="star2-1"></div>
-            <div class="star2-2"></div>
-            <div class="star2-3"></div>
-            <div class="star2-4"></div>
-          </div>
-          <div class="star3">
-            <div class="star3-1"></div>
-            <div class="star3-2"></div>
-            <div class="star3-3"></div>
-            <div class="star3-4"></div>
-          </div>
-        </div>
 
-        <h2 class="accent-font-weight">What Our Clients Say</h2>
-        <div class="main-section-subtitle d-flex space-between">
+          <h2 class="accent-font-weight">What Our Clients Say</h2>
 
-          <p class="subtitle obscured-text">
+          <p class="obscured-text">
             Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose
             Estatein for their real estate needs.
           </p>
 
-          <a href="#" class="btn btn-fill__black hide-mobile">View All Testimonials</a>
-
         </div>
-      </header>
+
+        <a href="#" class="btn btn-fill__black hide-mobile">View All Testimonials</a>
+
+      </div>
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide swiper2-slide d-flex">
 
             <div class="rating d-flex">
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="swiper2-content d-flex">
+            <div class="swiper2-content main-section-title always-full-width d-flex">
               <h3 class="accent-font-weight">Exceptional Service!</h3>
               <p class="obscured-text">
                 Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding
@@ -458,35 +469,36 @@
           </div>
 
           <div class="swiper-slide swiper2-slide d-flex">
+
             <div class="rating d-flex">
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="swiper2-content d-flex">
+            <div class="swiper2-content main-section-title always-full-width d-flex">
               <h3 class="accent-font-weight">Efficient and Reliable</h3>
               <p class="obscured-text">
                 Estatein provided us with top-notch service. They helped us sell our property quickly and at a great
@@ -500,38 +512,40 @@
                 <p class="obscured-text">USA, Florida</p>
               </div>
             </div>
+
           </div>
 
           <div class="swiper-slide swiper2-slide d-flex">
+
             <div class="rating d-flex">
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
-              <div class="shapes d-flex items-center">
-                <svg class="shape" width="24px" height="24px">
-                  <use xlink:href="assets/images/sprite.svg#shape"></use>
+              <div class="stars d-flex items-center">
+                <svg class="star" width="24px" height="24px">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="swiper2-content d-flex">
+            <div class="swiper2-content main-section-title always-full-width d-flex">
               <h3 class="accent-font-weight">Trusted Advisors</h3>
               <p class="obscured-text">
                 The Estatein team guided us through the entire buying process. Their knowledge and commitment to our
@@ -545,6 +559,7 @@
                 <p class="obscured-text">USA, Nevada</p>
               </div>
             </div>
+
           </div>
 
           <div class="swiper-slide swiper2-slide d-flex">Slide 4</div>
@@ -578,6 +593,7 @@
         </div>
 
       </div>
+
     </section>
 
     <!-- ------------------------ End of Second Swiper Section -------------------------------- -->
@@ -585,43 +601,46 @@
     <!-- ------------------------ Third Swiper Section -------------------------------- -->
 
 
-    <section class="main-section content-wrap">
+    <section class="main-section d-flex content-wrap">
+      <div class="main-section-subtitle d-flex space-between">
+        <div class="main-section-title d-flex">
 
-      <header>
-
-        <div class="stars d-flex items-center">
-          <div class="star1">
-            <div class="star1-1"></div>
-            <div class="star1-2"></div>
-            <div class="star1-3"></div>
-            <div class="star1-4"></div>
+          <div class="shapes d-flex items-center">
+            <div class="shape1">
+              <div class="shape1-1"></div>
+              <div class="shape1-2"></div>
+              <div class="shape1-3"></div>
+              <div class="shape1-4"></div>
+            </div>
+            <div class="shape2">
+              <div class="shape2-1"></div>
+              <div class="shape2-2"></div>
+              <div class="shape2-3"></div>
+              <div class="shape2-4"></div>
+            </div>
+            <div class="shape3">
+              <div class="shape3-1"></div>
+              <div class="shape3-2"></div>
+              <div class="shape3-3"></div>
+              <div class="shape3-4"></div>
+            </div>
           </div>
-          <div class="star2">
-            <div class="star2-1"></div>
-            <div class="star2-2"></div>
-            <div class="star2-3"></div>
-            <div class="star2-4"></div>
-          </div>
-          <div class="star3">
-            <div class="star3-1"></div>
-            <div class="star3-2"></div>
-            <div class="star3-3"></div>
-            <div class="star3-4"></div>
-          </div>
-        </div>
 
-        <h2 class="accent-font-weight">Frequently Asked Questions</h2>
-        <div class="main-section-subtitle d-flex space-between">
+          <h2 class="accent-font-weight">Frequently Asked Questions</h2>
 
-          <p class="subtitle obscured-text">
+
+
+          <p class="obscured-text">
             Find answers to common questions about Estatein's services, property listings, and the real estate process.
             We're here to provide clarity and assist you every step of the way.
           </p>
 
-          <a href="#" class="btn btn-fill__black hide-mobile">View All FAQ’s</a>
 
         </div>
-      </header>
+        <a href="#" class="btn btn-fill__black hide-mobile">View All FAQ’s</a>
+
+      </div>
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
 
@@ -686,6 +705,7 @@
         </div>
 
       </div>
+
     </section>
 
   </main>
@@ -721,7 +741,7 @@
       <div class="footer-content">
         <div class="mail-input">
 
-          <div class="logo-container d-flex items-center">
+          <div class="logo-container d-flex align-center">
             <img class="logo" src="assets/images/logo-icon.png" alt="Logo Estatein">
             <svg width="60px" height="13px" class="logo-text">
               <use xlink:href="assets/images/sprite.svg#logoText"></use>
@@ -729,14 +749,14 @@
           </div>
 
           <div class="input-container">
-            <form action="server.html" method="get" name="user-email">
+            <!-- <form action="server.html" method="get" name="user-email"> -->
 
-              <input type="email" name="" id="mailMe" placeholder="Enter Your Email">
-              <div class="placeholder-icon"></div>
-              <label class="submit-button">
-                <input type="submit" value="">
-              </label>
-            </form>
+            <input type="email" name="" id="mailMe" placeholder="Enter Your Email">
+            <div class="placeholder-icon"></div>
+            <label class="submit-icon">
+              <input type="submit" value="">
+            </label>
+            <!-- </form> -->
           </div>
 
         </div>
@@ -777,9 +797,9 @@
           </div>
 
           <div class="footer-link-item link-item-5 d-flex">
-            <a href="#" class="obscured-text">Contact Us</a>
-            <a href="#">Contact Form</a>
-            <a href="#">Our Offices</a>
+            <a href="contact.html" class="obscured-text">Contact Us</a>
+            <a href="contact.html#contactForm">Contact Form</a>
+            <a href="contact.html#locations">Our Offices</a>
           </div>
 
           <div class="footer-link-line-1"></div>
@@ -836,28 +856,6 @@
 
   </footer>
 
-  <div class="tes">
-    <div class="star d-flex items-center">
-      <div class="star1">
-        <div class="star1-1"></div>
-        <div class="star1-2"></div>
-        <div class="star1-3"></div>
-        <div class="star1-4"></div>
-      </div>
-      <div class="star2">
-        <div class="star2-1"></div>
-        <div class="star2-2"></div>
-        <div class="star2-3"></div>
-        <div class="star2-4"></div>
-      </div>
-      <div class="star3">
-        <div class="star3-1"></div>
-        <div class="star3-2"></div>
-        <div class="star3-3"></div>
-        <div class="star3-4"></div>
-      </div>
-    </div>
-  </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/scripts/script.js"></script>
 </body>

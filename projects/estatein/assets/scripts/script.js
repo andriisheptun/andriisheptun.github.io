@@ -6,7 +6,6 @@ const iconClose = document.getElementById("iconClose");
 const headerMenu = document.getElementById("headerMenu");
 
 
-
 bannerClose.addEventListener("click", () => {
   banner.classList.toggle("hide");
   headerMenu.classList.toggle("max-height");
