@@ -736,6 +736,7 @@ div[class*=swipe-button]:hover {
   padding: 30px;
   flex-direction: column;
   gap: 20px;
+  border-radius: 12px;
 }
 
 .swiper3-slide h3 {
