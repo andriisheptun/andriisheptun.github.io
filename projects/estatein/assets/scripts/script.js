@@ -1,3 +1,6 @@
+document.addEventListener('touchstart', () => { }, true);
+
+
 const heroSection = document.getElementById("heroSection");
 const bannerClose = document.getElementById("bannerClose");
 const banner = document.getElementById("banner");

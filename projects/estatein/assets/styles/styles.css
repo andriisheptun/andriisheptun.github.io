@@ -226,14 +226,11 @@ section.hero-height {
   position: relative;
   padding: 20px 14px;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   border: 1px solid var(--grey-shade__15);
   border-radius: 12px;
   background-color: var(--grey-shade__10);
-}
-
-.big-btn-block a:hover {
-  background-color: var(--grey-shade__08);
 }
 
 .big-btn-block div {
@@ -394,18 +391,8 @@ div.header-menu-hide {
   background-color: var(--grey-shade__08);
 }
 
-.btn-fill__black:hover {
-  background-color: var(--main-color__60);
-  border-color: var(--main-color__60);
-}
-
 .btn-fill__main-color {
   background-color: var(--main-color__60);
-}
-
-.btn-fill__main-color:hover {
-  color: var(--main-color__60);
-  background-color: var(--light-shade__90);
 }
 
 .hero-image {
@@ -683,10 +670,6 @@ div[class*=swipe-button] {
   cursor: pointer;
 }
 
-div[class*=swipe-button]:hover {
-  background-color: var(--grey-shade__40);
-}
-
 .swiper2-slide {
   padding: 30px;
   gap: 24px;
@@ -859,15 +842,22 @@ input {
   border: none;
 }
 
+input:-webkit-autofill {
+  color: var(--grey-shade__60);
+  border: 1px solid var(--grey-shade__15);
+  background-color: var(--grey-shade__08);
+  /* background-color: white !important; */
+  /* color: #000 !important; */
+  transition: background-color 5000s ease-in-out 0s;
+  /* Хак, щоб приховати жовтий фон */
+}
+
 input:not([type="submit"]):active,
 input:not([type="submit"]):focus,
-input:not([type="submit"]):hover,
 textarea:active,
 select:active,
 textarea:focus,
-select:focus,
-textarea:hover,
-select:hover {
+select:focus {
   border: 1px solid var(--main-color__60);
   outline: none;
 }
@@ -1024,7 +1014,7 @@ a.active-contact {
   gap: 10px;
 }
 
-.top-section .big-btn-4 p {
+.top-section .grid-item-4 p {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -1392,6 +1382,36 @@ div[class*="sort-item-"]>a {
 
   .bg-section-content img {
     height: 220px;
+  }
+
+}
+
+@media (hover: hover) {
+
+  .big-btn-block a:hover {
+    background-color: var(--grey-shade__08);
+  }
+
+  .btn-fill__black:hover {
+    background-color: var(--main-color__60);
+    border-color: var(--main-color__60);
+  }
+
+  .btn-fill__main-color:hover {
+    color: var(--main-color__60);
+    background-color: var(--light-shade__90);
+  }
+
+  div[class*=swipe-button]:hover {
+    background-color: var(--grey-shade__40);
+  }
+
+
+  input:not([type="submit"]):hover,
+  textarea:hover,
+  select:hover {
+    border: 1px solid var(--main-color__60);
+    outline: none;
   }
 
 }
