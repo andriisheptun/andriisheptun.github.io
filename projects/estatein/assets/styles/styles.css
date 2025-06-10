@@ -1386,7 +1386,7 @@ div[class*="sort-item-"]>a {
 
 }
 
-@media (hover: hover) {
+@media all and (hover: hover) {
 
   .big-btn-block a:hover {
     background-color: var(--grey-shade__08);
