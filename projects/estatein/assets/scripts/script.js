@@ -1,7 +1,7 @@
 document.addEventListener('touchstart', () => { }, true);
 
 
-const heroSection = document.getElementById("heroSection");
+const topSection = document.getElementById("topSection");
 const bannerClose = document.getElementById("bannerClose");
 const banner = document.getElementById("banner");
 const iconOpen = document.getElementById("iconOpen");
@@ -12,7 +12,7 @@ const headerMenu = document.getElementById("headerMenu");
 bannerClose.addEventListener("click", () => {
   banner.classList.toggle("hide");
   headerMenu.classList.toggle("max-height");
-  heroSection.classList.toggle("hero-height");
+  topSection.classList.toggle("hero-height");
 });
 
 iconOpen.addEventListener("click", () => {
@@ -33,7 +33,7 @@ headerMenu.addEventListener("click", () => {
   headerMenu.classList.toggle("header-menu-hide");
 });
 
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swipe-pagination",
     type: "fraction",
