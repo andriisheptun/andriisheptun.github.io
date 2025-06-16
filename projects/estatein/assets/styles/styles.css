@@ -2069,7 +2069,7 @@ div[class*="sort-item-"]>a {
   .banner {
     height: 49px;
     padding-top: 0;
-    font-size: .875px;
+    font-size: .875rem;
   }
 
   .banner-content {

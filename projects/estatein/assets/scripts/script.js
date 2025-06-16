@@ -86,7 +86,7 @@ function updateInputState() {
   }
 }
 
-updateInputState();
+// updateInputState();
 
 radios.forEach(radio => {
   radio.addEventListener('change', updateInputState);
