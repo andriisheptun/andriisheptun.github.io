@@ -24,7 +24,7 @@
 
         <div class="banner-content d-flex">
           <span>
-            ✨Discover Your Dream Property with Estatein <a href="#">Learn More</a>
+            ✨Discover Your Dream Property with Estatein <a href="properties.html">Learn More</a>
           </span>
         </div>
 
@@ -65,7 +65,7 @@
                 <a href="about_us.html">About Us</a>
               </li>
               <li>
-                <a href="#">Properties</a>
+                <a href="properties.html">Properties</a>
               </li>
               <li>
                 <a href="services.html">Services</a>
@@ -94,9 +94,9 @@
       </div>
     </div>
 
-    <div class="big-btn-block d-grid box-shadow-6">
+    <div class="big-btn-block border b-radius-12 d-grid box-shadow-6">
 
-      <a href="mailto:info@estatein.com" class="grid-item-1 d-flex">
+      <a href="mailto:info@estatein.com" class="border b-radius-12 grid-item-1 d-flex">
         <div>
           <img src="assets/images/contact-big-btn-icon1.png" alt="icon">
         </div>
@@ -105,7 +105,7 @@
           <use xlink:href="assets/images/sprite.svg#arrow"></use>
         </svg>
       </a>
-      <a href="tel:+11234567890" class="grid-item-2 d-flex">
+      <a href="tel:+11234567890" class="border b-radius-12 grid-item-2 d-flex">
         <div>
           <img src="assets/images/contact-big-btn-icon2.png" alt="icon">
         </div>
@@ -114,7 +114,7 @@
           <use xlink:href="assets/images/sprite.svg#arrow"></use>
         </svg>
       </a>
-      <a href="#" class="grid-item-3 d-flex">
+      <a href="#" class="border b-radius-12 grid-item-3 d-flex">
         <div>
           <img src="assets/images/contact-big-btn-icon3.png" alt="icon">
         </div>
@@ -123,7 +123,7 @@
           <use xlink:href="assets/images/sprite.svg#arrow"></use>
         </svg>
       </a>
-      <a href="#" class="grid-item-4 d-flex">
+      <a href="#" class="border b-radius-12 grid-item-4 d-flex">
         <div>
           <img src="assets/images/contact-big-btn-icon4.png" alt="icon">
         </div>
@@ -177,7 +177,7 @@
 
       </div>
 
-      <fieldset>
+      <div class="border b-radius-12">
         <form action="form-tester.html" method="get" autocomplete="off" name="contactForm">
 
           <div class="form-container">
@@ -204,25 +204,55 @@
 
             <label class="grid-item-5">
               Inquiry Type
-              <div class="select-checkmark">
-                <select name="" id="">
-                  <option value="none">Select Inquiry Type</option>
-                  <option value="type-1">Inquiry Type 1</option>
-                  <option value="type-2">Inquiry Type 2</option>
-                  <option value="type-3">Inquiry Type 3</option>
-                </select>
+              <div class="select border">
+                <div class="select-input d-flex align-center">
+                  <span class="visible">Select Inquiry Type</span>
+                  <span class="option hide">Inquiry Type 11321 1414321 243412</span>
+                  <span class="option hide">Inquiry Type 2</span>
+                  <span class="option hide">Inquiry Type 3</span>
+                  <span class="option hide">Inquiry Type 4</span>
+                  <span class="option hide">Inquiry Type 5</span>
+                  <div class="select-icon d-flex items-center">
+                    <svg class="icon-arrow" width="14px" height="8px">
+                      <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
+                    </svg>
+                    <i class="icon-clear hide fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <ul class="drop-menu border hide d-flex items-center">
+                  <li data-index="0">Inquiry Type 1</li>
+                  <li data-index="1">Inquiry Type 2</li>
+                  <li data-index="2">Inquiry Type 3</li>
+                  <li data-index="3">Inquiry Type 4</li>
+                  <li data-index="4">Inquiry Type 5</li>
+                </ul>
               </div>
             </label>
 
             <label class="grid-item-6">
               How Did You Hear About Us?
-              <div class="select-checkmark">
-                <select name="" id="">
-                  <option value="none">Select</option>
-                  <option value="option-1">Select 1</option>
-                  <option value="option-2">Select 2</option>
-                  <option value="option-3">Select 3</option>
-                </select>
+              <div class="select border">
+                <div class="select-input d-flex align-center">
+                  <span class="visible">Select</span>
+                  <span class="option hide">Option 11321 1414321 243412</span>
+                  <span class="option hide">Option 2</span>
+                  <span class="option hide">Option 3</span>
+                  <span class="option hide">Option 4</span>
+                  <span class="option hide">Option 5</span>
+                  <div class="select-icon d-flex items-center">
+                    <svg class="icon-arrow" width="14px" height="8px">
+                      <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
+                    </svg>
+                    <i class="icon-clear hide fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <ul class="drop-menu border hide d-flex items-center">
+                  <li data-index="0">Option 1</li>
+                  <li data-index="1">Option 2</li>
+                  <li data-index="2">Option 3</li>
+                  <li data-index="3">Option 4</li>
+                  <li data-index="4">Option 5</li>
+                </ul>
               </div>
             </label>
 
@@ -246,7 +276,7 @@
           </div>
 
         </form>
-      </fieldset>
+      </div>
 
 
     </section>
@@ -286,15 +316,21 @@
 
       <div class="sort-container d-flex">
 
-        <div class="sort-buttons d-grid">
-          <button class="btn btn-fill__black sort-btn-1 always-full-width" disabled>All</button>
-          <button class="btn btn-fill__black sort-btn-2 always-full-width">Regional</button>
-          <button class="btn btn-fill__black sort-btn-3 always-full-width">International</button>
+        <div id="sortBtns" class="sort-buttons d-grid">
+          <button class="btn btn-fill__black sort-btn-1 always-full-width" data-filter="all" disabled>
+            All
+          </button>
+          <button class="btn btn-fill__black sort-btn-2 always-full-width" data-filter="regional">
+            Regional
+          </button>
+          <button class="btn btn-fill__black sort-btn-3 always-full-width" data-filter="international">
+            International
+          </button>
         </div>
 
-        <div class="sort-items d-grid">
+        <div id="sortItems" class="sort-items d-grid">
 
-          <div class="grid-item-1 d-flex">
+          <div class="office international border d-flex">
 
             <div class="main-section-title always-full-width d-flex">
               <div class="title d-flex">
@@ -310,7 +346,7 @@
             <div class="icon-boxes d-flex">
 
               <a href="mailto:info@estatein.com">
-                <div class="icon-boxes-item d-flex">
+                <div class="icon-boxes-item border d-flex">
                   <svg width="20px" height="20px">
                     <use xlink:href="assets/images/sprite.svg#mail"></use>
                   </svg>
@@ -319,7 +355,7 @@
               </a>
 
               <a href="tel:+11234567890">
-                <div class="icon-boxes-item d-flex">
+                <div class="icon-boxes-item border d-flex">
                   <svg width="20px" height="20px">
                     <use xlink:href="assets/images/sprite.svg#phone"></use>
                   </svg>
@@ -328,7 +364,7 @@
               </a>
 
               <a href="geo:48.3794,31.1678">
-                <div class="icon-boxes-item d-flex">
+                <div class="icon-boxes-item border d-flex">
                   <svg width="20px" height="20px">
                     <use xlink:href="assets/images/sprite.svg#location"></use>
                   </svg>
@@ -338,11 +374,11 @@
 
             </div>
 
-            <a href="#" class="btn btn-fill__main-color">Get Direction</a>
+            <a href="#" class="btn btn-fill__main-color always-full-width">Get Direction</a>
 
           </div>
 
-          <div class="grid-item-2 d-flex">
+          <div class="office regional border d-flex">
 
             <div class="main-section-title always-full-width d-flex">
               <div class="title d-flex">
@@ -359,7 +395,7 @@
             <div class="icon-boxes d-flex">
 
               <a href="mailto:info@estatein.com">
-                <div class="icon-boxes-item d-flex">
+                <div class="icon-boxes-item border d-flex">
                   <svg width="20px" height="20px">
                     <use xlink:href="assets/images/sprite.svg#mail"></use>
                   </svg>
@@ -368,7 +404,7 @@
               </a>
 
               <a href="tel:+11234567890">
-                <div class="icon-boxes-item d-flex">
+                <div class="icon-boxes-item border d-flex">
                   <svg width="20px" height="20px">
                     <use xlink:href="assets/images/sprite.svg#phone"></use>
                   </svg>
@@ -377,7 +413,7 @@
               </a>
 
               <a href="geo:48.3794,31.1678">
-                <div class="icon-boxes-item d-flex">
+                <div class="icon-boxes-item border d-flex">
                   <svg width="20px" height="20px">
                     <use xlink:href="assets/images/sprite.svg#location"></use>
                   </svg>
@@ -387,7 +423,105 @@
 
             </div>
 
-            <a href="#" class="btn btn-fill__main-color">Get Direction</a>
+            <a href="#" class="btn btn-fill__main-color always-full-width">Get Direction</a>
+
+          </div>
+
+          <div class="office regional border d-flex">
+
+            <div class="main-section-title always-full-width d-flex">
+              <div class="title d-flex">
+                <span>Regional Offices</span>
+                <h3>456 Urban Avenue, Downtown District, Metropolis</h3>
+              </div>
+              <p class="obscured-text">
+                Estatein's presence extends to multiple regions, each with its own dynamic real estate landscape.
+                Discover our regional offices, staffed by local experts who understand the nuances of their respective
+                markets.
+              </p>
+            </div>
+
+            <div class="icon-boxes d-flex">
+
+              <a href="mailto:info@estatein.com">
+                <div class="icon-boxes-item border d-flex">
+                  <svg width="20px" height="20px">
+                    <use xlink:href="assets/images/sprite.svg#mail"></use>
+                  </svg>
+                  <span>info@estatein.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+11234567890">
+                <div class="icon-boxes-item border d-flex">
+                  <svg width="20px" height="20px">
+                    <use xlink:href="assets/images/sprite.svg#phone"></use>
+                  </svg>
+                  <span>+1 (123) 456-7890</span>
+                </div>
+              </a>
+
+              <a href="geo:48.3794,31.1678">
+                <div class="icon-boxes-item border d-flex">
+                  <svg width="20px" height="20px">
+                    <use xlink:href="assets/images/sprite.svg#location"></use>
+                  </svg>
+                  <span>Metropolis</span>
+                </div>
+              </a>
+
+            </div>
+
+            <a href="#" class="btn btn-fill__main-color always-full-width">Get Direction</a>
+
+          </div>
+
+          <div class="office regional border d-flex">
+
+            <div class="main-section-title always-full-width d-flex">
+              <div class="title d-flex">
+                <span>Regional Offices</span>
+                <h3>456 Urban Avenue, Downtown District, Metropolis</h3>
+              </div>
+              <p class="obscured-text">
+                Estatein's presence extends to multiple regions, each with its own dynamic real estate landscape.
+                Discover our regional offices, staffed by local experts who understand the nuances of their respective
+                markets.
+              </p>
+            </div>
+
+            <div class="icon-boxes d-flex">
+
+              <a href="mailto:info@estatein.com">
+                <div class="icon-boxes-item border d-flex">
+                  <svg width="20px" height="20px">
+                    <use xlink:href="assets/images/sprite.svg#mail"></use>
+                  </svg>
+                  <span>info@estatein.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+11234567890">
+                <div class="icon-boxes-item border d-flex">
+                  <svg width="20px" height="20px">
+                    <use xlink:href="assets/images/sprite.svg#phone"></use>
+                  </svg>
+                  <span>+1 (123) 456-7890</span>
+                </div>
+              </a>
+
+              <a href="geo:48.3794,31.1678">
+                <div class="icon-boxes-item border d-flex">
+                  <svg width="20px" height="20px">
+                    <use xlink:href="assets/images/sprite.svg#location"></use>
+                  </svg>
+                  <span>Metropolis</span>
+                </div>
+              </a>
+
+            </div>
+
+            <a href="#" class="btn btn-fill__main-color always-full-width">Get Direction</a>
 
           </div>
 
@@ -395,11 +529,10 @@
 
       </div>
 
-
     </section>
 
     <section class="content-wrap">
-      <div class="bg-section bg-cover d-grid">
+      <div class="bg-section bg-cover border b-radius-12 d-grid">
         <img src="assets/images/bg-section-img_1.png" alt="Photo" class="grid-item-1">
         <img src="assets/images/bg-section-img_2.png" alt="Photo" class="grid-item-2">
         <img src="assets/images/bg-section-img_3.png" alt="Photo" class="grid-item-3">
@@ -444,150 +577,150 @@
       </div>
     </section>
 
-    <footer>
-
-      <div class="footer-bg">
-        <div class="content-wrap">
-
-          <div class="footer-section-title d-flex">
-            <div class="footer-bg-content d-flex">
-              <h2 class="footer-title">
-                Start Your Real Estate Journey Today
-              </h2>
-              <p class="subtitle">
-                Your dream property is just a click away. Whether you're looking for a new home, a strategic investment,
-                or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step
-                towards your real estate goals and explore our available properties or get in touch with our team for
-                personalized assistance.
-              </p>
-            </div>
-            <a href="properties.html" class="btn btn-fill__main-color">Explore Properties</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-wrap">
-        <div class="footer-content d-flex">
-
-          <div class="mail-input d-flex">
-
-            <div class="logo-container d-flex align-center">
-              <img class="logo" src="assets/images/logo-icon.png" alt="Logo Estatein">
-              <svg width="60px" height="13px" class="logo-text">
-                <use xlink:href="assets/images/sprite.svg#logoText"></use>
-              </svg>
-            </div>
-
-            <div class="input-container">
-              <input type="email" name="" id="mailMe" placeholder="Enter Your Email">
-              <div class="mail-me-placeholder-icon"></div>
-              <label class="submit-icon">
-                <input type="submit" value="">
-              </label>
-            </div>
-
-          </div>
-
-          <div class="footer-link-container d-grid">
-
-            <div class="footer-link-item grid-item-1 link-item-1 d-flex">
-              <a href="index.html" class="obscured-text">Home</a>
-              <a href="index.html#topSection">Hero Section</a>
-              <a href="index.html#features">Features</a>
-              <a href="index.html#features">Properties</a>
-              <a href="index.html#testimonials">Testimonials</a>
-              <a href="index.html#faq">FAQ’s</a>
-            </div>
-
-            <div class="footer-link-item grid-item-2 link-item-2 d-flex">
-              <a href="about_us.html" class="obscured-text">About Us</a>
-              <a href="about_us.html#ourStory">Our Story</a>
-              <a href="about_us.html#ourWorks">Our Works</a>
-              <a href="about_us.html#howItWorks">How It Works</a>
-              <a href="about_us.html#ourTeam">Our Team</a>
-              <a href="about_us.html#ourClients">Our Clients</a>
-            </div>
-
-            <div class="footer-link-item grid-item-3 link-item-3 d-flex">
-              <a href="properties.html" class="obscured-text">Properties</a>
-              <a href="properties.html#portfolio">Portfolio</a>
-              <a href="properties.html#categories">Categories</a>
-            </div>
-
-            <div class="footer-link-item grid-item-5 link-item-5 d-flex">
-              <a href="contact.html" class="obscured-text">Contact Us</a>
-              <a href="contact.html#contactForm">Contact Form</a>
-              <a href="contact.html#locations">Our Offices</a>
-            </div>
-
-            <div class="footer-link-item grid-item-4 link-item-4 d-flex">
-              <a href="services.html" class="obscured-text">Services</a>
-              <a href="services.html#valuationMastery">Valuation Mastery</a>
-              <a href="services.html#joinPropertyManagement">Strategic Marketing</a>
-              <a href="services.html#joinPropertyManagement">Negotiation Wizardry</a>
-              <a href="services.html#joinPropertyManagement">Closing Success</a>
-              <a href="services.html#propertyManagement">Property Management</a>
-            </div>
-
-            <div class="footer-link-line-1 grid-item-6"></div>
-            <div class="footer-link-line-2 grid-item-7"></div>
-            <div class="footer-link-line-3 grid-item-8"></div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="footer-social">
-        <div class="content-wrap footer-social-container d-flex items-center">
-
-          <div class="icon-container d-flex items-center">
-
-            <a href="#">
-              <div class="social-item d-flex items-center">
-                <svg width="20px" height="20px" class="social-icon">
-                  <use xlink:href="assets/images/sprite.svg#facebook"></use>
-                </svg>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="social-item d-flex items-center">
-                <svg width="20px" height="20px" class="social-icon">
-                  <use xlink:href="assets/images/sprite.svg#instagram"></use>
-                </svg>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="social-item d-flex items-center">
-                <svg width="20px" height="20px" class="social-icon">
-                  <use xlink:href="assets/images/sprite.svg#twitter"></use>
-                </svg>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="social-item d-flex items-center">
-                <svg width="20px" height="20px" class="social-icon">
-                  <use xlink:href="assets/images/sprite.svg#youTube"></use>
-                </svg>
-              </div>
-            </a>
-          </div>
-          <div class="social-subcontainer d-flex items-center">
-            <span>&copy; 2023 Estatein. All Rights Reserved.</span>
-            <a href="#">Terms & Conditions</a>
-          </div>
-        </div>
-      </div>
-
-    </footer>
-
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <footer>
 
+    <div class="footer-bg">
+      <div class="content-wrap">
+
+        <div class="footer-section-title d-flex">
+          <div class="footer-bg-content d-flex">
+            <h2 class="footer-title">
+              Start Your Real Estate Journey Today
+            </h2>
+            <p class="subtitle">
+              Your dream property is just a click away. Whether you're looking for a new home, a strategic investment,
+              or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step
+              towards your real estate goals and explore our available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
+          <a href="properties.html" class="btn btn-fill__main-color">Explore Properties</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrap">
+      <div class="footer-content d-flex">
+
+        <div class="mail-input d-flex">
+
+          <div class="logo-container d-flex align-center">
+            <img class="logo" src="assets/images/logo-icon.png" alt="Logo Estatein">
+            <svg width="60px" height="13px" class="logo-text">
+              <use xlink:href="assets/images/sprite.svg#logoText"></use>
+            </svg>
+          </div>
+
+          <div class="input-container">
+            <input type="email" name="" id="mailMe" placeholder="Enter Your Email">
+            <div class="mail-me-placeholder-icon"></div>
+            <label class="submit-icon">
+              <input type="submit" value="">
+            </label>
+          </div>
+
+        </div>
+
+        <div class="footer-link-container d-grid">
+
+          <div class="footer-link-item grid-item-1 link-item-1 d-flex">
+            <a href="index.html" class="obscured-text">Home</a>
+            <a href="index.html#topSection">Hero Section</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#features">Properties</a>
+            <a href="index.html#testimonials">Testimonials</a>
+            <a href="index.html#faq">FAQ’s</a>
+          </div>
+
+          <div class="footer-link-item grid-item-2 link-item-2 d-flex">
+            <a href="about_us.html" class="obscured-text">About Us</a>
+            <a href="about_us.html#ourStory">Our Story</a>
+            <a href="about_us.html#ourWorks">Our Works</a>
+            <a href="about_us.html#howItWorks">How It Works</a>
+            <a href="about_us.html#ourTeam">Our Team</a>
+            <a href="about_us.html#ourClients">Our Clients</a>
+          </div>
+
+          <div class="footer-link-item grid-item-3 link-item-3 d-flex">
+            <a href="properties.html" class="obscured-text">Properties</a>
+            <a href="properties.html#portfolio">Portfolio</a>
+            <a href="properties.html#categories">Categories</a>
+          </div>
+
+          <div class="footer-link-item grid-item-5 link-item-5 d-flex">
+            <a href="contact.html" class="obscured-text">Contact Us</a>
+            <a href="contact.html#contactForm">Contact Form</a>
+            <a href="contact.html#locations">Our Offices</a>
+          </div>
+
+          <div class="footer-link-item grid-item-4 link-item-4 d-flex">
+            <a href="services.html" class="obscured-text">Services</a>
+            <a href="services.html#valuationMastery">Valuation Mastery</a>
+            <a href="services.html#joinPropertyManagement">Strategic Marketing</a>
+            <a href="services.html#joinPropertyManagement">Negotiation Wizardry</a>
+            <a href="services.html#joinPropertyManagement">Closing Success</a>
+            <a href="services.html#propertyManagement">Property Management</a>
+          </div>
+
+          <div class="footer-link-line-1 grid-item-6"></div>
+          <div class="footer-link-line-2 grid-item-7"></div>
+          <div class="footer-link-line-3 grid-item-8"></div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <div class="content-wrap footer-social-container d-flex items-center">
+
+        <div class="icon-container d-flex items-center">
+
+          <a href="#">
+            <div class="social-item d-flex items-center">
+              <svg width="20px" height="20px" class="social-icon">
+                <use xlink:href="assets/images/sprite.svg#facebook"></use>
+              </svg>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="social-item d-flex items-center">
+              <svg width="20px" height="20px" class="social-icon">
+                <use xlink:href="assets/images/sprite.svg#instagram"></use>
+              </svg>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="social-item d-flex items-center">
+              <svg width="20px" height="20px" class="social-icon">
+                <use xlink:href="assets/images/sprite.svg#twitter"></use>
+              </svg>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="social-item d-flex items-center">
+              <svg width="20px" height="20px" class="social-icon">
+                <use xlink:href="assets/images/sprite.svg#youTube"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="social-subcontainer d-flex items-center">
+          <span>&copy; 2023 Estatein. All Rights Reserved.</span>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/scripts/contact.js"></script>
   <script src="assets/scripts/script.js"></script>
 </body>
 
