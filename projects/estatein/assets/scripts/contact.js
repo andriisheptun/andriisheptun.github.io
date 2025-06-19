@@ -9,9 +9,9 @@ document.querySelectorAll('.select').forEach(select => {
     const dropdown = select.querySelector('.drop-menu');
     const items = dropdown.querySelectorAll('li');
 
-    // Click to input — open drop menu
+
     input.addEventListener('click', (e) => {
-        if (e.target === clearBtn) return; // не відкривати dropdown при кліку на хрестик
+        if (e.target === clearBtn) return;
 
         document.querySelectorAll('.drop-menu').forEach(dd => {
             if (dd !== dropdown) dd.classList.add('hide');
@@ -19,7 +19,6 @@ document.querySelectorAll('.select').forEach(select => {
         dropdown.classList.toggle('hide');
     });
 
-    // Клік по пункту списку
     items.forEach(li => {
         li.addEventListener('click', () => {
             const selectedIndex = li.getAttribute('data-index');
@@ -34,9 +33,8 @@ document.querySelectorAll('.select').forEach(select => {
         });
     });
 
-    // Клік на хрестик — скинути вибір
     clearBtn.addEventListener('click', (e) => {
-        e.stopPropagation(); // не відкривати dropdown
+        e.stopPropagation();
         optionSpans.forEach(span => span.classList.add('hide'));
         visibleSpan.classList.remove('hide');
         clearBtn.classList.add('hide');
@@ -45,7 +43,6 @@ document.querySelectorAll('.select').forEach(select => {
     });
 });
 
-// Закривання dropdown при кліку поза селектом
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.select')) {
         document.querySelectorAll('.drop-menu').forEach(dd => dd.classList.add('hide'));
@@ -72,10 +69,8 @@ buttons.forEach(button => {
             if (isVisible) visibleCount++;
         });
 
-        // Додаємо/прибираємо клас, якщо залишився лише один елемент
         container.classList.toggle('single', visibleCount === 1);
 
-        // Disabled логіка
         buttons.forEach(btn => btn.disabled = false);
         button.disabled = true;
     });

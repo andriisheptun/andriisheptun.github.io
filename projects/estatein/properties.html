@@ -17,11 +17,11 @@
 
 <body>
 
-  <section id="topSection" class="top-section">
+  <section id="topSection" class="top-section hero-height">
 
     <header class="main-header border-bottom">
 
-      <div id="banner" class="banner border-bottom d-flex align-center bg-cover">
+      <div id="banner" class="banner hide border-bottom d-flex align-center bg-cover">
 
         <div class="banner-content d-flex">
           <span>
@@ -57,7 +57,7 @@
             </svg>
           </div>
 
-          <div id="headerMenu" class="d-flex header-menu header-menu-hide items-center">
+          <div id="headerMenu" class="d-flex max-height header-menu header-menu-hide items-center">
             <ul class="menu-list d-flex items-center">
               <li>
                 <a href="index.html">Home</a>
@@ -100,9 +100,7 @@
       <div class="search-input">
         <input type="text" placeholder="Search For A Property">
         <div class="search-btn btn btn-fill__main-color">
-          <svg width="20px" height="20px">
-            <use xlink:href="assets/images/sprite.svg#searchBtn"></use>
-          </svg>
+          <i class="fa-solid fa-magnifying-glass"></i>
           <span class="hide-mobile">Find Property</span>
         </div>
       </div>
@@ -281,32 +279,17 @@
 
             <img src="assets/images/slider1-image1.png" alt="House">
 
+            <div class="icon-boxes d-flex">
+              <div class="icon-boxes-item border d-flex">
+                <span>Coastal Escapes - Where Waves Beckon</span>
+              </div>
+            </div>
+
             <div class="swiper-content">
               <h3>Seaside Serenity Villa</h3>
               <p class="obscured-text">
                 A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#">Read More</a>
               </p>
-            </div>
-
-            <div class="icon-boxes d-flex">
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#bedroom"></use>
-                </svg>
-                <span>4-Bedroom</span>
-              </div>
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#bathroom"></use>
-                </svg>
-                <span>3-Bathroom</span>
-              </div>
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#villa"></use>
-                </svg>
-                <span>Villa</span>
-              </div>
             </div>
 
             <div class="swiper-price d-flex items-center space-between">
@@ -323,32 +306,17 @@
 
             <img src="assets/images/slider1-image2.png" alt="House">
 
+            <div class="icon-boxes d-flex">
+              <div class="icon-boxes-item border d-flex">
+                <span>Urban Oasis - Life in the Heart of the City</span>
+              </div>
+            </div>
+
             <div class="swiper-content">
               <h3>Metropolitan Haven</h3>
               <p class="obscured-text">
                 A chic and fully-furnished 2-bedroom apartment with panoramic city views... <a href="#">Read More</a>
               </p>
-            </div>
-
-            <div class="icon-boxes d-flex">
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#bedroom"></use>
-                </svg>
-                <span>2-Bedroom</span>
-              </div>
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#bathroom"></use>
-                </svg>
-                <span>2-Bathroom</span>
-              </div>
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#villa"></use>
-                </svg>
-                <span>Villa</span>
-              </div>
             </div>
 
             <div class="swiper-price d-flex items-center space-between">
@@ -364,32 +332,17 @@
 
             <img src="assets/images/slider1-image3.png" alt="House">
 
+            <div class="icon-boxes d-flex">
+              <div class="icon-boxes-item border d-flex">
+                <span>Countryside Charm - Escape to Nature's Embrace</span>
+              </div>
+            </div>
+
             <div class="swiper-content">
               <h3>Rustic Retreat Cottage</h3>
               <p class="obscured-text">
                 An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="#">Read More</a>
               </p>
-            </div>
-
-            <div class="icon-boxes d-flex">
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#bedroom"></use>
-                </svg>
-                <span>3-Bedroom</span>
-              </div>
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#bathroom"></use>
-                </svg>
-                <span>3-Bathroom</span>
-              </div>
-              <div class="icon-boxes-item border d-flex">
-                <svg width="20px" height="20px">
-                  <use xlink:href="assets/images/sprite.svg#villa"></use>
-                </svg>
-                <span>Villa</span>
-              </div>
             </div>
 
             <div class="swiper-price d-flex items-center space-between">
@@ -419,19 +372,17 @@
         </div>
 
         <div class="swipe-controls d-flex align-center">
-          <a href="#" class="btn btn-fill__black hide-desktop">View All Properties</a>
 
-          <div class="swipe-controls-mobile d-flex align-center">
-            <div class="swipe-button-prev border d-flex items-center">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="swipe-pagination">
-
-            </div>
-            <div class="swipe-button-next border d-flex items-center">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
+          <div class="swipe-button-prev border d-flex items-center">
+            <i class="fa-solid fa-arrow-left"></i>
           </div>
+
+          <div class="swipe-pagination prop-pagination"></div>
+
+          <div class="swipe-button-next border d-flex items-center">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+
         </div>
       </div>
 
@@ -776,7 +727,7 @@
 
           <a href="#">
             <div class="social-item d-flex items-center">
-              <svg width="20px" height="20px" class="social-icon">
+              <svg width="11" height="20" class="social-icon">
                 <use xlink:href="assets/images/sprite.svg#facebook"></use>
               </svg>
             </div>
@@ -784,7 +735,7 @@
 
           <a href="#">
             <div class="social-item d-flex items-center">
-              <svg width="20px" height="20px" class="social-icon">
+              <svg width="17" height="18" class="social-icon">
                 <use xlink:href="assets/images/sprite.svg#instagram"></use>
               </svg>
             </div>
@@ -792,7 +743,7 @@
 
           <a href="#">
             <div class="social-item d-flex items-center">
-              <svg width="20px" height="20px" class="social-icon">
+              <svg width="17" height="14" class="social-icon">
                 <use xlink:href="assets/images/sprite.svg#twitter"></use>
               </svg>
             </div>
@@ -800,7 +751,7 @@
 
           <a href="#">
             <div class="social-item d-flex items-center">
-              <svg width="20px" height="20px" class="social-icon">
+              <svg width="19" height="14" class="social-icon">
                 <use xlink:href="assets/images/sprite.svg#youTube"></use>
               </svg>
             </div>
