@@ -3,7 +3,7 @@ let section = document.getElementsByTagName('section');
 
 async function populate() {
     try {
-        let response = await fetch('https://semegenkep.github.io/itca/superheroes.json');
+        let response = await fetch('https://andriisheptun.github.io/tasks/js/task-1-20250622/files/superheroes.json');
         if (!response.ok) {
             throw new Error('HTTP error! status: ' + response.status);
         }
