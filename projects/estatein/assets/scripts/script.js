@@ -43,44 +43,50 @@ headerMenu.addEventListener("click", () => {
   headerMenu.classList.toggle("header-menu-hide");
 });
 
-let swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swipe-pagination",
-    type: "fraction",
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="' + currentClass + '"></span>' +
-        ' of ' +
-        '<span class="' + totalClass + '"></span>';
+document.querySelectorAll('#standartSwipers .mySwiper').forEach((swiperEl) => {
+  const paginationEl = swiperEl.querySelector('.swipe-pagination');
+  const nextBtn = swiperEl.querySelector('.swipe-button-next');
+  const prevBtn = swiperEl.querySelector('.swipe-button-prev');
+
+  new Swiper(swiperEl, {
+    pagination: {
+      el: paginationEl,
+      type: "fraction",
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+          ' of ' +
+          '<span class="' + totalClass + '"></span>';
+      },
+      formatFractionCurrent: function (number) {
+        return number.toString().padStart(2, '0');
+      },
+      formatFractionTotal: function (number) {
+        return number.toString().padStart(2, '0');
+      },
     },
-    formatFractionCurrent: function (number) {
-      return number.toString().padStart(2, '0');
+    navigation: {
+      nextEl: nextBtn,
+      prevEl: prevBtn,
     },
-    formatFractionTotal: function (number) {
-      return number.toString().padStart(2, '0');
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
     },
-  },
-  navigation: {
-    nextEl: ".swipe-button-next",
-    prevEl: ".swipe-button-prev",
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1440: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    1920: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
+  });
 });
 
 
@@ -120,21 +126,67 @@ let swiper2 = new Swiper(".two-item-swiper", {
   },
 });
 
-let detailsSwiper = new Swiper(".details-Swiper", {
+const thumbsEl = document.getElementById('thumbsEl');
+const mainSwiperEl = document.getElementById('mainSwiperEl');
+const paginationDblEl = document.getElementById('paginationDblEl');
+const nextDblBtn = document.getElementById('nextDblBtn');
+const prevDblBtn = document.getElementById('prevDblBtn');
+
+let thumbsSwiper = new Swiper(thumbsEl, {
   spaceBetween: 10,
-  slidesPerView: 9,
+  slidesPerView: 4,
+  slidesPerGroup: 2,
   freeMode: true,
   watchSlidesProgress: true,
+  pagination: {
+    el: paginationDblEl,
+    type: "bullets",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: nextDblBtn,
+    prevEl: prevDblBtn,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+    },
+    1440: {
+      slidesPerView: 8,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+    },
+    1920: {
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+    },
+  },
 });
 
-let detailsSwiper2 = new Swiper(".details-Swiper2", {
+let mainSwiper = new Swiper(mainSwiperEl, {
   spaceBetween: 10,
-  slidesPerView: 2,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   thumbs: {
-    swiper: swiper,
+    swiper: thumbsSwiper,
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // 1024: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 20,
+    // },
+    // 1440: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 20,
+    // },
+    1920: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
   },
 });

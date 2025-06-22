@@ -40,13 +40,16 @@ document.querySelectorAll('.select').forEach(select => {
         arrowIcon.classList.remove('hide');
         dropMenu.classList.add('hide');
     });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.select')) {
+            select.querySelectorAll('.drop-menu').forEach(dm => dm.classList.add('hide'));
+        }
+    });
+
 });
 
-document.addEventListener('click', (e) => {
-    if (!e.target.closest('.select')) {
-        select.querySelectorAll('.drop-menu').forEach(dm => dm.classList.add('hide'));
-    }
-});
+
 
 // -------------------- End of Select ---------------------
 
