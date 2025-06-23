@@ -76,6 +76,52 @@ async function renderFAQCards() {
   });
 }
 
+async function renderTestimonialsCards() {
+  let data = await fetchUrl('https://andriisheptun.github.io/tasks/js/client_reviews.json');
+
+  let wrapper = document.getElementById('testimonials').querySelector('.swiper-wrapper');
+
+  data.forEach(item => {
+    let slide = document.createElement('div');
+    slide.classList.add('swiper-slide', 'swiper2-slide');
+
+    let rating = document.createElement('div');
+    rating.classList.add('rating', 'd-flex');
+
+    for (let i = 0; i < item.rating; i++) {
+      let star = document.createElement('div');
+      star.classList.add('stars', 'border', 'd-flex', 'items-center');
+      star.innerHTML = `
+        <svg class="star" width="20" height="20">
+          <use xlink:href="assets/images/sprite.svg#star"></use>
+        </svg>`;
+      rating.appendChild(star);
+    }
+
+    let content = document.createElement('div');
+    content.classList.add('swiper2-content', 'main-section-title', 'always-full-width', 'd-flex');
+    content.innerHTML = `
+      <h3>${item.title}</h3>
+      <p class="obscured-text">${item.review}</p>
+    `;
+
+    let profile = document.createElement('div');
+    profile.classList.add('swiper2-profile', 'd-flex', 'align-center');
+    profile.innerHTML = `
+      <img src="${item.photo}" alt="${item.name}" class="swiper2-photo bg-cover">
+      <div class="swiper2-name-block">
+        <p>${item.name}</p>
+        <p class="obscured-text">${item.location}</p>
+      </div>
+    `;
+
+    slide.appendChild(rating);
+    slide.appendChild(content);
+    slide.appendChild(profile);
+
+    wrapper.appendChild(slide);
+  });
+}
 
 
 
@@ -229,5 +275,5 @@ let mainSwiper = new Swiper(mainSwiperEl, {
   },
 });
 
-
+renderTestimonialsCards();
 renderFAQCards();

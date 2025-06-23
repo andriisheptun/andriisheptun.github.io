@@ -671,12 +671,15 @@ div[class^="sparkle3"] {
 .swiper1-slide {
   padding: 24px;
   gap: 16px;
+  border-radius: 12px;
 }
 
 .swiper-slide {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: auto;
+  border: 1px solid var(--grey-shade__15);
 }
 
 .swiper1-slide img {
@@ -822,11 +825,8 @@ div[class*=swipe-button] {
 
 .swiper3-slide {
   padding: 30px;
-  display: flex;
-  flex-direction: column;
   gap: 20px;
   border-radius: 12px;
-  border: 1px solid var(--grey-shade__15);
 }
 
 .swiper3-slide h3 {
