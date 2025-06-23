@@ -1,0 +1,223 @@
+[
+    {
+      "title": "Seaside Serenity Villa",
+      "location": "Malibu, California",
+      "price": 1250000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,1",
+        "exterior": "https://source.unsplash.com/800x600/?modern-villa,1",
+        "interior": "https://source.unsplash.com/800x600/?living-room,1"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Mountain Escape Chalet",
+      "location": "Aspen, Colorado",
+      "price": 890000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,2",
+        "exterior": "https://source.unsplash.com/800x600/?mountain-house,2",
+        "interior": "https://source.unsplash.com/800x600/?cozy-interior,2"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Urban Modern Loft",
+      "location": "Brooklyn, New York",
+      "price": 1120000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,3",
+        "exterior": "https://source.unsplash.com/800x600/?city-loft,3",
+        "interior": "https://source.unsplash.com/800x600/?modern-apartment,3"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Countryside Manor",
+      "location": "Napa Valley, California",
+      "price": 1340000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,4",
+        "exterior": "https://source.unsplash.com/800x600/?countryside-house,4",
+        "interior": "https://source.unsplash.com/800x600/?farmhouse-interior,4"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Lakeview Retreat",
+      "location": "Lake Tahoe, California",
+      "price": 980000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,5",
+        "exterior": "https://source.unsplash.com/800x600/?lake-house,5",
+        "interior": "https://source.unsplash.com/800x600/?lakeview-interior,5"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Palm Beach Mansion",
+      "location": "Palm Beach, Florida",
+      "price": 1550000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,6",
+        "exterior": "https://source.unsplash.com/800x600/?luxury-house,6",
+        "interior": "https://source.unsplash.com/800x600/?villa-interior,6"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Modern Hillside Home",
+      "location": "Hollywood Hills, California",
+      "price": 1320000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,7",
+        "exterior": "https://source.unsplash.com/800x600/?modern-house,7",
+        "interior": "https://source.unsplash.com/800x600/?luxury-interior,7"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Desert View Estate",
+      "location": "Scottsdale, Arizona",
+      "price": 920000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,8",
+        "exterior": "https://source.unsplash.com/800x600/?desert-house,8",
+        "interior": "https://source.unsplash.com/800x600/?interior,8"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Tropical Oasis Villa",
+      "location": "Maui, Hawaii",
+      "price": 1490000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,9",
+        "exterior": "https://source.unsplash.com/800x600/?beach-house,9",
+        "interior": "https://source.unsplash.com/800x600/?tropical-interior,9"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    },
+    {
+      "title": "Forest Cabin Retreat",
+      "location": "Bend, Oregon",
+      "price": 770000,
+      "images": {
+        "thumbnail": "https://source.unsplash.com/600x400/?house,10",
+        "exterior": "https://source.unsplash.com/800x600/?forest-cabin,10",
+        "interior": "https://source.unsplash.com/800x600/?wooden-interior,10"
+      },
+      "additionalFees": {
+        "propertyTransferTax": 25000,
+        "legalFees": 3000,
+        "homeInspection": 500,
+        "propertyInsurance": 1200,
+        "mortgageFees": "Varies"
+      },
+      "monthlyCosts": {
+        "propertyTaxes": 1250,
+        "hoaFee": 300,
+        "insurance": 100
+      }
+    }
+  ]
+  

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Emily Johnson",
+    "location": "USA, California",
+    "photo": "https://randomuser.me/api/portraits/women/10.jpg",
+    "rating": 4,
+    "title": "Perfect experience!",
+    "review": "The villa was everything we hoped for and more. Beautiful views, quiet surroundings, and top-notch service."
+  },
+  {
+    "name": "Carlos Mendes",
+    "location": "Brazil, S\u00e3o Paulo",
+    "photo": "https://randomuser.me/api/portraits/men/11.jpg",
+    "rating": 5,
+    "title": "Highly recommended",
+    "review": "We had a wonderful experience from start to finish. The house was clean, well-equipped, and in a perfect location."
+  },
+  {
+    "name": "Aiko Tanaka",
+    "location": "Japan, Tokyo",
+    "photo": "https://randomuser.me/api/portraits/women/12.jpg",
+    "rating": 5,
+    "title": "Absolutely loved it",
+    "review": "Booking this property was the best decision ever. It had all the features we needed and looked even better in person."
+  },
+  {
+    "name": "Liam O'Connor",
+    "location": "Ireland, Dublin",
+    "photo": "https://randomuser.me/api/portraits/men/13.jpg",
+    "rating": 5,
+    "title": "A dream come true",
+    "review": "The views were stunning, and the place was spotless. It made our vacation feel special and relaxing."
+  },
+  {
+    "name": "Sofia Petrova",
+    "location": "Bulgaria, Sofia",
+    "photo": "https://randomuser.me/api/portraits/women/14.jpg",
+    "rating": 4,
+    "title": "Comfort and style",
+    "review": "Top quality finishes, great communication, and a lovely environment made this a perfect escape."
+  },
+  {
+    "name": "Mohamed Al-Farsi",
+    "location": "UAE, Dubai",
+    "photo": "https://randomuser.me/api/portraits/men/15.jpg",
+    "rating": 5,
+    "title": "Unforgettable stay",
+    "review": "This home exceeded our expectations in every way. We\u2019ll definitely be recommending it to friends and family."
+  },
+  {
+    "name": "Anna M\u00fcller",
+    "location": "Germany, Bavaria",
+    "photo": "https://randomuser.me/api/portraits/women/16.jpg",
+    "rating": 5,
+    "title": "Great investment",
+    "review": "If you're looking for peace and comfort, this is the place to be. Everything was just perfect."
+  },
+  {
+    "name": "Lucas Dupont",
+    "location": "France, Lyon",
+    "photo": "https://randomuser.me/api/portraits/men/17.jpg",
+    "rating": 4,
+    "title": "Peaceful retreat",
+    "review": "From the stylish design to the comfy furniture, this house made us feel right at home."
+  },
+  {
+    "name": "Isabella Rossi",
+    "location": "Italy, Rome",
+    "photo": "https://randomuser.me/api/portraits/women/18.jpg",
+    "rating": 5,
+    "title": "Amazing value",
+    "review": "Absolutely amazing! The process was smooth, and the home was just like the photos, if not better."
+  },
+  {
+    "name": "Jinwoo Park",
+    "location": "South Korea, Seoul",
+    "photo": "https://randomuser.me/api/portraits/men/19.jpg",
+    "rating": 4,
+    "title": "Exceptional property",
+    "review": "A true gem! Fantastic experience, and we felt cared for from the moment we booked until checkout."
+  }
+]

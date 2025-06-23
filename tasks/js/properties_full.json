@@ -1,0 +1,333 @@
+[
+  {
+    "title": "Seaside Serenity Villa",
+    "location": "Malibu, California",
+    "price": 1038761,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,1",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,1",
+      "interior": "https://source.unsplash.com/800x600/?interior,1"
+    },
+    "description": "Enjoy luxury and tranquility in this beachfront villa with modern design and panoramic ocean views.",
+    "bedrooms": 3,
+    "bathrooms": 5,
+    "area": 2089,
+    "keyFeaturesAndAmenities": [
+      "Panoramic oceanfront views",
+      "Infinity pool with lounge area",
+      "Open-concept kitchen",
+      "Private beach access",
+      "Smart home integration",
+      "Covered garage"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Mountain Escape Chalet",
+    "location": "Aspen, Colorado",
+    "price": 1012419,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,2",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,2",
+      "interior": "https://source.unsplash.com/800x600/?interior,2"
+    },
+    "description": "Retreat to this cozy mountain chalet featuring rustic charm and modern amenities.",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "area": 4235,
+    "keyFeaturesAndAmenities": [
+      "Stone fireplace",
+      "Ski-in/ski-out location",
+      "Wraparound deck",
+      "Modern kitchen",
+      "Hot tub with views"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Urban Modern Loft",
+    "location": "Brooklyn, New York",
+    "price": 929447,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,3",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,3",
+      "interior": "https://source.unsplash.com/800x600/?interior,3"
+    },
+    "description": "Live in the heart of Brooklyn in this stylish modern loft with high ceilings and city views.",
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "area": 1587,
+    "keyFeaturesAndAmenities": [
+      "Open-plan living space",
+      "Industrial windows",
+      "Rooftop terrace",
+      "In-unit laundry",
+      "Fiber internet"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Countryside Manor",
+    "location": "Napa Valley, California",
+    "price": 1113542,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,4",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,4",
+      "interior": "https://source.unsplash.com/800x600/?interior,4"
+    },
+    "description": "Elegant estate in wine country, surrounded by vineyards and rolling hills.",
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "area": 3298,
+    "keyFeaturesAndAmenities": [
+      "Porch with valley views",
+      "Chef\u2019s kitchen",
+      "Private vineyard",
+      "Solar panels",
+      "Outdoor fireplace"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Lakeview Retreat",
+    "location": "Lake Tahoe, California",
+    "price": 1313311,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,5",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,5",
+      "interior": "https://source.unsplash.com/800x600/?interior,5"
+    },
+    "description": "Relax in this scenic lakeside home with peaceful surroundings and modern comforts.",
+    "bedrooms": 6,
+    "bathrooms": 4,
+    "area": 4475,
+    "keyFeaturesAndAmenities": [
+      "Lakeview terrace",
+      "Energy-efficient heating",
+      "Hardwood floors",
+      "Walk-in closets",
+      "Fire pit patio"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Palm Beach Mansion",
+    "location": "Palm Beach, Florida",
+    "price": 1313210,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,6",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,6",
+      "interior": "https://source.unsplash.com/800x600/?interior,6"
+    },
+    "description": "Extravagant mansion with tropical gardens and luxurious living spaces.",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 2554,
+    "keyFeaturesAndAmenities": [
+      "Olympic-size pool",
+      "Tennis court",
+      "Butler\u2019s pantry",
+      "Marble floors",
+      "Gated estate"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Modern Hillside Home",
+    "location": "Hollywood Hills, California",
+    "price": 1539287,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,7",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,7",
+      "interior": "https://source.unsplash.com/800x600/?interior,7"
+    },
+    "description": "A stunning modern home nestled in the hills with sweeping city views.",
+    "bedrooms": 6,
+    "bathrooms": 2,
+    "area": 4181,
+    "keyFeaturesAndAmenities": [
+      "Glass walls",
+      "Infinity pool",
+      "Home theater",
+      "Designer kitchen",
+      "Garage with EV charging"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Desert View Estate",
+    "location": "Scottsdale, Arizona",
+    "price": 1097965,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,8",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,8",
+      "interior": "https://source.unsplash.com/800x600/?interior,8"
+    },
+    "description": "Desert luxury meets modern design in this expansive Arizona estate.",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "area": 3094,
+    "keyFeaturesAndAmenities": [
+      "Mountain views",
+      "Open-air patio",
+      "Modern layout",
+      "Home gym",
+      "Custom lighting"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Tropical Oasis Villa",
+    "location": "Maui, Hawaii",
+    "price": 789281,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,9",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,9",
+      "interior": "https://source.unsplash.com/800x600/?interior,9"
+    },
+    "description": "This tropical villa blends indoor and outdoor living with lush landscaping.",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "area": 1867,
+    "keyFeaturesAndAmenities": [
+      "Outdoor shower",
+      "Tropical garden",
+      "Indoor-outdoor flow",
+      "Spa bathroom",
+      "Hammock terrace"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  {
+    "title": "Forest Cabin Retreat",
+    "location": "Bend, Oregon",
+    "price": 1113159,
+    "images": {
+      "thumbnail": "https://source.unsplash.com/600x400/?house,10",
+      "exterior": "https://source.unsplash.com/800x600/?modern-house,10",
+      "interior": "https://source.unsplash.com/800x600/?interior,10"
+    },
+    "description": "Rustic forest cabin ideal for peaceful retreats and cozy getaways.",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "area": 1972,
+    "keyFeaturesAndAmenities": [
+      "Wood-burning stove",
+      "Loft sleeping area",
+      "Wraparound porch",
+      "Nature trails",
+      "Rustic wood accents"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1250,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  }
+]
