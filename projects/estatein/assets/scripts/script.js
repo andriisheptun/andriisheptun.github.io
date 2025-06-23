@@ -58,7 +58,7 @@ async function fetchUrl(url) {
 }
 
 async function renderFAQCards() {
-  let data = await fetchUrl('assets/scripts/estatein_faq.json');
+  let data = await fetchUrl('https://andriisheptun.github.io/tasks/js/estatein_faq.json');
 
   let wrapper = document.getElementById('faq').querySelector('.swiper-wrapper');
 
