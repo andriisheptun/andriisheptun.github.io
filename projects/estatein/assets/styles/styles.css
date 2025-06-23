@@ -811,18 +811,6 @@ div[class*=swipe-button] {
   border-radius: 50%;
 }
 
-.swiper2-photo1 {
-  background-image: url(../images/swiper2-photo1.png);
-}
-
-.swiper2-photo2 {
-  background-image: url(../images/swiper2-photo2.png);
-}
-
-.swiper2-photo3 {
-  background-image: url(../images/swiper2-photo3.png);
-}
-
 .swiper3-slide {
   padding: 30px;
   gap: 20px;
