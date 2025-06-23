@@ -5,9 +5,9 @@
     "price": 1038761,
     "type": "Villa",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,1",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,1",
-      "interior": "https://source.unsplash.com/800x600/?interior,1"
+      "thumbnail": "https://picsum.photos/id/100/600/400",
+      "exterior": "https://picsum.photos/id/101/800/600",
+      "interior": "https://picsum.photos/id/102/800/600"
     },
     "description": "Enjoy luxury and tranquility in this beachfront villa with modern design and panoramic ocean views.",
     "bedrooms": 3,
@@ -40,9 +40,9 @@
     "price": 1012419,
     "type": "Villa",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,2",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,2",
-      "interior": "https://source.unsplash.com/800x600/?interior,2"
+      "thumbnail": "https://picsum.photos/id/103/600/400",
+      "exterior": "https://picsum.photos/id/104/800/600",
+      "interior": "https://picsum.photos/id/105/800/600"
     },
     "description": "Retreat to this cozy mountain chalet featuring rustic charm and modern amenities.",
     "bedrooms": 4,
@@ -74,9 +74,9 @@
     "price": 929447,
     "type": "Apt.",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,3",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,3",
-      "interior": "https://source.unsplash.com/800x600/?interior,3"
+      "thumbnail": "https://picsum.photos/id/106/600/400",
+      "exterior": "https://picsum.photos/id/107/800/600",
+      "interior": "https://picsum.photos/id/108/800/600"
     },
     "description": "Live in the heart of Brooklyn in this stylish modern loft with high ceilings and city views.",
     "bedrooms": 5,
@@ -108,9 +108,9 @@
     "price": 1113542,
     "type": "Villa",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,4",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,4",
-      "interior": "https://source.unsplash.com/800x600/?interior,4"
+      "thumbnail": "https://picsum.photos/id/109/600/400",
+      "exterior": "https://picsum.photos/id/110/800/600",
+      "interior": "https://picsum.photos/id/111/800/600"
     },
     "description": "Elegant estate in wine country, surrounded by vineyards and rolling hills.",
     "bedrooms": 5,
@@ -142,9 +142,9 @@
     "price": 1313311,
     "type": "Villa",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,5",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,5",
-      "interior": "https://source.unsplash.com/800x600/?interior,5"
+      "thumbnail": "https://picsum.photos/id/112/600/400",
+      "exterior": "https://picsum.photos/id/113/800/600",
+      "interior": "https://picsum.photos/id/114/800/600"
     },
     "description": "Relax in this scenic lakeside home with peaceful surroundings and modern comforts.",
     "bedrooms": 6,
@@ -176,9 +176,9 @@
     "price": 1313210,
     "type": "Villa",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,6",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,6",
-      "interior": "https://source.unsplash.com/800x600/?interior,6"
+      "thumbnail": "https://picsum.photos/id/115/600/400",
+      "exterior": "https://picsum.photos/id/116/800/600",
+      "interior": "https://picsum.photos/id/117/800/600"
     },
     "description": "Extravagant mansion with tropical gardens and luxurious living spaces.",
     "bedrooms": 2,
@@ -210,9 +210,9 @@
     "price": 1539287,
     "type": "Apt.",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,7",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,7",
-      "interior": "https://source.unsplash.com/800x600/?interior,7"
+      "thumbnail": "https://picsum.photos/id/118/600/400",
+      "exterior": "https://picsum.photos/id/119/800/600",
+      "interior": "https://picsum.photos/id/120/800/600"
     },
     "description": "A stunning modern home nestled in the hills with sweeping city views.",
     "bedrooms": 6,
@@ -244,9 +244,9 @@
     "price": 1097965,
     "type": "Villa",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,8",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,8",
-      "interior": "https://source.unsplash.com/800x600/?interior,8"
+      "thumbnail": "https://picsum.photos/id/121/600/400",
+      "exterior": "https://picsum.photos/id/122/800/600",
+      "interior": "https://picsum.photos/id/123/800/600"
     },
     "description": "Desert luxury meets modern design in this expansive Arizona estate.",
     "bedrooms": 3,
@@ -278,9 +278,9 @@
     "price": 789281,
     "type": "Villa",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,9",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,9",
-      "interior": "https://source.unsplash.com/800x600/?interior,9"
+      "thumbnail": "https://picsum.photos/id/124/600/400",
+      "exterior": "https://picsum.photos/id/125/800/600",
+      "interior": "https://picsum.photos/id/126/800/600"
     },
     "description": "This tropical villa blends indoor and outdoor living with lush landscaping.",
     "bedrooms": 4,
@@ -312,9 +312,9 @@
     "price": 1113159,
     "type": "Villa",
     "images": {
-      "thumbnail": "https://source.unsplash.com/600x400/?house,10",
-      "exterior": "https://source.unsplash.com/800x600/?modern-house,10",
-      "interior": "https://source.unsplash.com/800x600/?interior,10"
+      "thumbnail": "https://picsum.photos/id/127/600/400",
+      "exterior": "https://picsum.photos/id/128/800/600",
+      "interior": "https://picsum.photos/id/129/800/600"
     },
     "description": "Rustic forest cabin ideal for peaceful retreats and cozy getaways.",
     "bedrooms": 3,
