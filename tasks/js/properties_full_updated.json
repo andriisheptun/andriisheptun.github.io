@@ -1,6 +1,45 @@
 [
-  {
+  { 
+    "id": 1,
+    "year": 2020,
     "title": "Seaside Serenity Villa",
+    "location": "Malibu, California",
+    "price": 1250000,
+    "type": "Villa",
+    "images": {
+      "thumbnail": "https://picsum.photos/id/100/600/400",
+      "exterior": "https://andriisheptun.github.io/projects/estatein/assets/images/slider1-image1.png",
+      "interior": "https://picsum.photos/id/102/800/600"
+    },
+    "description": "Enjoy luxury and tranquility in this beachfront villa with modern design and panoramic ocean views.",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": 2500,
+    "keyFeaturesAndAmenities": [
+      "Panoramic oceanfront views",
+      "Infinity pool with lounge area",
+      "Open-concept kitchen",
+      "Private beach access",
+      "Smart home integration",
+      "Covered garage"
+    ],
+    "additionalFees": {
+      "propertyTransferTax": 25000,
+      "legalFees": 3000,
+      "homeInspection": 500,
+      "propertyInsurance": 1200,
+      "mortgageFees": "Varies"
+    },
+    "monthlyCosts": {
+      "propertyTaxes": 1200,
+      "hoaFee": 300,
+      "insurance": 100
+    }
+  },
+  { 
+    "id": 2,
+    "year": 2017,
+    "title": "Seaside Villa",
     "location": "Malibu, California",
     "price": 1038761,
     "type": "Villa",
@@ -22,19 +61,21 @@
       "Covered garage"
     ],
     "additionalFees": {
-      "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "propertyTransferTax": 20000,
+      "legalFees": 2500,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 1100,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 1050,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 3,
+    "year": 2015,
     "title": "Mountain Escape Chalet",
     "location": "Aspen, Colorado",
     "price": 1012419,
@@ -56,19 +97,21 @@
       "Hot tub with views"
     ],
     "additionalFees": {
-      "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "propertyTransferTax": 19000,
+      "legalFees": 2400,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 1000,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 1050,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 4,
+    "year": 2017,
     "title": "Urban Modern Loft",
     "location": "Brooklyn, New York",
     "price": 929447,
@@ -90,19 +133,21 @@
       "Fiber internet"
     ],
     "additionalFees": {
-      "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "propertyTransferTax": 18000,
+      "legalFees": 2300,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 900,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 950,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 5,
+    "year": 2018,
     "title": "Countryside Manor",
     "location": "Napa Valley, California",
     "price": 1113542,
@@ -124,19 +169,21 @@
       "Outdoor fireplace"
     ],
     "additionalFees": {
-      "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "propertyTransferTax": 21000,
+      "legalFees": 2800,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 1100,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 1150,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 6,
+    "year": 2020,
     "title": "Lakeview Retreat",
     "location": "Lake Tahoe, California",
     "price": 1313311,
@@ -161,16 +208,18 @@
       "propertyTransferTax": 25000,
       "legalFees": 3000,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 1300,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 1350,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 7,
+    "year": 2020,
     "title": "Palm Beach Mansion",
     "location": "Palm Beach, Florida",
     "price": 1313210,
@@ -193,18 +242,20 @@
     ],
     "additionalFees": {
       "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "legalFees": 3100,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 1300,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 1350,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 8,
+    "year": 2021,
     "title": "Modern Hillside Home",
     "location": "Hollywood Hills, California",
     "price": 1539287,
@@ -226,19 +277,21 @@
       "Garage with EV charging"
     ],
     "additionalFees": {
-      "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "propertyTransferTax": 27000,
+      "legalFees": 3600,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 1500,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 1550,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 9,
+    "year": 2019,
     "title": "Desert View Estate",
     "location": "Scottsdale, Arizona",
     "price": 1097965,
@@ -260,19 +313,21 @@
       "Custom lighting"
     ],
     "additionalFees": {
-      "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "propertyTransferTax": 21000,
+      "legalFees": 2600,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 1000,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 1000,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 10,
+    "year": 2017,
     "title": "Tropical Oasis Villa",
     "location": "Maui, Hawaii",
     "price": 789281,
@@ -294,19 +349,21 @@
       "Hammock terrace"
     ],
     "additionalFees": {
-      "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "propertyTransferTax": 16000,
+      "legalFees": 2000,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 800,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 850,
       "hoaFee": 300,
       "insurance": 100
     }
   },
-  {
+  { 
+    "id": 11,
+    "year": 2019,
     "title": "Forest Cabin Retreat",
     "location": "Bend, Oregon",
     "price": 1113159,
@@ -328,14 +385,14 @@
       "Rustic wood accents"
     ],
     "additionalFees": {
-      "propertyTransferTax": 25000,
-      "legalFees": 3000,
+      "propertyTransferTax": 20000,
+      "legalFees": 2600,
       "homeInspection": 500,
-      "propertyInsurance": 1200,
+      "propertyInsurance": 1100,
       "mortgageFees": "Varies"
     },
     "monthlyCosts": {
-      "propertyTaxes": 1250,
+      "propertyTaxes": 1150,
       "hoaFee": 300,
       "insurance": 100
     }

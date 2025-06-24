@@ -44,7 +44,7 @@ body {
   font-family: var(--main-font);
   font-size: .875rem;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
   color: var(--absolute-white);
   background-color: var(--grey-shade__08);
 }
@@ -87,7 +87,8 @@ video {
 }
 
 .content-wrap {
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   width: 100%;
   max-width: 1596px;
   margin: 0 auto;
@@ -496,7 +497,8 @@ h2 {
 }
 
 h3,
-.price-item p:last-of-type {
+.price-item p:last-of-type,
+.pricing-descr span {
   font-size: 1.125rem;
   line-height: normal;
   font-weight: 600;
@@ -520,7 +522,7 @@ h3,
 /* --------------------------- Main Section ------------------------------- */
 
 .main-section {
-  margin-top: 80px;
+  padding-top: 80px;
   flex-direction: column;
   gap: 40px;
 }
@@ -978,7 +980,7 @@ input:not([type="submit"]):not([type="radio"]),
 textarea {
   width: 100%;
   padding: 16px 20px;
-  color: var(--grey-shade__60);
+  color: var(--light-shade__90);
   border-radius: 8px;
   border: 1px solid var(--grey-shade__15);
   background-color: var(--grey-shade__08);
@@ -1043,7 +1045,7 @@ div[class*="placeholder-icon"] {
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:hover {
-  -webkit-text-fill-color: var(--grey-shade__60);
+  -webkit-text-fill-color: var(--light-shade__90);
   box-shadow: 0 0 0 1000px var(--grey-shade__10) inset;
 }
 
@@ -1588,15 +1590,13 @@ form {
   gap: 30px;
 }
 
-.form-container,
-.property-form-container {
+[class*="form-container"] {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.form-container label,
-.property-form-container label {
+[class*="form-container"] label {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1875,7 +1875,7 @@ input[type="checkbox"]:checked::after {
   gap: 18px;
 }
 
-.descr-2item-container div {
+.descr-2item-container li {
   width: 100%;
   padding: 10px 12px;
   gap: 10px;
@@ -1890,45 +1890,117 @@ input[type="checkbox"]:checked::after {
 .selected-property svg {
   position: absolute;
   right: 20px;
-  bottom: 15px;
+  bottom: 18px;
+  transform: scale(.8);
 }
 
-
-
-/* .swiper-slide {
-  background-size: cover;
-  background-position: center;
+.pricing {
+  flex-direction: column;
+  gap: 30px;
 }
 
-.details-Swiper2 {
-  height: 80%;
+.pricing-note .line {
   width: 100%;
+  height: 0;
+  border-bottom: 1px solid var(--grey-shade__15);
 }
 
-.details-Swiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
+.pricing-note {
+  padding: 24px 20px;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: var(--grey-shade__10);
 }
 
-.details-Swiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
+.pricing-title {
+  flex-direction: column;
+  gap: 2px;
 }
 
-.details-Swiper .swiper-slide-thumb-active {
-  opacity: 1;
+.pricing-title span:last-child {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.pricing-main,
+.pricing-container {
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pricing-item-title a {
+  width: fit-content;
+}
+
+[class*="pricing-box"] {
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.pricing-box-1 {
+  grid-template-areas:
+    "item-1"
+    "item-7"
+    "item-2"
+    "item-8"
+    "item-3"
+    "item-9"
+    "item-4"
+    "item-10"
+    "item-5"
+    "item-11"
+    "item-6";
+}
+
+.pricing-box-2 {
+  grid-template-areas:
+    "item-1"
+    "item-4"
+    "item-2"
+    "item-5"
+    "item-3";
+}
+
+.pricing-box-3 {
+  grid-template-areas:
+    "item-1"
+    "item-6"
+    "item-2"
+    "item-7"
+    "item-3"
+    "item-8"
+    "item-4"
+    "item-9"
+    "item-5";
+}
+
+
+.pricing-item {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pricing-descr {
+  gap: 12px;
+}
+
+.pricing-descr p:last-child {
+  padding: 6px 12px;
+  border-radius: 28px;
+  background-color: var(--grey-shade__10);
+}
+
+[class*="pricing-box"] .line {
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid var(--grey-shade__15);
+}
+
 
 /* -------------------------------- End of Property Details ---------------------------------------- */
 
@@ -1976,6 +2048,25 @@ input[type="checkbox"]:checked::after {
 
   .sort-items {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  div.details-form-container label.selected-property input {
+    padding: 16px 28px 16px 20px;
+  }
+
+  .selected-property svg {
+    position: absolute;
+    right: 12px;
+    bottom: 18px;
+    transform: scale(.8);
+  }
+
+  .pricing-item-title a {
+    padding: 10px 14px;
+  }
+
+  .pricing-item-title h3 {
+    font-size: 1rem;
   }
 
 }
@@ -2235,6 +2326,57 @@ input[type="checkbox"]:checked::after {
       "item-1 item-6 item-2 item-4 item-3";
   }
 
+  .details-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "item-1 item-2"
+      "item-3 item-4"
+      "item-5 item-5"
+      "item-6 item-6";
+  }
+
+  [class*="pricing-box"] {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .pricing-box-1 {
+    grid-template-areas:
+      "item-1 item-1 item-1"
+      "item-9 item-9 item-9"
+      "item-2 item-7 item-3"
+      "item-10 item-10 item-10"
+      "item-4 item-8 item-5"
+      "item-11 item-11 item-11"
+      "item-6 . ."
+
+    ;
+  }
+
+  .pricing-box-2 {
+    grid-template-areas:
+      "item-1 item-1 item-1"
+      "item-4 item-4 item-4"
+      "item-2 item-2 item-2"
+      "item-5 item-5 item-5"
+      "item-3 item-3 item-3";
+  }
+
+  .pricing-box-3 {
+    grid-template-areas:
+      "item-1 item-1 item-1"
+      "item-8 item-8 item-8"
+      "item-2 item-6 item-3"
+      "item-9 item-9 item-9"
+      "item-4 item-7 item-5";
+  }
+
+  [class*="pricing-box"] div.vertical {
+    width: 0;
+    height: 100%;
+    border-left: 1px solid var(--grey-shade__15);
+  }
+
 
 }
 
@@ -2286,7 +2428,8 @@ input[type="checkbox"]:checked::after {
   }
 
   .content-wrap {
-    padding: 0 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .hero-content-block {
@@ -2663,13 +2806,68 @@ input[type="checkbox"]:checked::after {
       "item-3 item-3 item-3";
   }
 
+  .details-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "item-1 item-2"
+      "item-3 item-4"
+      "item-5 item-5"
+      "item-6 item-6";
+  }
+
+  [class*="pricing-box"] {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .pricing-box-1 {
+    grid-template-areas:
+      "item-1 item-1 item-1"
+      "item-9 item-9 item-9"
+      "item-2 item-7 item-3"
+      "item-10 item-10 item-10"
+      "item-4 item-8 item-5"
+      "item-11 item-11 item-11"
+      "item-6 . ."
+
+    ;
+  }
+
+  .pricing-box-2 {
+    grid-template-areas:
+      "item-1 item-1 item-1"
+      "item-4 item-4 item-4"
+      "item-2 item-2 item-2"
+      "item-5 item-5 item-5"
+      "item-3 item-3 item-3";
+  }
+
+  .pricing-box-3 {
+    grid-template-areas:
+      "item-1 item-1 item-1"
+      "item-8 item-8 item-8"
+      "item-2 item-6 item-3"
+      "item-9 item-9 item-9"
+      "item-4 item-7 item-5";
+  }
+
+  [class*="pricing-box"] div.vertical {
+    width: 0;
+    height: 100%;
+    border-left: 1px solid var(--grey-shade__15);
+  }
+
+  .pricing-main {
+    flex-direction: row;
+  }
 
 }
 
 @media all and (min-width: 1024px) {
 
   .content-wrap {
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .hero-content-block {
@@ -2903,6 +3101,28 @@ input[type="checkbox"]:checked::after {
       "item-1 item-2 item-3 item-4 item-5";
   }
 
+  .two-parts-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+  }
+
+  .selected-property svg {
+    transform: scale(1);
+  }
+
+  .pricing-note .line {
+    width: 0;
+    height: 100%;
+    border-left: 1px solid var(--grey-shade__15);
+  }
+
+  .pricing-note {
+    padding: 40px 20px;
+    gap: 16px;
+    flex-direction: row;
+  }
+
 }
 
 @media all and (1200px <=width <=1320px) {
@@ -2932,7 +3152,8 @@ input[type="checkbox"]:checked::after {
   }
 
   h3,
-  .price-item p:last-of-type {
+  .price-item p:last-of-type,
+  .pricing-descr span {
     font-size: 1.25rem;
   }
 
@@ -2945,7 +3166,8 @@ input[type="checkbox"]:checked::after {
   }
 
   .content-wrap {
-    padding: 0 64px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
   .main-header {
@@ -2982,7 +3204,7 @@ input[type="checkbox"]:checked::after {
   }
 
   .main-section {
-    margin-top: 120px;
+    padding-top: 120px;
     gap: 60px;
   }
 
@@ -3137,13 +3359,11 @@ input[type="checkbox"]:checked::after {
     padding: 80px;
   }
 
-  .form-container,
-  .property-form-container {
+  [class*="form-container"] {
     gap: 30px;
   }
 
-  .form-container label,
-  .property-form-container label {
+  [class*="form-container"] label {
     gap: 14px;
   }
 
@@ -3398,8 +3618,42 @@ input[type="checkbox"]:checked::after {
     gap: 20px;
   }
 
-  .descr-2item-container div {
+  .descr-2item-container li {
     padding: 14px 16px;
+  }
+
+  .pricing {
+    gap: 40px;
+  }
+
+  .pricing-title span:last-child {
+    font-size: 1.875rem;
+  }
+
+  .pricing-main {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .pricing-container {
+    gap: 40px;
+  }
+
+  [class*="pricing-box"] {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .pricing-item {
+    gap: 12px;
+  }
+
+  .pricing-main {
+    gap: 40px;
+  }
+
+  .pricing-container {
+    gap: 40px;
   }
 
 }
@@ -3423,7 +3677,8 @@ input[type="checkbox"]:checked::after {
   }
 
   .content-wrap {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .hero-image {
@@ -3481,7 +3736,8 @@ input[type="checkbox"]:checked::after {
   }
 
   h3,
-  .price-item p:last-of-type {
+  .price-item p:last-of-type,
+  .pricing-descr span {
     font-size: 1.5rem;
   }
 
@@ -3540,7 +3796,7 @@ input[type="checkbox"]:checked::after {
   }
 
   .main-section {
-    margin-top: 150px;
+    padding-top: 150px;
     gap: 80px;
   }
 
@@ -3704,13 +3960,11 @@ input[type="checkbox"]:checked::after {
     gap: 50px;
   }
 
-  .form-container,
-  .property-form-container {
+  [class*="form-container"] {
     gap: 50px;
   }
 
-  .form-container label,
-  .property-form-container label {
+  [class*="form-container"] label {
     gap: 16px;
     font-size: 1.25rem;
   }
@@ -4033,8 +4287,57 @@ input[type="checkbox"]:checked::after {
     gap: 30px;
   }
 
-  .descr-2item-container div {
+  .descr-2item-container li {
     padding: 18px 24px;
+  }
+
+  .selected-property svg {
+    bottom: 28px;
+    right: 28px;
+    transform: scale(1.2);
+  }
+
+  .pricing {
+    gap: 50px;
+  }
+
+  .pricing-note {
+    padding: 50px 30px;
+    gap: 20px;
+  }
+
+  .pricing-title span:last-child {
+    font-size: 2.5rem;
+  }
+
+  .pricing-main,
+  .pricing-container {
+    gap: 50px;
+  }
+
+  [class*="pricing-box"] {
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .pricing-item {
+    gap: 16px;
+  }
+
+  .pricing-descr {
+    gap: 16px;
+  }
+
+  .pricing-descr p:last-child {
+    padding: 8px 14px;
+  }
+
+  .pricing-main {
+    gap: 50px;
+  }
+
+  .pricing-container {
+    gap: 50px;
   }
 
 }
