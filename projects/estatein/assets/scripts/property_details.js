@@ -1,18 +1,3 @@
-// const params = new URLSearchParams(window.location.search);
-// const id = params.get('id');
-
-// // Тепер можна завантажити дані:
-// fetch('/data/properties.json')
-//   .then(res => res.json())
-//   .then(data => {
-//     const property = data.find(item => item.id == id);
-//     if (property) {
-//       // Рендеримо контент
-//     }
-//   });
-
-
-
 async function fetchUrl(url) {
   try {
     let response = await fetch(url);
