@@ -88,18 +88,18 @@
 
         <div class="details-title d-flex align-center">
 
-          <h1>Seaside Serenity Villa</h1>
+          <h1 id="titleOne">Seaside Serenity Villa</h1>
 
           <div class="icon-boxes-item border d-flex align-center">
             <svg width="14" height="18">
               <use xlink:href="assets/images/sprite.svg#location"></use>
             </svg>
-            <span>Malibu, California</span>
+            <span id="location">Malibu, California</span>
           </div>
 
           <div class="price-item d-flex">
             <p class="obscured-text">Price</p>
-            <p>$1,250,000</p>
+            <p id="priceOne">$1,250,000</p>
           </div>
 
         </div>
@@ -198,7 +198,7 @@
 
           <div class="main-section-title always-full-width d-flex">
             <h3>Description</h3>
-            <p class="obscured-text">
+            <p id="description" class="obscured-text">
               Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan,
               breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is
               the epitome of coastal living.
@@ -214,7 +214,7 @@
                 </svg>
                 <span>Bedrooms</span>
               </div>
-              <p>04</p>
+              <p id="bedrooms">04</p>
             </div>
 
             <div class="descr-box d-flex grid-item-2">
@@ -224,7 +224,7 @@
                 </svg>
                 <span>Bathrooms</span>
               </div>
-              <p>03</p>
+              <p id="bathrooms">03</p>
             </div>
 
             <div class="descr-box d-flex grid-item-3">
@@ -234,7 +234,7 @@
                 </svg>
                 <span>Area</span>
               </div>
-              <p>2,500 Square Feet</p>
+              <p id="area">2,500 Square Feet</p>
             </div>
 
             <div class="descr-line grid-item-4"></div>
@@ -249,9 +249,9 @@
 
           <h3>Key Features and Amenities</h3>
 
-          <ul class="descr-2item-container d-flex">
+          <ul id="keyFeatures" class="descr-2item-container d-flex">
 
-            <li class="d-flex align-center">
+            <!-- <li class="d-flex align-center">
               <svg width="14" height="16">
                 <use xlink:href="assets/images/sprite.svg#bolt"></use>
               </svg>
@@ -284,7 +284,7 @@
                 <use xlink:href="assets/images/sprite.svg#bolt"></use>
               </svg>
               <span class="obscured-text">Private garage and ample storage space</span>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -323,7 +323,7 @@
           </div>
         </div>
 
-        <h2>Inquire About <span>Seaside Serenity Villa</span></h2>
+        <h2>Inquire About <span id="titleTwo">Seaside Serenity Villa</span></h2>
 
         <p class="obscured-text">
           Interested in this property? Fill out the form below, and our real estate experts will get back to you with
@@ -364,7 +364,8 @@
                 <use xlink:href="assets/images/sprite.svg#location"></use>
               </svg>
 
-              <input type="text" name="selected-property" value="Seaside Serenity Villa, Malibu, California" disabled>
+              <input id="titleAndLocation" type="text" name="selected-property"
+                value="Seaside Serenity Villa, Malibu, California" disabled>
             </label>
 
             <label class="grid-item-6">
@@ -441,7 +442,7 @@
 
           <div class="pricing-title d-flex">
             <span class="obscured-text">Listing Price</span>
-            <span>$1,250,000</span>
+            <span id="priceTwo">$1,250,000</span>
           </div>
 
           <div class="pricing-container d-flex">
@@ -456,7 +457,7 @@
               <div class="pricing-item d-flex grid-item-2">
                 <span class="obscured-text">Property Transfer Tax</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$25,000</span>
+                  <span id="propertyTransferTax">$25,000</span>
                   <p class="obscured-text border">
                     Based on the sale price and local regulations
                   </p>
@@ -466,7 +467,7 @@
               <div class="pricing-item d-flex grid-item-3">
                 <span class="obscured-text">Legal Fees</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$3,000</span>
+                  <span id="legalFees">$3,000</span>
                   <p class="obscured-text border">
                     Approximate cost for legal services, including title transfer
                   </p>
@@ -476,7 +477,7 @@
               <div class="pricing-item d-flex grid-item-4">
                 <span class="obscured-text">Home Inspection</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$500</span>
+                  <span id="homeInspection">$500</span>
                   <p class="obscured-text border">
                     Recommended for due diligence
                   </p>
@@ -486,7 +487,7 @@
               <div class="pricing-item d-flex grid-item-5">
                 <span class="obscured-text">Property Insurance</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$1,200</span>
+                  <span id="propertyInsurance">$1,200</span>
                   <p class="obscured-text border">
                     Annual cost for comprehensive property insurance
                   </p>
@@ -496,7 +497,7 @@
               <div class="pricing-item d-flex grid-item-6">
                 <span class="obscured-text">Mortgage Fees</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>Varies</span>
+                  <span id="mortgageFees">Varies</span>
                   <p class="obscured-text border">
                     If applicable, consult with your lender for specific details
                   </p>
@@ -521,7 +522,7 @@
               <div class="pricing-item d-flex grid-item-2">
                 <span class="obscured-text">Property Taxes</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$1,250</span>
+                  <span id="propertyTaxes">$1,250</span>
                   <p class="obscured-text border">
                     Approximate monthly property tax based on the sale price and local rates
                   </p>
@@ -531,7 +532,7 @@
               <div class="pricing-item d-flex grid-item-3">
                 <span class="obscured-text">Homeowners' Association Fee</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$300</span>
+                  <span id="hoaFee">$300</span>
                   <p class="obscured-text border">
                     Monthly fee for common area maintenance and security
                   </p>
@@ -553,14 +554,14 @@
               <div class="pricing-item d-flex grid-item-2">
                 <span class="obscured-text">Listing Price</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$1,250,000</span>
+                  <span id="priceThree">$1,250,000</span>
                 </div>
               </div>
 
               <div class="pricing-item d-flex grid-item-3">
                 <span class="obscured-text">Additional Fees</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$29,700</span>
+                  <span id="additionalFees">$29,700</span>
                   <p class="obscured-text border">
                     Property transfer tax, legal fees, inspection, insurance
                   </p>
@@ -570,7 +571,7 @@
               <div class="pricing-item d-flex grid-item-4">
                 <span class="obscured-text">Down Payment</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$250,000</span>
+                  <span id="downPayment">$250,000</span>
                   <p class="obscured-text border">
                     20%
                   </p>
@@ -580,7 +581,7 @@
               <div class="pricing-item d-flex grid-item-5">
                 <span class="obscured-text">Mortgage Amount</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$1,000,000</span>
+                  <span id="mortgageAmount">$1,000,000</span>
                   <p class="obscured-text border">
                     If applicable
                   </p>
@@ -604,14 +605,14 @@
               <div class="pricing-item d-flex grid-item-2">
                 <span class="obscured-text">Property Taxes</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$1,250</span>
+                  <span id="propertyTaxesTwo">$1,250</span>
                 </div>
               </div>
 
               <div class="pricing-item d-flex grid-item-3">
                 <span class="obscured-text">Homeowners' Association Fee</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$300</span>
+                  <span id="hoaFeeTwo">$300</span>
                 </div>
               </div>
 
@@ -628,7 +629,7 @@
               <div class="pricing-item d-flex grid-item-5">
                 <span class="obscured-text">Property Insurance</span>
                 <div class="pricing-descr d-flex align-center">
-                  <span>$100</span>
+                  <span id="insurance">$100</span>
                   <p class="obscured-text border">
                     Approximate monthly cost
                   </p>

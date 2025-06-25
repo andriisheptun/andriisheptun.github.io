@@ -1,15 +1,15 @@
-const params = new URLSearchParams(window.location.search);
-const id = params.get('id');
+// const params = new URLSearchParams(window.location.search);
+// const id = params.get('id');
 
-// Тепер можна завантажити дані:
-fetch('/data/properties.json')
-  .then(res => res.json())
-  .then(data => {
-    const property = data.find(item => item.id == id);
-    if (property) {
-      // Рендеримо контент
-    }
-  });
+// // Тепер можна завантажити дані:
+// fetch('/data/properties.json')
+//   .then(res => res.json())
+//   .then(data => {
+//     const property = data.find(item => item.id == id);
+//     if (property) {
+//       // Рендеримо контент
+//     }
+//   });
 
 
 
@@ -200,14 +200,121 @@ async function renderPage() {
     if (!response.ok) throw new Error("Failed to fetch data");
 
     const data = await response.json();
-    const property = data.find(item => item.id == id);
+    const item = data.find(item => item.id == id);
 
-    if (property) {
+    if (item) {
+
+      let titleOne = document.getElementById("titleOne");
+      titleOne.textContent = item.title;
+
+      let location = document.getElementById("location");
+      location.textContent = item.location;
+
+      let priceOne = document.getElementById("priceOne");
+      priceOne.textContent = `$${item.price.toLocaleString('en-US')}`;
+
+      let description = document.getElementById("description");
+      description.textContent = item.description;
+
+      let bedrooms = document.getElementById("bedrooms");
+      bedrooms.textContent = `0${item.bedrooms}`;
+
+      let bathrooms = document.getElementById("bathrooms");
+      bathrooms.textContent = `0${item.bathrooms}`;
+
+      let area = document.getElementById("area");
+      area.textContent = `${item.area.toLocaleString('en-US')} Square Feet`;
+
+      let keyFeatures = document.getElementById("keyFeatures");
+      item.keyFeaturesAndAmenities.forEach(f => {
+        let li = document.createElement("li");
+        li.classList.add("d-flex", "align-center")
+        li.innerHTML = `
+          <svg width="14" height="16">
+            <use xlink:href="assets/images/sprite.svg#bolt"></use>
+          </svg>
+          <span class="obscured-text">${f}</span>`
+        keyFeatures.appendChild(li);
+      });
+
+      let titleTwo = document.getElementById("titleTwo");
+      titleTwo.textContent = item.title;
+
+      let titleLocat = document.getElementById("titleAndLocation");
+      titleLocat.value = `${item.title}, ${item.location}`;
+
+      let priceTwo = document.getElementById("priceTwo");
+      priceTwo.textContent = `$${item.price.toLocaleString('en-US')}`;
+
+      let propertyTransferTax = document.getElementById("propertyTransferTax");
+      propertyTransferTax.textContent = `$${item.additionalFees.propertyTransferTax.toLocaleString('en-US')}`;
+
+      let legalFees = document.getElementById("legalFees");
+      legalFees.textContent = `$${item.additionalFees.legalFees.toLocaleString('en-US')}`;
+
+      let homeInspection = document.getElementById("homeInspection");
+      homeInspection.textContent = `$${item.additionalFees.homeInspection.toLocaleString('en-US')}`;
+
+      let propertyInsurance = document.getElementById("propertyInsurance");
+      propertyInsurance.textContent = `$${item.additionalFees.propertyInsurance.toLocaleString('en-US')}`;
+
+      let mortgageFees = document.getElementById("mortgageFees");
+      let value = item.additionalFees.mortgageFees;
+
+      if (typeof value === 'number' && !isNaN(value)) {
+        mortgageFees.textContent = `$${value.toLocaleString('en-US')}`;
+      } else {
+        mortgageFees.textContent = value;
+      }
+
+      let propertyTaxes = document.getElementById("propertyTaxes");
+      propertyTaxes.textContent = `$${item.monthlyCosts.propertyTaxes.toLocaleString('en-US')}`;
+
+      let hoaFee = document.getElementById("hoaFee");
+      hoaFee.textContent = `$${item.monthlyCosts.hoaFee.toLocaleString('en-US')}`;
+
+      let priceThree = document.getElementById("priceThree");
+      priceThree.textContent = `$${item.price.toLocaleString('en-US')}`;
+
+
+      let additionalFees = document.getElementById("additionalFees");
+      let fees = item.additionalFees;
+
+      let total = 0;
+
+      for (let key in fees) {
+        let value = fees[key];
+        if (typeof value === 'number' && !isNaN(value)) {
+          total += value;
+        }
+      }
+      additionalFees.textContent = `$${total.toLocaleString('en-US')}`;
+
+      let downPayment = document.getElementById("downPayment");
+      if (typeof item.price === 'number' && !isNaN(item.price)) {
+        let percent20 = item.price * 0.2;
+        downPayment.textContent = `$${percent20.toLocaleString('en-US')}`;
+      }
+
+      let mortgageAmount = document.getElementById("mortgageAmount");
+      if (typeof item.price === 'number' && !isNaN(item.price)) {
+        let percent80 = item.price * 0.8;
+        mortgageAmount.textContent = `$${percent80.toLocaleString('en-US')}`;
+      }
+
+      let propertyTaxesTwo = document.getElementById("propertyTaxesTwo");
+      propertyTaxesTwo.textContent = `$${item.monthlyCosts.propertyTaxes.toLocaleString('en-US')}`;
+
+      let hoaFeeTwo = document.getElementById("hoaFeeTwo");
+      hoaFeeTwo.textContent = `$${item.monthlyCosts.hoaFee.toLocaleString('en-US')}`;
+
+      let insurance = document.getElementById("insurance");
+      insurance.textContent = `$${item.monthlyCosts.insurance.toLocaleString('en-US')}`;
 
 
 
 
-      console.log("Property:", property);
+      console.log("Property:", item);
     } else {
       console.warn("Property not found");
     }
