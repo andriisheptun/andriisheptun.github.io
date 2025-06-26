@@ -649,11 +649,7 @@
 
       </div>
 
-
-
     </section>
-
-
 
     <section id="faq" class="main-section d-flex content-wrap">
 
@@ -684,83 +680,50 @@
 
           <h2>Frequently Asked Questions</h2>
 
-
-
           <p class="obscured-text">
             Find answers to common questions about Estatein's services, property listings, and the real estate process.
             We're here to provide clarity and assist you every step of the way.
           </p>
 
-
         </div>
 
-        <a href="#" class="btn btn-fill__black hide-mobile">View All FAQ’s</a>
+        <div id="toggleFaqBtn" class="btn btn-fill__black mobile-absolute">View All FAQ’s</div>
 
       </div>
 
-      <div class="swiper mySwiper">
-        <div id="faqSwiper" class="swiper-wrapper">
-          <!-- 
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex">
+      <div id="faqList" class="faq-list hide"></div>
 
-            <h3>How do I search for properties on Estatein?</h3>
-            <p class="obscured-text">
-              Learn how to use our user-friendly search tools to find properties that match your criteria.
-            </p>
-            <a href="#" class="btn btn-fill__black">Read More</a>
+      <div id="faqSwiper" class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-          </div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex">
-
-            <h3>What documents do I need to sell my property through Estatein?</h3>
-            <p class="obscured-text">
-              Find out about the necessary documentation for listing your property with us.
-            </p>
-            <a href="#" class="btn btn-fill__black">Read More</a>
-
-          </div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex">
-
-            <h3>How can I contact an Estatein agent?</h3>
-            <p class="obscured-text">
-              Discover the different ways you can get in touch with our experienced agents.
-            </p>
-            <a href="#" class="btn btn-fill__black">Read More</a>
-
-          </div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex items-center">Slide 4</div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex items-center">Slide 5</div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex items-center">Slide 6</div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex items-center">Slide 7</div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex items-center">Slide 8</div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex items-center">Slide 9</div>
-
-          <div class="swiper-slide border b-radius-12 swiper3-slide d-flex items-center">Slide 10</div> -->
         </div>
+
         <div class="swipe-controls d-flex align-center">
-          <a href="#" class="btn btn-fill__black hide-desktop">View All FAQ’s</a>
 
           <div class="swipe-controls-mobile d-flex align-center">
             <div class="swipe-button-prev border d-flex items-center">
               <i class="fa-solid fa-arrow-left"></i>
             </div>
-            <div class="swipe-pagination">
-
-            </div>
+            <div class="swipe-pagination"></div>
             <div class="swipe-button-next border d-flex items-center">
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
         </div>
 
+      </div>
+
+      <div id="faqModal" class="modal hide">
+        <div class="modal-content d-flex border b-radius-12">
+          <div class="modal-title d-flex">
+            <h3 id="modalQuestion"></h3>
+            <div id="modal-close" class="banner-close d-flex items-center modal-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="line"></div>
+          <p id="modalAnswer"></p>
+        </div>
       </div>
 
     </section>

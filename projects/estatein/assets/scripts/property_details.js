@@ -18,17 +18,17 @@ async function fetchUrl(url) {
 async function renderFAQCards() {
   faqData = await fetchUrl('https://andriisheptun.github.io/tasks/js/estatein_faq.json');
 
-  let wrapper = document.getElementById('faqSwiper');
+  let wrapper = document.getElementById('faqSwiper').querySelector('.swiper-wrapper');
 
-  data.forEach(item => {
+  faqData.forEach((item, index) => {
     let slide = document.createElement('div');
 
     slide.classList.add('swiper-slide', 'swiper3-slide');
     slide.innerHTML = `
-        <h3>${item.question}</h3>
-        <p class="obscured-text">${item.description}</p>
-        <a href="#" class="btn btn-fill__black">Read More</a>  
-    `;
+      <h3>${item.question}</h3>
+      <p class="obscured-text">${item.description}</p>
+      <div class="btn btn-fill__black" data-index="${index}">Read More</div>  
+  `;
 
     wrapper.appendChild(slide);
   });
@@ -312,22 +312,38 @@ async function renderPage() {
   }
 }
 
+function renderFaqAccordion() {
+  list.innerHTML = '';
+
+  faqData.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.classList.add("faq-item");
+
+    li.innerHTML = `
+      <h3 class="faq-title" data-index="${index}">${item.question}</h3>
+      <div class="faq-answer obscured-text hide">${item.fullDescription}</div>
+    `;
+
+    list.appendChild(li);
+  });
+}
 
 
 document.addEventListener('DOMContentLoaded', async () => {
   await renderPage();
   await renderFAQCards();
   initSwipers();
+  renderFaqAccordion();
 });
 
-// 2. Показ модалки по індексу
+const list = document.getElementById("faqList");
 const faqContainer = document.getElementById('faqSwiper');
 const modal = document.getElementById("faqModal");
 const modalQuestion = document.getElementById("modalQuestion");
 const modalAnswer = document.getElementById("modalAnswer");
 const modalClose = document.getElementById("faqModal").querySelector(".modal-close");
+const toggleBtn = document.getElementById("toggleFaqBtn");
 
-// Делегування події на кнопку Read more
 faqContainer.addEventListener("click", (event) => {
   if (event.target.classList.contains("btn")) {
     const index = +event.target.dataset.index;
@@ -339,10 +355,44 @@ faqContainer.addEventListener("click", (event) => {
   }
 });
 
-// Закриття модалки
 modalClose.addEventListener("click", () => modal.classList.add("hide"));
 window.addEventListener("click", (e) => {
   if (e.target === modal) modal.classList.add("hide");
+});
+
+
+list.addEventListener("click", (e) => {
+  if (e.target.classList.contains("faq-title")) {
+    const clickedTitle = e.target;
+    const isAlreadyActive = clickedTitle.classList.contains("active");
+    const allAnswers = list.querySelectorAll(".faq-answer");
+    const allTitles = list.querySelectorAll(".faq-title");
+
+
+    allAnswers.forEach(answer => answer.classList.add("hide"));
+    allTitles.forEach(title => title.classList.remove("active"));
+
+    if (!isAlreadyActive) {
+      const answer = clickedTitle.nextElementSibling;
+      answer.classList.remove("hide");
+      clickedTitle.classList.add("active");
+    }
+
+  }
+});
+
+toggleBtn.addEventListener("click", () => {
+  const isListVisible = !list.classList.contains("hide");
+
+  if (isListVisible) {
+    list.classList.add("hide");
+    faqContainer.classList.remove("hide");
+    toggleBtn.textContent = "View all FAQ's";
+  } else {
+    list.classList.remove("hide");
+    faqContainer.classList.add("hide");
+    toggleBtn.textContent = "View less FAQ's";
+  }
 });
 
 

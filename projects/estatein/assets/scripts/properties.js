@@ -118,7 +118,7 @@ async function renderPropertyCards() {
 
   let wrapper = document.getElementById("propertySwiper");
 
-  data.forEach(item => {
+  propertyData.forEach(item => {
     let slide = document.createElement("div");
     slide.classList.add("swiper-slide", "swiper1-slide");
 
@@ -131,42 +131,42 @@ async function renderPropertyCards() {
     let bathroomsText = `${item.bathrooms}-Bathroom${item.bathrooms !== 1 ? 's' : ''}`;
 
     slide.innerHTML = `
-              <img src="${item.images.exterior}" alt="Photo: ${item.title}">
-              <div class="swiper-content">
-                <h3>${item.title}</h3>
-                <p class="obscured-text">
-                  ${shortDesc} <a href="#">Read More</a>
-                </p>
+            <img src="${item.images.exterior}" alt="Photo: ${item.title}">
+            <div class="swiper-content">
+              <h3>${item.title}</h3>
+              <p class="obscured-text">
+                ${shortDesc} <a href="property_details.html?id=${item.id}">Read More</a>
+              </p>
+            </div>
+
+            <div class="icon-boxes d-flex">
+              <div class="icon-boxes-item border d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#bedroom"></use>
+                </svg>
+                <span>${bedroomsText}</span>
               </div>
-  
-              <div class="icon-boxes d-flex">
-                <div class="icon-boxes-item border d-flex">
-                  <svg width="20px" height="20px">
-                    <use xlink:href="assets/images/sprite.svg#bedroom"></use>
-                  </svg>
-                  <span>${bedroomsText}</span>
-                </div>
-                <div class="icon-boxes-item border d-flex">
-                  <svg width="20px" height="20px">
-                    <use xlink:href="assets/images/sprite.svg#bathroom"></use>
-                  </svg>
-                  <span>${bathroomsText}</span>
-                </div>
-                <div class="icon-boxes-item border d-flex">
-                  <svg width="20px" height="20px">
-                    <use xlink:href="assets/images/sprite.svg#villa"></use>
-                  </svg>
-                  <span>${item.type}</span>
-                </div>
+              <div class="icon-boxes-item border d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#bathroom"></use>
+                </svg>
+                <span>${bathroomsText}</span>
               </div>
-  
-              <div class="swiper-price d-flex items-center space-between">
-                <div class="price-item d-flex">
-                  <p class="obscured-text">Price</p>
-                  <p>$${item.price.toLocaleString('en-US')}</p>
-                </div>
-                <a href="#" class="btn btn-fill__main-color">View Property Details</a>
-              </div>`;
+              <div class="icon-boxes-item border d-flex">
+                <svg width="20px" height="20px">
+                  <use xlink:href="assets/images/sprite.svg#villa"></use>
+                </svg>
+                <span>${item.type}</span>
+              </div>
+            </div>
+
+            <div class="swiper-price d-flex items-center space-between">
+              <div class="price-item d-flex">
+                <p class="obscured-text">Price</p>
+                <p>$${item.price.toLocaleString('en-US')}</p>
+              </div>
+              <a href="property_details.html?id=${item.id}" class="btn btn-fill__main-color">View Property Details</a>
+            </div>`;
 
     wrapper.appendChild(slide);
 

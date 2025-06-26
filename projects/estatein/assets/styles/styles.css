@@ -556,6 +556,7 @@ h3,
 /* --------------------------- Main Section ------------------------------- */
 
 .main-section {
+  position: relative;
   padding-top: 80px;
   flex-direction: column;
   gap: 40px;
@@ -769,7 +770,9 @@ a .icon-boxes-item {
 .swipe-controls {
   width: 100%;
   margin-top: 40px;
-  padding-top: 16px;
+  padding-top: 28px;
+  /* margin-left: auto;
+  gap: 10px; */
   justify-content: space-between;
   border-top: 1px solid var(--grey-shade__15);
 }
@@ -792,11 +795,51 @@ a .icon-boxes-item {
 }
 
 .swipe-controls-mobile {
+  margin-left: auto;
   gap: 10px;
 }
 
-.swipe-controls a {
+.mobile-absolute {
   width: fit-content;
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  /* transform: translateY(-100%); */
+  z-index: 2;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 60px 0;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--grey-shade__15);
+  padding-bottom: 1rem;
+}
+
+.faq-title {
+  background: none;
+  border: none;
+  /* font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left; */
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+  color: var(--grey-shade__30);
+  transition: color 0.3s;
+}
+
+.faq-title.active {
+  color: var(--absolute-white);
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  transition: max-height 0.3s ease;
 }
 
 div[class*=swipe-button]:not(.swiper-button-disabled) {
@@ -2063,7 +2106,7 @@ input[type="checkbox"]:checked::after {
     font-size: .6rem;
   }
 
-  .swipe-controls a {
+  .mobile-absolute {
     font-size: .53rem;
   }
 
@@ -2163,6 +2206,10 @@ input[type="checkbox"]:checked::after {
 
   a.hide-desktop {
     display: none;
+  }
+
+  .mobile-absolute {
+    position: static;
   }
 
   a.hide-mobile,
@@ -2382,9 +2429,7 @@ input[type="checkbox"]:checked::after {
       "item-10 item-10 item-10"
       "item-4 item-8 item-5"
       "item-11 item-11 item-11"
-      "item-6 . ."
-
-    ;
+      "item-6 . .";
   }
 
   .pricing-box-2 {
@@ -2409,6 +2454,10 @@ input[type="checkbox"]:checked::after {
     width: 0;
     height: 100%;
     border-left: 1px solid var(--grey-shade__15);
+  }
+
+  .faq-list {
+    margin: 0;
   }
 
 
@@ -2512,6 +2561,10 @@ input[type="checkbox"]:checked::after {
 
   a.hide-desktop {
     display: none;
+  }
+
+  .mobile-absolute {
+    position: static;
   }
 
   a.hide-mobile,
@@ -2893,6 +2946,10 @@ input[type="checkbox"]:checked::after {
 
   .pricing-main {
     flex-direction: row;
+  }
+
+  .faq-list {
+    margin: 0;
   }
 
 }
