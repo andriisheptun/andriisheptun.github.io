@@ -223,7 +223,7 @@
       <div class="swiper mySwiper">
         <div id="propertySwiper" class="swiper-wrapper">
 
-          <div class="swiper-slide swiper1-slide">
+          <!-- <div class="swiper-slide swiper1-slide">
 
             <img src="assets/images/slider1-image1.png" alt="House">
 
@@ -346,7 +346,7 @@
               <a href="#" class="btn btn-fill__main-color">View Property Details</a>
             </div>
 
-          </div>
+          </div> -->
 
           <!-- <div class="swiper-slide swiper1-slide">Slide 4</div>
 
@@ -647,13 +647,10 @@
 
           <h2>Frequently Asked Questions</h2>
 
-
-
           <p class="obscured-text">
             Find answers to common questions about Estatein's services, property listings, and the real estate process.
             We're here to provide clarity and assist you every step of the way.
           </p>
-
 
         </div>
 
@@ -661,8 +658,10 @@
 
       </div>
 
-      <div class="swiper mySwiper">
-        <div id="faqSwiper" class="swiper-wrapper">
+      <div id="faqList" class="faq-list hide"></div>
+
+      <div id="faqSwiper" class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
           <!-- <div class="swiper-slide swiper3-slide">
 
@@ -728,7 +727,22 @@
 
       </div>
 
+      <div id="faqModal" class="modal hide">
+        <div class="modal-content d-flex border b-radius-12">
+          <div class="modal-title d-flex">
+            <h3 id="modalQuestion"></h3>
+            <div id="modal-close" class="banner-close d-flex items-center modal-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="line"></div>
+          <p id="modalAnswer"></p>
+        </div>
+      </div>
+
     </section>
+
+
 
   </main>
   <!-- ------------------------ End of Third Swiper Section -------------------------------- -->

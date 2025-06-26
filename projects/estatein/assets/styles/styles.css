@@ -179,6 +179,40 @@ ul {
 
 /* ------------------------ Hero Section ---------------------------- */
 
+.modal {
+  position: fixed;
+  inset: 0;
+  /* top: 600px; */
+  width: 100%;
+  /* height: 100%; */
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 35;
+}
+
+.modal-content {
+  width: 80%;
+  /* height: 100%; */
+  margin: 15vh auto;
+  padding: 3vh;
+  gap: 2vh;
+  flex-direction: column;
+  background-color: var(--grey-shade__10);
+}
+
+.modal-title h3 {
+  max-width: 80%;
+}
+
+.modal-content .modal-close {
+  margin-right: 0;
+}
+
+.modal-content .line {
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid var(--grey-shade__15);
+}
+
 .hero-section {
   width: 100%;
   margin-top: 78px;

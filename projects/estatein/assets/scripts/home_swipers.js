@@ -1,3 +1,7 @@
+let faqData = {};
+let testimonialsData = {};
+let propertyData = {};
+
 async function fetchUrl(url) {
     try {
         let response = await fetch(url);
@@ -13,18 +17,18 @@ async function fetchUrl(url) {
 }
 
 async function renderFAQCards() {
-    let data = await fetchUrl('https://andriisheptun.github.io/tasks/js/estatein_faq.json');
+    faqData = await fetchUrl('https://andriisheptun.github.io/tasks/js/estatein_faq.json');
 
-    let wrapper = document.getElementById('faqSwiper');
+    let wrapper = document.getElementById('faqSwiper').querySelector('.swiperer-wrapper');
 
-    data.forEach(item => {
+    faqData.forEach((item, index) => {
         let slide = document.createElement('div');
 
         slide.classList.add('swiper-slide', 'swiper3-slide');
         slide.innerHTML = `
         <h3>${item.question}</h3>
         <p class="obscured-text">${item.description}</p>
-        <a href="#" class="btn btn-fill__black">Read More</a>  
+        <div class="btn btn-fill__black" data-index="${index}">Read More</div>  
     `;
 
         wrapper.appendChild(slide);
@@ -32,11 +36,11 @@ async function renderFAQCards() {
 }
 
 async function renderTestimonialsCards() {
-    let data = await fetchUrl('https://andriisheptun.github.io/tasks/js/client_reviews.json');
+    testimonialsData = await fetchUrl('https://andriisheptun.github.io/tasks/js/client_reviews.json');
 
     let wrapper = document.getElementById('testimonialsSwiper');
 
-    data.forEach(item => {
+    testimonialsData.forEach(item => {
         let slide = document.createElement('div');
         slide.classList.add('swiper-slide', 'swiper2-slide');
 
@@ -79,11 +83,11 @@ async function renderTestimonialsCards() {
 }
 
 async function renderPropertyCards() {
-    let data = await fetchUrl("https://andriisheptun.github.io/tasks/js/properties_full_updated.json");
+    propertyData = await fetchUrl("https://andriisheptun.github.io/tasks/js/properties_full_updated.json");
 
     let wrapper = document.getElementById("propertySwiper");
 
-    data.forEach(item => {
+    propertyData.forEach(item => {
         let slide = document.createElement("div");
         slide.classList.add("swiper-slide", "swiper1-slide");
 
@@ -285,4 +289,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     await renderTestimonialsCards();
     await renderFAQCards();
     initSwipers();
+});
+
+// 2. Показ модалки по індексу
+const faqContainer = document.getElementById('faqSwiper');
+const modal = document.getElementById("faqModal");
+const modalQuestion = document.getElementById("modalQuestion");
+const modalAnswer = document.getElementById("modalAnswer");
+const modalClose = document.getElementById("faqModal").querySelector(".modal-close");
+
+// Делегування події на кнопку Read more
+faqContainer.addEventListener("click", (event) => {
+    if (event.target.classList.contains("btn")) {
+        const index = +event.target.dataset.index;
+        const item = faqData[index];
+
+        modalQuestion.textContent = item.question;
+        modalAnswer.textContent = item.fullDescription;
+        modal.classList.remove("hide");
+    }
+});
+
+// Закриття модалки
+modalClose.addEventListener("click", () => modal.classList.add("hide"));
+window.addEventListener("click", (e) => {
+    if (e.target === modal) modal.classList.add("hide");
 });

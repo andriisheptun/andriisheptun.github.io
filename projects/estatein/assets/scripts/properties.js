@@ -97,7 +97,7 @@ emailInput.addEventListener("focus", () => {
 //---------------------- End of Radios -------------------------------
 
 
-
+let propertyData = {};
 
 async function fetchUrl(url) {
   try {
@@ -114,7 +114,7 @@ async function fetchUrl(url) {
 }
 
 async function renderPropertyCards() {
-  let data = await fetchUrl("https://andriisheptun.github.io/tasks/js/properties_full_updated.json");
+  propertyData = await fetchUrl("https://andriisheptun.github.io/tasks/js/properties_full_updated.json");
 
   let wrapper = document.getElementById("propertySwiper");
 

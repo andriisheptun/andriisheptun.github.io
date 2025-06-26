@@ -1,3 +1,6 @@
+let faqData = {};
+let propertyData = {};
+
 async function fetchUrl(url) {
   try {
     let response = await fetch(url);
@@ -13,7 +16,7 @@ async function fetchUrl(url) {
 }
 
 async function renderFAQCards() {
-  let data = await fetchUrl('https://andriisheptun.github.io/tasks/js/estatein_faq.json');
+  faqData = await fetchUrl('https://andriisheptun.github.io/tasks/js/estatein_faq.json');
 
   let wrapper = document.getElementById('faqSwiper');
 
@@ -213,7 +216,7 @@ async function renderPage() {
       let keyFeatures = document.getElementById("keyFeatures");
       item.keyFeaturesAndAmenities.forEach(f => {
         let li = document.createElement("li");
-        li.classList.add("d-flex", "align-center")
+        li.classList.add("d-flex", "align-center");
         li.innerHTML = `
           <svg width="14" height="16">
             <use xlink:href="assets/images/sprite.svg#bolt"></use>
@@ -317,7 +320,30 @@ document.addEventListener('DOMContentLoaded', async () => {
   initSwipers();
 });
 
+// 2. Показ модалки по індексу
+const faqContainer = document.getElementById('faqSwiper');
+const modal = document.getElementById("faqModal");
+const modalQuestion = document.getElementById("modalQuestion");
+const modalAnswer = document.getElementById("modalAnswer");
+const modalClose = document.getElementById("faqModal").querySelector(".modal-close");
 
+// Делегування події на кнопку Read more
+faqContainer.addEventListener("click", (event) => {
+  if (event.target.classList.contains("btn")) {
+    const index = +event.target.dataset.index;
+    const item = faqData[index];
+
+    modalQuestion.textContent = item.question;
+    modalAnswer.textContent = item.fullDescription;
+    modal.classList.remove("hide");
+  }
+});
+
+// Закриття модалки
+modalClose.addEventListener("click", () => modal.classList.add("hide"));
+window.addEventListener("click", (e) => {
+  if (e.target === modal) modal.classList.add("hide");
+});
 
 
 
