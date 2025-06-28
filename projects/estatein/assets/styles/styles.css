@@ -816,13 +816,14 @@ a .icon-boxes-item {
 }
 
 .faq-item,
-.review-head {
+.review-item {
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--grey-shade__15);
   padding-bottom: 1rem;
 }
 
 .review-head {
+  padding: 8px 16px;
   flex-direction: column;
   gap: 12px;
   cursor: pointer;
@@ -842,10 +843,18 @@ a .icon-boxes-item {
   color: var(--absolute-white);
 }
 
-.faq-answer,
 .review-content {
-  margin-top: 0.5rem;
-  transition: max-height 0.3s ease;
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--grey-shade__15);
+  background-color: var(--grey-shade__10);
+}
+
+.faq-answer {
+  margin-top: .5rem;
+  /* transition: max-height 0.3s ease; */
 }
 
 div[class*=swipe-button]:not(.swiper-button-disabled) {
@@ -885,7 +894,7 @@ svg.no-star {
   border-radius: 50%;
 }
 
-.swiper2-content p {
+.swiper2-content:not(.review-content) p {
   height: 84px;
   overflow: auto;
 }
@@ -3400,7 +3409,7 @@ input[type="checkbox"]:checked::after {
     gap: 30px;
   }
 
-  .swiper2-content p {
+  .swiper2-content:not(.review-content) p {
     height: 96px;
   }
 
@@ -3978,7 +3987,7 @@ input[type="checkbox"]:checked::after {
     gap: 40px;
   }
 
-  .swiper2-content p {
+  .swiper2-content:not(.review-content) p {
     height: 108px;
   }
 

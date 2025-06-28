@@ -313,7 +313,7 @@ async function renderReviewAccordion() {
 
   testimonialsData.forEach((item, index) => {
     const li = document.createElement("li");
-    li.classList.add("rewiew-item");
+    li.classList.add("review-item");
     const liHead = document.createElement("div");
     liHead.classList.add("d-flex", "align-center", "space-between", "review-head")
     liHead.dataset.index = index;
@@ -353,7 +353,7 @@ async function renderReviewAccordion() {
     li.appendChild(liHead);
 
     let content = document.createElement('div');
-    content.classList.add('swiper2-content', 'main-section-title', 'always-full-width', 'd-flex', 'hide');
+    content.classList.add('swiper2-content', 'main-section-title', 'always-full-width', 'd-flex', 'hide', 'review-content');
     content.innerHTML = `
         <h3>${item.title}</h3>
         <p class="obscured-text">${item.review}</p>
