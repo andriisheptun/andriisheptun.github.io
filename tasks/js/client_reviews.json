@@ -1,5 +1,29 @@
 [
   {
+    "name": "Wade Warren",
+    "location": "USA, California",
+    "photo": "https://andriisheptun.github.io/projects/estatein/assets/images/swiper2-photo1.png",
+    "rating": 5,
+    "title": "Exceptional Service!",
+    "review": "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!"
+  },
+  {
+    "name": "Emelie Thomson",
+    "location": "USA, Florida",
+    "photo": "https://andriisheptun.github.io/projects/estatein/assets/images/swiper2-photo2.png",
+    "rating": 4,
+    "title": "Efficient and Reliable",
+    "review": "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results."
+  },
+  {
+    "name": "John Mans",
+    "location": "USA, Nevada",
+    "photo": "https://andriisheptun.github.io/projects/estatein/assets/images/swiper2-photo3.png",
+    "rating": 4,
+    "title": "Trusted Advisors",
+    "review": "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!"
+  },
+  {
     "name": "Emily Johnson",
     "location": "USA, California",
     "photo": "https://randomuser.me/api/portraits/women/10.jpg",

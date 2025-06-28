@@ -424,14 +424,16 @@
 
         </div>
 
-        <div class="btn btn-fill__black mobile-absolute">View All Testimonials</div>
+        <div id="toggleReviewBtn" class="btn btn-fill__black mobile-absolute">View All Testimonials</div>
 
       </div>
 
-      <div class="swiper mySwiper">
-        <div id="testimonialsSwiper" class="swiper-wrapper">
+      <ul id="reviewList" class="review-list hide"></ul>
 
-          <div class="swiper-slide swiper2-slide">
+      <div id="reviewSwiper" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <!-- <div class="swiper-slide swiper2-slide">
 
             <div class="rating d-flex">
               <div class="stars border d-flex items-center">
@@ -576,7 +578,8 @@
               </div>
             </div>
 
-          </div>
+          </div> -->
+
           <!-- 
           <div class="swiper-slide swiper2-slide">Slide 4</div>
 
@@ -658,7 +661,7 @@
 
       </div>
 
-      <div id="faqList" class="faq-list hide"></div>
+      <ul id="faqList" class="faq-list hide"></ul>
 
       <div id="faqSwiper" class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -801,7 +804,7 @@
 
         <div class="icon-container d-flex items-center">
 
-          <a href="#">
+          <a href="https://facebook.com/">
             <div class="social-item d-flex items-center">
               <svg width="11" height="20" class="social-icon">
                 <use xlink:href="assets/images/sprite.svg#facebook"></use>
@@ -809,7 +812,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a href="https://instagram.com">
             <div class="social-item d-flex items-center">
               <svg width="17" height="18" class="social-icon">
                 <use xlink:href="assets/images/sprite.svg#instagram"></use>
@@ -817,7 +820,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a href="https://twitter.com">
             <div class="social-item d-flex items-center">
               <svg width="17" height="14" class="social-icon">
                 <use xlink:href="assets/images/sprite.svg#twitter"></use>
@@ -825,7 +828,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a href="https://youtube.com">
             <div class="social-item d-flex items-center">
               <svg width="19" height="14" class="social-icon">
                 <use xlink:href="assets/images/sprite.svg#youTube"></use>
