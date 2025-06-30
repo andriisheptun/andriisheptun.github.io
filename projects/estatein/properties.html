@@ -95,7 +95,7 @@
       </div>
     </div>
 
-    <div class="search-block content-wrap">
+    <div id="searchBlock" class="search-block content-wrap">
 
       <div class="search-input">
         <input type="text" placeholder="Search For A Property">
@@ -107,18 +107,13 @@
 
       <div class="selector-block b-radius-12 d-grid">
 
-        <div class="select border grid-item-1">
+        <div class="select border grid-item-1" data-filter="location">
           <div class="select-input d-flex align-center">
             <svg width="20px" height="20px">
               <use xlink:href="assets/images/sprite.svg#searchLocation"></use>
             </svg>
             <div class="horiznt-line"></div>
             <span class="visible">Location</span>
-            <span class="option hide">Location 11321 1414321 243412</span>
-            <span class="option hide">Location 2</span>
-            <span class="option hide">Location 3</span>
-            <span class="option hide">Location 4</span>
-            <span class="option hide">Location 5</span>
             <div class="select-icon d-flex items-center">
               <svg class="icon-arrow" width="14px" height="8px">
                 <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -127,24 +122,21 @@
             </div>
           </div>
           <ul class="drop-menu border hide d-flex items-center">
-            <li data-index="0">Location 1</li>
+            <!-- <li data-index="0">Location 1</li>
             <li data-index="1">Location 2</li>
             <li data-index="2">Location 3</li>
             <li data-index="3">Location 4</li>
-            <li data-index="4">Location 5</li>
+            <li data-index="4">Location 5</li> -->
           </ul>
         </div>
 
-        <div class="select border grid-item-2">
+        <div class="select border grid-item-2" data-filter="type">
           <div class="select-input d-flex align-center">
             <svg width="20px" height="20px">
               <use xlink:href="assets/images/sprite.svg#searchType"></use>
             </svg>
             <div class="horiznt-line"></div>
             <span class="visible">Property Type</span>
-            <span class="option hide">Property Type 1</span>
-            <span class="option hide">Property Type 2</span>
-            <span class="option hide">Property Type 3</span>
             <div class="select-icon d-flex items-center">
               <svg class="icon-arrow" width="14px" height="8px">
                 <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -153,22 +145,19 @@
             </div>
           </div>
           <ul class="drop-menu border hide d-flex items-center">
-            <li data-index="0">Property Type 1</li>
+            <!-- <li data-index="0">Property Type 1</li>
             <li data-index="1">Property Type 2</li>
-            <li data-index="2">Property Type 3</li>
+            <li data-index="2">Property Type 3</li> -->
           </ul>
         </div>
 
-        <div class="select border grid-item-3">
+        <div class="select border grid-item-3" data-filter="price">
           <div class="select-input d-flex align-center">
             <svg width="20px" height="20px">
               <use xlink:href="assets/images/sprite.svg#searchPrice"></use>
             </svg>
             <div class="horiznt-line"></div>
             <span class="visible">Pricing Range</span>
-            <span class="option hide">Pricing Range 1</span>
-            <span class="option hide">Pricing Range 2</span>
-            <span class="option hide">Pricing Range 3</span>
             <div class="select-icon d-flex items-center">
               <svg class="icon-arrow" width="14px" height="8px">
                 <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -177,22 +166,19 @@
             </div>
           </div>
           <ul class="drop-menu border hide d-flex items-center">
-            <li data-index="0">Pricing Range 1</li>
+            <!-- <li data-index="0">Pricing Range 1</li>
             <li data-index="1">Pricing Range 2</li>
-            <li data-index="2">Pricing Range 3</li>
+            <li data-index="2">Pricing Range 3</li> -->
           </ul>
         </div>
 
-        <div class="select border grid-item-4">
+        <div class="select border grid-item-4" data-filter="area">
           <div class="select-input d-flex align-center">
             <svg width="20px" height="20px">
               <use xlink:href="assets/images/sprite.svg#searchSize"></use>
             </svg>
             <div class="horiznt-line"></div>
             <span class="visible">Property Size</span>
-            <span class="option hide">Property Size 1</span>
-            <span class="option hide">Property Size 2</span>
-            <span class="option hide">Property Size 3</span>
             <div class="select-icon d-flex items-center">
               <svg class="icon-arrow" width="14px" height="8px">
                 <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -201,22 +187,19 @@
             </div>
           </div>
           <ul class="drop-menu border hide d-flex items-center">
-            <li data-index="0">Property Size 1</li>
+            <!-- <li data-index="0">Property Size 1</li>
             <li data-index="1">Property Size 2</li>
-            <li data-index="2">Property Size 3</li>
+            <li data-index="2">Property Size 3</li> -->
           </ul>
         </div>
 
-        <div class="select border grid-item-5">
+        <div class="select border grid-item-5" data-filter="year">
           <div class="select-input d-flex align-center">
             <svg width="20px" height="20px">
               <use xlink:href="assets/images/sprite.svg#searchYear"></use>
             </svg>
             <div class="horiznt-line"></div>
             <span class="visible">Build Year</span>
-            <span class="option hide">Build Year 1</span>
-            <span class="option hide">Build Year 2</span>
-            <span class="option hide">Build Year 3</span>
             <div class="select-icon d-flex items-center">
               <svg class="icon-arrow" width="14px" height="8px">
                 <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -225,9 +208,9 @@
             </div>
           </div>
           <ul class="drop-menu border hide d-flex items-center">
-            <li data-index="0">Build Year 1</li>
+            <!-- <li data-index="0">Build Year 1</li>
             <li data-index="1">Build Year 2</li>
-            <li data-index="2">LBuild Year 3</li>
+            <li data-index="2">LBuild Year 3</li> -->
           </ul>
         </div>
 
@@ -275,7 +258,7 @@
       <div class="swiper mySwiper">
         <div id="propertySwiper" class="swiper-wrapper">
 
-          <div class="swiper-slide swiper1-slide">
+          <!-- <div class="swiper-slide swiper1-slide">
 
             <img src="assets/images/slider1-image1.png" alt="House">
 
@@ -353,7 +336,7 @@
               <a href="#" class="btn btn-fill__main-color">View Property Details</a>
             </div>
 
-          </div>
+          </div> -->
 
           <!-- <div class="swiper-slide swiper1-slide">Slide 4</div>
 
@@ -439,12 +422,14 @@
 
             <label class="grid-item-3">
               Email
-              <input type="email" name="Email" placeholder="Enter your Email">
+              <input id="formEmail" type="email" name="Email" placeholder="Enter your Email">
+              <p id="emailError" class="error hide">Please enter a valid Email.</p>
             </label>
 
             <label class="grid-item-4">
               Phone
-              <input type="tel" name="Phone" placeholder="Enter Phone Number">
+              <input id="formTel" type="tel" name="Phone" placeholder="Enter Phone Number">
+              <p id="phoneError" class="error hide">Please enter a valid phone number.</p>
             </label>
 
             <label class="grid-item-5">
@@ -452,11 +437,6 @@
               <div class="select border">
                 <div class="select-input d-flex align-center">
                   <span class="visible">Select Location</span>
-                  <span class="option hide">Location 11321 1414321 243412</span>
-                  <span class="option hide">Location 2</span>
-                  <span class="option hide">Location 3</span>
-                  <span class="option hide">Location 4</span>
-                  <span class="option hide">Location 5</span>
                   <div class="select-icon d-flex items-center">
                     <svg class="icon-arrow" width="14px" height="8px">
                       <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -479,11 +459,6 @@
               <div class="select border">
                 <div class="select-input d-flex align-center">
                   <span class="visible">Select Property Type</span>
-                  <span class="option hide">Property Type 11321 1414321 243412</span>
-                  <span class="option hide">Property Type 2</span>
-                  <span class="option hide">Property Type 3</span>
-                  <span class="option hide">Property Type 4</span>
-                  <span class="option hide">Property Type 5</span>
                   <div class="select-icon d-flex items-center">
                     <svg class="icon-arrow" width="14px" height="8px">
                       <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -506,11 +481,6 @@
               <div class="select border">
                 <div class="select-input d-flex align-center">
                   <span class="visible">Select no. of Bathrooms</span>
-                  <span class="option hide">1 Bathroom</span>
-                  <span class="option hide">2 Bathrooms</span>
-                  <span class="option hide">3 Bathrooms</span>
-                  <span class="option hide">4 Bathrooms</span>
-                  <span class="option hide">5 Bathrooms</span>
                   <div class="select-icon d-flex items-center">
                     <svg class="icon-arrow" width="14px" height="8px">
                       <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -533,11 +503,6 @@
               <div class="select border">
                 <div class="select-input d-flex align-center">
                   <span class="visible">Select no. of Bedrooms</span>
-                  <span class="option hide">1 Bedroom</span>
-                  <span class="option hide">2 Bedrooms</span>
-                  <span class="option hide">3 Bedrooms</span>
-                  <span class="option hide">4 Bedrooms</span>
-                  <span class="option hide">5 Bedrooms</span>
                   <div class="select-icon d-flex items-center">
                     <svg class="icon-arrow" width="14px" height="8px">
                       <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -560,11 +525,6 @@
               <div class="select border">
                 <div class="select-input d-flex align-center">
                   <span class="visible">Select Budget</span>
-                  <span class="option hide">up to $250,000</span>
-                  <span class="option hide">up to $500,000</span>
-                  <span class="option hide">up to $750,000</span>
-                  <span class="option hide">up to $1,000,000</span>
-                  <span class="option hide">more than $1,000,000</span>
                   <div class="select-icon d-flex items-center">
                     <svg class="icon-arrow" width="14px" height="8px">
                       <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -601,7 +561,7 @@
 
             <label class="grid-item-11">
               Message
-              <textarea name="" id="" rows="3" placeholder="Enter your Message here.."></textarea>
+              <textarea name="message" id="" rows="3" placeholder="Enter your Message here.."></textarea>
             </label>
 
           </div>
@@ -617,7 +577,7 @@
             </label>
             <input type="submit" class="btn btn-fill__main-color" value="Send Your Message">
           </div>
-
+          <p id="submitError" class="error hide"></p>
         </form>
       </div>
 

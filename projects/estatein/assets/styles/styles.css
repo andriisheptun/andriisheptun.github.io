@@ -1237,7 +1237,7 @@ div.search-btn {
   color: var(--grey-shade__60);
   background-color: var(--grey-shade__08);
   border-radius: 8px;
-  z-index: 1;
+  z-index: 5;
 }
 
 

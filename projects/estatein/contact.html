@@ -210,12 +210,14 @@
 
             <label class="grid-item-3">
               Email
-              <input type="email" name="Email" placeholder="Enter your Email">
+              <input id="formEmail" type="email" name="Email" placeholder="Enter your Email">
+              <p id="emailError" class="error hide">Please enter a valid Email.</p>
             </label>
 
             <label class="grid-item-4">
               Phone
-              <input type="tel" name="Phone" placeholder="Enter Phone Number">
+              <input id="formTel" type="tel" name="Phone" placeholder="Enter Phone Number">
+              <p id="phoneError" class="error hide">Please enter a valid phone number.</p>
             </label>
 
             <label class="grid-item-5">
@@ -223,11 +225,11 @@
               <div class="select border">
                 <div class="select-input d-flex align-center">
                   <span class="visible">Select Inquiry Type</span>
-                  <span class="option hide">Inquiry Type 11321 1414321 243412</span>
+                  <!-- <span class="option hide">Inquiry Type 11321 1414321 243412</span>
                   <span class="option hide">Inquiry Type 2</span>
                   <span class="option hide">Inquiry Type 3</span>
                   <span class="option hide">Inquiry Type 4</span>
-                  <span class="option hide">Inquiry Type 5</span>
+                  <span class="option hide">Inquiry Type 5</span> -->
                   <div class="select-icon d-flex items-center">
                     <svg class="icon-arrow" width="14px" height="8px">
                       <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -251,10 +253,10 @@
                 <div class="select-input d-flex align-center">
                   <span class="visible">Select</span>
                   <span class="option hide">Option 11321 1414321 243412</span>
-                  <span class="option hide">Option 2</span>
+                  <!-- <span class="option hide">Option 2</span>
                   <span class="option hide">Option 3</span>
                   <span class="option hide">Option 4</span>
-                  <span class="option hide">Option 5</span>
+                  <span class="option hide">Option 5</span> -->
                   <div class="select-icon d-flex items-center">
                     <svg class="icon-arrow" width="14px" height="8px">
                       <use xlink:href="assets/images/sprite.svg#selectIcon"></use>
@@ -274,7 +276,7 @@
 
             <label class="grid-item-7">
               Message
-              <textarea name="" id="" rows="3" placeholder="Enter your Message here.."></textarea>
+              <textarea name="masagge" id="" rows="3" placeholder="Enter your Message here.."></textarea>
             </label>
 
           </div>
@@ -290,7 +292,7 @@
             </label>
             <input type="submit" class="btn btn-fill__main-color" value="Send Your Message">
           </div>
-
+          <p id="submitError" class="error hide"></p>
         </form>
       </div>
 
