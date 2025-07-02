@@ -96,6 +96,20 @@ div.info {
   cursor: pointer;
 }
 
+header {
+  position: relative;
+}
+
+select {
+  width: 80px;
+  font-size: 1rem;
+  padding: 4px 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+}
+
 /* -----End of Main Page Styles-----  */
 
 /* -----Left Side Styles-----  */

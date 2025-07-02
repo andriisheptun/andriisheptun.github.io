@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrii Sheptun</title>
+  <title data-i18n="name">Андрій Шептун</title>
   <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
@@ -22,41 +22,46 @@
 
     <main class="right-side">
       <header>
-        <h1>Андрій Шептун</h1>
+        <select id="langSwitcher">
+          <option value="ua">UA</option>
+          <option value="en">EN</option>
+        </select>
+        <h1 data-i18n="name">Андрій Шептун</h1>
+
       </header>
 
       <section class="info">
-        <h2>Досвід роботи</h2>
+        <h2 data-i18n="title-1">Досвід роботи</h2>
 
         <ul type="none">
           <li>
             <p class="info-row d-flex space-between">
-              <span class="title2 bold">Стрілець, Старший стрілець</span>
-              <span>лют 2022 - бер 2025</span>
+              <span class="title2 bold" data-i18n="exp-1-title">Стрілець, Старший стрілець</span>
+              <span data-i18n="exp-1-time">лют 2022 - бер 2025</span>
             </p>
-            <span class="info-item italic">ЗСУ, 72 омбр</span>
-            <p class="info-item">
+            <span class="info-item italic" data-i18n="exp-1-subtitle">ЗСУ, 72 омбр</span>
+            <p class="info-item" data-i18n="exp-1-descr">
               Виконання бойових та небойових завдань пов'язаних з захистом Батьківщини.
             </p>
           </li>
           <li>
             <p class="info-row d-flex space-between">
-              <span class="title2 bold">Зварювальник, бригадир</span>
-              <span>вер 2012 - лют 2022</span>
+              <span class="title2 bold" data-i18n="exp-2-title">Зварювальник, бригадир</span>
+              <span data-i18n="exp-2-time">вер 2012 - лют 2022</span>
             </p>
-            <span class="info-item italic">кузня "Вакула", Лубни</span>
-            <p class="info-item">
+            <span class="info-item italic" data-i18n="exp-2-subtitle">кузня "Вакула", Лубни</span>
+            <p class="info-item" data-i18n="exp-2-descr">
               Виробництво металевих виробів з елементами художньої ковки, надання завдань іншим працівникам та контроль
               якості виконання, керування процесом встановлення на об'єкті.
             </p>
           </li>
           <li>
             <p class="info-row  d-flex space-between">
-              <span class="title2 bold">Експедитор, Зав. складом</span>
-              <span>сер 2009 - бер 2012</span>
+              <span class="title2 bold" data-i18n="exp-3-title">Експедитор, Зав. складом</span>
+              <span data-i18n="exp-3-time">сер 2009 - бер 2012</span>
             </p>
-            <span class="info-item italic">ПП "Деметра", Лубни</span>
-            <p class="info-item">
+            <span class="info-item italic" data-i18n="exp-3-subtitle">ПП "Деметра", Лубни</span>
+            <p class="info-item" data-i18n="exp-3-descr">
               Доставка, оформлення та розрахунок товарів (тютюнові вироби) торговим точкам. Керування процесом
               формування заявок клієнтів, контроль переміщення товарів, проведення аудиту та формування відповідної
               документації.
@@ -64,11 +69,11 @@
           </li>
           <li>
             <p class="info-row  d-flex space-between">
-              <span class="title2 bold">Оператор комп'ютерного набору</span>
-              <span>вер 2006 - чер 2009</span>
+              <span class="title2 bold" data-i18n="exp-4-title">Оператор комп'ютерного набору</span>
+              <span data-i18n="exp-4-time">вер 2006 - чер 2009</span>
             </p>
-            <span class="info-item italic">ВАТ "Лубенський хлібозавод", Лубни</span>
-            <p class="info-item">
+            <span class="info-item italic" data-i18n="exp-4-subtitle">ВАТ "Лубенський хлібозавод", Лубни</span>
+            <p class="info-item" data-i18n="exp-4-descr">
               Прийом заявок від клієнтів, формування добового замовлення, формування та роздруківка накладних.
             </p>
           </li>
@@ -76,55 +81,49 @@
       </section>
 
       <section class="info">
-        <h2>Освіта і кваліфікації</h2>
+        <h2 data-i18n="title-2">Освіта і кваліфікації</h2>
 
         <p class="info-row  d-flex space-between">
-          <span class="title2 bold">2,5 курси</span>
-          <span>вер 2002 - лип 2006</span>
+          <span class="title2 bold" data-i18n="edu-1-title">2,5 курси</span>
+          <span data-i18n="edu-1-time">вер 2002 - лип 2006</span>
         </p>
-        <span class="info-item italic">Київський національний університет "ім. Тараса Шевченка", Київ</span>
-        <p class="info-item">
+        <span class="info-item italic" data-i18n="edu-1-subtitle">Київський національний університет "ім. Тараса
+          Шевченка", Київ</span>
+        <p class="info-item" data-i18n="edu-1-descr">
           Факультет кібернетики, спеціальність "Прикладна математика"
         </p>
       </section>
 
       <section class="info">
-        <h2>Курси</h2>
+        <h2 data-i18n="title-3">Курси</h2>
 
         <ul type="none">
-          <!-- <li>
-            <p class="info-row d-flex space-between">
-              <span class="title2 bold">Англійська для IT</span>
-              <span>вер 2004 - чер 2005</span>
+          <li>
+            <p class="info-row  d-flex space-between">
+              <span class="title2 bold" data-i18n="course-1-title">Data Analitycs With Power BI Fundamentals</span>
+              <span data-i18n="course-1-time">бер 2025 - тра 2025</span>
             </p>
-            <span class="info-item italic">Мовна школа Speak Up (Київ)</span>
+            <span class="info-item italic" data-i18n="course-1-subtitle">SoftServe Academy (on-line courses)</span>
           </li>
           <li>
             <p class="info-row  d-flex space-between">
-              <span class="title2 bold">Cisco: побудова розподілених мереж</span>
-              <span>тра 2003 - бер 2004</span>
+              <span class="title2 bold" data-i18n="course-2-title">Google IT Support</span>
+              <span data-i18n="course-2-time">лис 2023 - бер 2024</span>
             </p>
-            <span class="info-item italic">Учбовий центр "Мережеві технології" (Київ)</span>
+            <span class="info-item italic" data-i18n="course-2-subtitle">Coursera (on-line courses)</span>
           </li>
           <li>
             <p class="info-row  d-flex space-between">
-              <span class="title2 bold">Програмування на Java</span>
-              <span>січ 2003 - бер 2003</span>
+              <span class="title2 bold">«Військове застосування БПЛА»</span>
+              <span>чер 2022 - лип 2022</span>
             </p>
-            <span class="info-item italic">JavaRush (онлайн)</span>
-          </li> -->
-          <li>
-            <p class="info-row  d-flex space-between">
-              <span class="title2 bold">Google IT Support</span>
-              <span>лис 2023 - кві 2024</span>
-            </p>
-            <span class="info-item italic">Coursera (on-line courses).</span>
+            <span class="info-item italic">Prometheus (on-line courses)</span>
           </li>
         </ul>
       </section>
 
       <section class="info">
-        <h2>Сертифікати</h2>
+        <h2 data-i18n="title-4">Сертифікати</h2>
 
         <div class="certificates">
           <a href="img/Certificate_SoftServe_Power_BI.pdf" target="_blank">
@@ -137,46 +136,15 @@
             <img src="img/Certificate BPLA-page-001.jpg" alt="PDF Preview" />
           </a>
         </div>
-
-        <!-- <ul type="none">
-          <li>
-                  <p class="info-row d-flex space-between">
-                    <span class="title2 bold">Англійська для IT</span>
-                    <span>вер 2004 - чер 2005</span>
-                  </p>
-                  <span class="info-item italic">Мовна школа Speak Up (Київ)</span>
-                </li>
-                <li>
-                  <p class="info-row  d-flex space-between">
-                    <span class="title2 bold">Cisco: побудова розподілених мереж</span>
-                    <span>тра 2003 - бер 2004</span>
-                  </p>
-                  <span class="info-item italic">Учбовий центр "Мережеві технології" (Київ)</span>
-                </li>
-                <li>
-                  <p class="info-row  d-flex space-between">
-                    <span class="title2 bold">Програмування на Java</span>
-                    <span>січ 2003 - бер 2003</span>
-                  </p>
-                  <span class="info-item italic">JavaRush (онлайн)</span>
-                </li>
-          <li>
-            <p class="info-row  d-flex space-between">
-              <span class="title2 bold">Google IT Support</span>
-              <span>лис 2023 - кві 2024</span>
-            </p>
-            <span class="info-item italic">Coursera (on-line courses).</span>
-          </li>
-        </ul> -->
       </section>
 
       <section class="info">
-        <h2>Навички</h2>
-        <span class="info"><strong>HTML, CSS, JavaScript</strong></span>
+        <h2 data-i18n="title-5">Навички</h2>
+        <span class="info" data-i18n="title-5-descr"><strong>HTML, CSS, JavaScript</strong></span>
       </section>
 
       <section class="info">
-        <h3>Мої роботи</h3>
+        <h3 data-i18n="title-6">Мої роботи</h3>
         <div class="info">
           <!-- <a href="tasks/task_lemon/index.html" class="btn">Lemon</a>
           <a href="tasks/task_mriia/cossacs.html" class="btn">Cossacs</a>
@@ -187,7 +155,8 @@
           <a href="tasks/task8/index.html" class="btn">Super Duper Metal Band</a>
           <a href="tasks/task_catalog/index.html" class="btn">Catalog</a> -->
           <!-- <a href="tasks/cloudbudget/index.html" class="btn">CloudBudget</a> -->
-          <a href="projects/estatein/index.html" class="btn">Estatein</a>
+          <a href="projects/estatein/index.html"
+            class="btn">Estatein<span>https://andriisheptun.github.io/projects/estatein/index.html</span></a>
           <!-- <a href="tasks/grid_task/index.html" class="btn">Grid</a> -->
         </div>
       </section>
@@ -208,69 +177,61 @@
       </div>
 
       <div class="personal">
-        <span class="personal-title">Особисті дані</span>
+        <span class="personal-title" data-i18n="title-7">Особисті дані</span>
         <ul type="none">
           <li class="personal-item">
-            <span class="bold mb-6">Ім'я</span>
-            <span>Андрій Шептун</span>
+            <span class="bold mb-6" data-i18n="t-7-title-1">Ім'я</span>
+            <span data-i18n="name">Андрій Шептун</span>
           </li>
           <li class="personal-item">
-            <span class="bold mb-6">Адреса</span>
-            <address>
+            <span class="bold mb-6" data-i18n="t-7-title-2">Адреса</span>
+            <address data-i18n="t-7-subtitle-2">
               вул. В. Новікова, буд. 17, кв. 13, 37500, м. Лубни, Полтавська
               обл.
             </address>
           </li>
           <li class="personal-item">
-            <span class="bold mb-6">Номер телефону</span>
-            <a href="tel:+380984459659">+38 (098) 445-96-59</a>
+            <span class="bold mb-6" data-i18n="t-7-title-3">Номер телефону</span>
+            <a href="tel:+380984459659" data-i18n="t-7-subtitle-3">+38 (098) 445-96-59</a>
           </li>
           <li class="personal-item">
-            <span class="bold mb-6">Email</span>
-            <a href="mailto:andrijsheptun@gmail.com">
+            <span class="bold mb-6" data-i18n="t-7-title-4">Email</span>
+            <a href="mailto:andrijsheptun@gmail.com" data-i18n="t-7-subtitle-4">
               andrijsheptun@gmail.com</a>
           </li>
           <li class="personal-item">
-            <span class="bold mb-6">Дата народження</span>
-            <time datetime="1985-07-11">11.07.1985</time>
+            <span class="bold mb-6" data-i18n="t-7-title-5">Дата народження</span>
+            <time datetime="1985-07-11" data-i18n="t-7-subtitle-5">11.07.1985</time>
           </li>
         </ul>
 
       </div>
 
       <div class="personal">
-        <span class="personal-title">Риси</span>
+        <span class="personal-title" data-i18n="title-8">Риси</span>
         <ul type="none">
           <li class="personal-item">
-            <span class="bold">Відповідальність</span>
+            <span class="bold" data-i18n="t-8-title-1">Відповідальність</span>
           </li>
           <li class="personal-item">
-            <span class="bold">Цілеспрямованість</span>
+            <span class="bold" data-i18n="t-8-title-2">Цілеспрямованість</span>
           </li>
           <li class="personal-item">
-            <span class="bold">Схильність до навчання</span>
+            <span class="bold" data-i18n="t-8-title-3">Схильність до навчання</span>
           </li>
-          <!-- <li class="personal-item">
-            <span class="bold">Дайвінг</span>
-          </li> -->
-
         </ul>
       </div>
 
       <div class="personal">
-        <span class="personal-title">Мови</span>
+        <span class="personal-title" data-i18n="title-9">Мови</span>
         <ul type="none">
           <li class="personal-item d-flex space-between">
-            <span class="bold">Англійська</span>
-            <span>Pre-Intermediate</span>
+            <span class="bold" data-i18n="t-9-title-1">Англійська</span>
+            <span data-i18n="t-9-subtitle-1">Pre-Intermediate</span>
           </li>
-          <!-- <li class="personal-item d-flex space-between">
-            <span class="bold">Німецька</span>
-            <span>Середній рівень</span>
-          </li> -->
           <li class="personal-item d-flex space-between">
-            <span class="bold">Українська</span>
-            <span>Рідна мова</span>
+            <span class="bold" data-i18n="t-9-title-2">Українська</span>
+            <span data-i18n="t-9-subtitle-2">Рідна мова</span>
           </li>
         </ul>
       </div>
