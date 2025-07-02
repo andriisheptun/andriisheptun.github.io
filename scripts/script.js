@@ -1,11 +1,3 @@
-
-// const wrapper = document.querySelector('.pdf-wrapper');
-
-// wrapper.addEventListener('click', () => {
-//   wrapper.classList.toggle('zoomed');
-// });
-
-
 function getLangFromUrl() {
   const params = new URLSearchParams(window.location.search);
   return params.get('lang') || 'ua'; // ua — за замовчуванням
