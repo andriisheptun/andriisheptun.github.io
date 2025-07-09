@@ -1,0 +1,90 @@
+[
+    {
+      "since": 2019,
+      "name": "ABC Corporation",
+      "domain": "Commercial Real Estate",
+      "category": "Luxury Home Development",
+      "website": "https://www.visionspace.studio",
+      "testimonial": "Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs."
+    },
+    {
+      "since": 2018,
+      "name": "GreenTech Enterprises",
+      "domain": "Commercial Real Estate",
+      "category": "Retail Space",
+      "website": "https://www.greentech.com",
+      "testimonial": "Estatein's ability to identify prime retail locations helped us expand our brand presence. They are a trusted partner in our growth."
+    },
+    {
+      "since": 2020,
+      "name": "EcoBuilders Ltd.",
+      "domain": "Sustainable Construction",
+      "category": "Green Buildings",
+      "website": "https://www.ecobuilders.com",
+      "testimonial": "Estatein's expertise in location analysis streamlined our expansion strategy into eco-friendly zones."
+    },
+    {
+      "since": 2017,
+      "name": "RetailNova",
+      "domain": "Commercial Retail",
+      "category": "Fashion Retail",
+      "website": "https://www.retailnova.com",
+      "testimonial": "With Estatein's support, we secured flagship stores in top-tier malls, boosting visibility and foot traffic."
+    },
+    {
+      "since": 2015,
+      "name": "SolarGrid Inc.",
+      "domain": "Renewable Energy",
+      "category": "Solar Infrastructure",
+      "website": "https://www.solargrid.com",
+      "testimonial": "Their property insights enabled us to deploy solar fields efficiently across strategic urban zones."
+    },
+    {
+      "since": 2021,
+      "name": "UrbanTaste Foods",
+      "domain": "Food & Beverage",
+      "category": "Restaurant Chains",
+      "website": "https://www.urbantaste.com",
+      "testimonial": "Estatein helped us secure high-traffic locations for our new restaurant concepts."
+    },
+    {
+      "since": 2019,
+      "name": "TechHaven Co.",
+      "domain": "Technology Services",
+      "category": "Coworking Spaces",
+      "website": "https://www.techhaven.com",
+      "testimonial": "Their attention to detail in site selection made all the difference for our coworking hubs."
+    },
+    {
+      "since": 2016,
+      "name": "EduSphere",
+      "domain": "Education",
+      "category": "Training Centers",
+      "website": "https://www.edusphere.org",
+      "testimonial": "Estatein was instrumental in identifying educational districts perfect for our learning centers."
+    },
+    {
+      "since": 2022,
+      "name": "WellnessFirst",
+      "domain": "Healthcare",
+      "category": "Wellness Clinics",
+      "website": "https://www.wellnessfirst.com",
+      "testimonial": "We relied on Estatein to find prime clinic locations close to our target demographic."
+    },
+    {
+      "since": 2014,
+      "name": "LogiPro",
+      "domain": "Logistics",
+      "category": "Warehousing",
+      "website": "https://www.logipro.io",
+      "testimonial": "Estatein provided us with strategic warehouse placements that optimized our delivery network."
+    },
+    {
+      "since": 2018,
+      "name": "VisionSpace Studios",
+      "domain": "Media & Entertainment",
+      "category": "Creative Workspaces",
+      "website": "https://www.visionspace.studio",
+      "testimonial": "Their knowledge of urban creative zones helped us find the perfect space for our studio team."
+    }
+  ]
