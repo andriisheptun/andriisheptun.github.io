@@ -392,7 +392,14 @@ async function populateSelects(data) {
       values = ['up to $1000000', 'over than $1000000'];
     } else if (key === 'area') {
       values = ['up to 2500', 'from 2500 to 3500', 'over than 3500'];
-    } else {
+    } else if (key === 'location') {
+      values = [...new Set(data.map(item => {
+        const fullLocation = item.location || '';
+        const parts = fullLocation.split(', ');
+        return parts[parts.length - 1];
+      }))].sort();
+    }
+    else {
       values = [...new Set(data.map(item => item[key]))].sort();
     }
 
@@ -406,20 +413,36 @@ async function populateSelects(data) {
 }
 
 async function filterAndRender() {
-  let filtered = propertyData.filter(item => {
+  const filtered = propertyData.filter(item => {
     return Object.entries(activeFilters).every(([key, val]) => {
       if (key === 'price') {
         return val === 'up to $1000000' ? item.price < 1000000 : item.price >= 1000000;
-      } if (key === 'area') {
+      }
+
+      if (key === 'area') {
         if (val === 'up to 2500') return item.area <= 2500;
         if (val === 'from 2500 to 3500') return item.area > 2500 && item.area <= 3500;
         if (val === 'over than 3500') return item.area > 3500;
-      } if (key === 'search') {
-        const text = (item.title + ' ' + item.description).toLowerCase();
-        return text.includes(val);
       }
+
+      if (key === 'search') {
+        const text = (item.title + ' ' + item.description).toLowerCase();
+        return text.includes(val.toLowerCase());
+      }
+
+      if (key === 'location') {
+        const itemState = (item.location || '').split(', ').pop().toLowerCase();
+        return itemState === val.toLowerCase();
+      }
+
       return item[key] == val;
     });
+  });
+
+  filtered.sort((a, b) => {
+    const stateA = (a.location || '').split(', ').pop().toLowerCase();
+    const stateB = (b.location || '').split(', ').pop().toLowerCase();
+    return stateA.localeCompare(stateB);
   });
 
   await renderPropertyCards(filtered);

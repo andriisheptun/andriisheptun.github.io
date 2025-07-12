@@ -2103,6 +2103,10 @@ input[type="checkbox"]:checked::after {
   /* transform: scale(.85); */
 }
 
+.icon-clear {
+  padding: 4px 12px;
+}
+
 /* -------------------------------- End of Property Details ---------------------------------------- */
 
 /* --------------------------- Media Queries ------------------------------------ */
