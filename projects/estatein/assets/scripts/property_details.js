@@ -364,6 +364,7 @@ function renderFaqAccordion() {
 document.addEventListener('DOMContentLoaded', async () => {
   await renderPage();
   await renderFAQCards();
+  await renderSwipers();
   initSwipers();
   renderFaqAccordion();
 });
