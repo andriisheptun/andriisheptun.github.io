@@ -1,5 +1,5 @@
-let faqData = {};
-let propertyData = {};
+let faqData = [];
+let propertyData = [];
 
 async function fetchUrl(url) {
   try {
@@ -130,15 +130,6 @@ function initSwipers() {
     slidesPerGroup: 2,
     freeMode: true,
     watchSlidesProgress: true,
-    pagination: {
-      el: paginationDblEl,
-      type: "bullets",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: nextDblBtn,
-      prevEl: prevDblBtn,
-    },
     breakpoints: {
       768: {
         slidesPerView: 6,
@@ -159,17 +150,26 @@ function initSwipers() {
 
   let mainSwiper = new Swiper(mainSwiperEl, {
     spaceBetween: 10,
+    slidesPerView: 1,
+    centeredSlides: true,
     thumbs: {
       swiper: thumbsSwiper,
     },
-
+    pagination: {
+      el: paginationDblEl,
+      type: "bullets",
+    },
+    navigation: {
+      nextEl: nextDblBtn,
+      prevEl: prevDblBtn,
+    },
     breakpoints: {
       768: {
-        slidesPerView: 2,
+        slidesPerView: "auto",
         spaceBetween: 20,
       },
       1920: {
-        slidesPerView: 2,
+        slidesPerView: "auto",
         spaceBetween: 30,
       },
     },
@@ -299,10 +299,42 @@ async function renderPage() {
       let insurance = document.getElementById("insurance");
       insurance.textContent = `$${item.monthlyCosts.insurance.toLocaleString('en-US')}`;
 
+    } else {
+      console.warn("Property not found");
+    }
 
+  } catch (error) {
+    console.error("Error loading property:", error);
+  }
+}
 
+async function renderSwipers() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
 
-      console.log("Property:", item);
+  if (!id) return;
+
+  try {
+    const response = await fetch("https://andriisheptun.github.io/tasks/js/properties_full_updated.json");
+
+    if (!response.ok) throw new Error("Failed to fetch data");
+
+    const data = await response.json();
+    const item = data.find(item => item.id == id);
+    const thumbsWrapper = getElementById("thumbsEl").querySelector(".swiper-wrapper");
+    const mainWrapper = getElementById("mainSwiperEl").querySelector(".swiper-wrapper");
+
+    if (item) for (i = 0; i = item.images.length; i++) {
+      let mainSlide = document.createElement("div");
+      mainSlide.classList.add("swiper-slide");
+      mainSlide.innerHTML = `<img src="${item.images[i]}" alt="Photo ${i + 1}" />`;
+
+      let thumbSlide = document.createElement("div");
+      thumbSlide.classList.add("swiper-slide");
+      thumbSlide.innerHTML = `<img src="${item.images[i]}" alt="Photo ${i + 1}" />`;
+
+      mainWrapper.appendChild(mainSlide);
+      thumbsWrapper.appendChild(thumbSlide);
     } else {
       console.warn("Property not found");
     }

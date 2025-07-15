@@ -37,14 +37,24 @@
 
       <nav class="head content-wrap d-flex space-between align-center">
 
-        <a href="index.html">
-          <div class="logo-container d-flex items-center">
+        <div class="logo-container d-flex items-center">
+          <a href="index.html" class="logo-container d-flex items-center">
             <img class="logo" src="assets/images/logo-icon.png" alt="Logo Estatein">
-            <svg width="60px" height="13px" class="logo-text">
+            <svg width="65px" height="13px" class="logo-text">
               <use xlink:href="assets/images/sprite.svg#logoText"></use>
             </svg>
+          </a>
+          <div class="theme-slider">
+            <input type="radio" name="theme" id="theme-light" value="light" checked>
+            <input type="radio" name="theme" id="theme-dark" value="dark">
+
+            <div class="slider">
+              <label for="theme-light">☀️</label>
+              <label for="theme-dark">🌙</label>
+              <div class="slider-indicator"></div>
+            </div>
           </div>
-        </a>
+        </div>
 
         <div class="menu-container">
 
@@ -108,7 +118,7 @@
 
           <div id="thumbsEl" thumbsSlider="" class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
               </div>
               <div class="swiper-slide">
@@ -137,13 +147,13 @@
               </div>
               <div class="swiper-slide">
                 <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-              </div>
+              </div> -->
             </div>
           </div>
 
           <div id="mainSwiperEl" class="swiper mySwiper2">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
               </div>
               <div class="swiper-slide">
@@ -172,7 +182,7 @@
               </div>
               <div class="swiper-slide">
                 <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -713,7 +723,7 @@
 
           <div class="logo-container d-flex align-center">
             <img class="logo" src="assets/images/logo-icon.png" alt="Logo Estatein">
-            <svg width="60px" height="13px" class="logo-text">
+            <svg width="65px" height="13px" class="logo-text">
               <use xlink:href="assets/images/sprite.svg#logoText"></use>
             </svg>
           </div>

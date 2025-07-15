@@ -8,7 +8,6 @@
   <title>Estatein</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="apple-touch-icon" href="assets/images/apple-icon.png">
-  <!-- <link rel="stylesheet" href="assets/images/sprite.svg"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -39,9 +38,20 @@
 
         <div class="logo-container d-flex items-center">
           <img class="logo" src="assets/images/logo-icon.png" alt="Logo Estatein">
-          <svg width="60px" height="13px" class="logo-text">
+          <svg width="65px" height="13px" class="logo-text">
             <use xlink:href="assets/images/sprite.svg#logoText"></use>
           </svg>
+
+          <div class="theme-slider">
+            <input type="radio" name="theme" id="theme-light" value="light" checked>
+            <input type="radio" name="theme" id="theme-dark" value="dark">
+
+            <div class="slider">
+              <label for="theme-light">☀️</label>
+              <label for="theme-dark">🌙</label>
+              <div class="slider-indicator"></div>
+            </div>
+          </div>
         </div>
 
         <div class="menu-container">
@@ -422,7 +432,7 @@
 
           <div class="logo-container d-flex align-center">
             <img class="logo" src="assets/images/logo-icon.png" alt="Logo Estatein">
-            <svg width="60px" height="13px" class="logo-text">
+            <svg width="65px" height="13px" class="logo-text">
               <use xlink:href="assets/images/sprite.svg#logoText"></use>
             </svg>
           </div>

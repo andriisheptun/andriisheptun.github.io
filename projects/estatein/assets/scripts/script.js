@@ -45,6 +45,30 @@ headerMenu.addEventListener("click", () => {
 
 
 
+const themeRadios = document.querySelectorAll('input[name="theme"]');
+const body = document.body;
 
+function setTheme(theme) {
+  if (theme === 'light') {
+    body.classList.add('light');
+    localStorage.setItem('theme', 'light');
+  } else {
+    body.classList.remove('light');
+    localStorage.setItem('theme', 'dark');
+  }
+}
 
+function loadTheme() {
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = saved || (prefersDark ? 'dark' : 'light');
+  document.getElementById(`theme-${theme}`).checked = true;
+  setTheme(theme);
+}
+
+themeRadios.forEach(radio => {
+  radio.addEventListener('change', (e) => setTheme(e.target.value));
+});
+
+loadTheme();
 

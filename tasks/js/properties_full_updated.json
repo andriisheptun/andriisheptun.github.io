@@ -6,11 +6,15 @@
     "location": "Malibu, California",
     "price": 1250000,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/100/600/400",
-      "exterior": "https://andriisheptun.github.io/projects/estatein/assets/images/slider1-image1.png",
-      "interior": "https://picsum.photos/id/102/800/600"
-    },
+    "images":  [
+      "https://www.pexels.com/photo/modern-house-front-angle",
+      "https://www.pexels.com/photo/modern-house-side-angle",
+      "https://www.pexels.com/photo/modern-house-rear-angle",
+      "https://pixabay.com/photos/house-top-view-angle",
+      "https://pixabay.com/photos/house-low-angle",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html"
+    ],
     "description": "Enjoy luxury and tranquility in this beachfront villa with modern design and panoramic ocean views.",
     "bedrooms": 4,
     "bathrooms": 3,
@@ -43,11 +47,15 @@
     "location": "Malibu, California",
     "price": 1038761,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/100/600/400",
-      "exterior": "https://picsum.photos/id/101/800/600",
-      "interior": "https://picsum.photos/id/102/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/white-house-front-view",
+      "https://www.pexels.com/photo/white-house-side-view",
+      "https://pixabay.com/photos/house-angle-back-view",
+      "https://pixabay.com/photos/house-aerial-view",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/house-dusk-wide-angle"
+    ],
     "description": "Enjoy luxury and tranquility in this beachfront villa with modern design and panoramic ocean views.",
     "bedrooms": 3,
     "bathrooms": 5,
@@ -80,11 +88,15 @@
     "location": "Aspen, Colorado",
     "price": 1012419,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/103/600/400",
-      "exterior": "https://picsum.photos/id/104/800/600",
-      "interior": "https://picsum.photos/id/105/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/house-side-daylight-angle",
+      "https://www.pexels.com/photo/house-rear-garden-angle",
+      "https://pixabay.com/photos/house-front-landscape-view",
+      "https://pixabay.com/photos/house-in-summer-angle",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/house-evening-angle"
+    ],
     "description": "Retreat to this cozy mountain chalet featuring rustic charm and modern amenities.",
     "bedrooms": 4,
     "bathrooms": 4,
@@ -116,11 +128,15 @@
     "location": "Brooklyn, New York",
     "price": 929447,
     "type": "Apt.",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/106/600/400",
-      "exterior": "https://picsum.photos/id/107/800/600",
-      "interior": "https://picsum.photos/id/108/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/house-large-windows-angle",
+      "https://www.pexels.com/photo/house-roofline-angle",
+      "https://pixabay.com/photos/house-front-night-view",
+      "https://pixabay.com/photos/house-closeup-angle",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/house-on-lush-lawn-angle"
+    ],
     "description": "Live in the heart of Brooklyn in this stylish modern loft with high ceilings and city views.",
     "bedrooms": 5,
     "bathrooms": 5,
@@ -152,11 +168,15 @@
     "location": "Napa Valley, California",
     "price": 1113542,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/109/600/400",
-      "exterior": "https://picsum.photos/id/110/800/600",
-      "interior": "https://picsum.photos/id/111/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/house-surrounded-by-trees-angle",
+      "https://www.pexels.com/photo/house-near-water-angle",
+      "https://pixabay.com/photos/house-national-park-setting",
+      "https://pixabay.com/photos/house-cliffside-view",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/house-in-forest-angle"
+    ],
     "description": "Elegant estate in wine country, surrounded by vineyards and rolling hills.",
     "bedrooms": 5,
     "bathrooms": 5,
@@ -188,11 +208,15 @@
     "location": "Lake Tahoe, California",
     "price": 1313311,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/112/600/400",
-      "exterior": "https://picsum.photos/id/113/800/600",
-      "interior": "https://picsum.photos/id/114/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/house-in-suburbia-front",
+      "https://www.pexels.com/photo/house-in-suburbia-side",
+      "https://pixabay.com/photos/house-yard-view",
+      "https://pixabay.com/photos/house-broader-urban-setting",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/house-at-sunset-angle"
+    ],
     "description": "Relax in this scenic lakeside home with peaceful surroundings and modern comforts.",
     "bedrooms": 6,
     "bathrooms": 4,
@@ -224,11 +248,15 @@
     "location": "Palm Beach, Florida",
     "price": 1313210,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/115/600/400",
-      "exterior": "https://picsum.photos/id/116/800/600",
-      "interior": "https://picsum.photos/id/117/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/cottage-front-angle",
+      "https://www.pexels.com/photo/cottage-rear-view",
+      "https://pixabay.com/photos/cottage-in-garden-angle",
+      "https://pixabay.com/photos/cottage-rooftop-view",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/cottage-evening-lights"
+    ],
     "description": "Extravagant mansion with tropical gardens and luxurious living spaces.",
     "bedrooms": 2,
     "bathrooms": 2,
@@ -260,11 +288,15 @@
     "location": "Hollywood Hills, California",
     "price": 1539287,
     "type": "Apt.",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/118/600/400",
-      "exterior": "https://picsum.photos/id/119/800/600",
-      "interior": "https://picsum.photos/id/120/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/villa-frontal-angle",
+      "https://www.pexels.com/photo/villa-rear-angle",
+      "https://pixabay.com/photos/villa-poolside-view",
+      "https://pixabay.com/photos/villa-landscape-angle",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/villa-dawn-angle"
+    ],
     "description": "A stunning modern home nestled in the hills with sweeping city views.",
     "bedrooms": 6,
     "bathrooms": 2,
@@ -296,11 +328,15 @@
     "location": "Scottsdale, Arizona",
     "price": 1097965,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/121/600/400",
-      "exterior": "https://picsum.photos/id/122/800/600",
-      "interior": "https://picsum.photos/id/123/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/modern-farmhouse-front",
+      "https://www.pexels.com/photo/modern-farmhouse-side",
+      "https://pixabay.com/photos/farmhouse-lawn-view",
+      "https://pixabay.com/photos/farmhouse-aerial-young-sky",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/modern-farmhouse-evening"
+    ],
     "description": "Desert luxury meets modern design in this expansive Arizona estate.",
     "bedrooms": 3,
     "bathrooms": 4,
@@ -332,11 +368,15 @@
     "location": "Maui, Hawaii",
     "price": 789281,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/124/600/400",
-      "exterior": "https://picsum.photos/id/125/800/600",
-      "interior": "https://picsum.photos/id/126/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/urban-house-front",
+      "https://www.pexels.com/photo/urban-house-back",
+      "https://pixabay.com/photos/urban-house-street-view",
+      "https://pixabay.com/photos/urban-house-rooftop-view",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/urban-house-sunset-angle"
+    ],
     "description": "This tropical villa blends indoor and outdoor living with lush landscaping.",
     "bedrooms": 4,
     "bathrooms": 2,
@@ -368,11 +408,15 @@
     "location": "Bend, Oregon",
     "price": 1113159,
     "type": "Villa",
-    "images": {
-      "thumbnail": "https://picsum.photos/id/127/600/400",
-      "exterior": "https://picsum.photos/id/128/800/600",
-      "interior": "https://picsum.photos/id/129/800/600"
-    },
+    "images": [
+      "https://www.pexels.com/photo/urban-house-front",
+      "https://www.pexels.com/photo/urban-house-back",
+      "https://pixabay.com/photos/urban-house-street-view",
+      "https://pixabay.com/photos/urban-house-rooftop-view",
+      "https://www.dreamstime.com/photos-images/house-different-angles.html",
+      "https://www.dreamstime.com/photos-images/modern-house-different-view-angles.html",
+      "https://www.pexels.com/photo/urban-house-sunset-angle"
+    ],
     "description": "Rustic forest cabin ideal for peaceful retreats and cozy getaways.",
     "bedrooms": 3,
     "bathrooms": 4,

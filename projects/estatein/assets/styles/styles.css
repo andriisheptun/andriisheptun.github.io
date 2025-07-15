@@ -40,6 +40,85 @@
   /* ---------- End of Colors ---------- */
 }
 
+body.light {
+  --absolute-white: #000;
+  --absolute-black: #fff;
+  --main-color__60-opac-40: rgba(112, 59, 247, 0.4);
+  --main-color__60: #703BF7;
+  --main-color__65: #8254F8;
+  --main-color__70: #946CF9;
+  --main-color__75: #A685FA;
+  --main-color__90: #DBCEFD;
+  --main-color__95: #EDE7FE;
+  --main-color__97: #F4F0FE;
+  --main-color__99: #FBFAFF;
+  --grey-shade__08: #FCFCFD;
+  --grey-shade__10: #F7F7F8;
+  --grey-shade__15: #F1F1F3;
+  --grey-shade__20: #E4E4E7;
+  --grey-shade__30: #4D4D4D;
+  --grey-shade__40: #666666;
+  --grey-shade__50: #808080;
+  --grey-shade__60: #999999;
+  --light-shade__90: #141414;
+  --light-shade__95: #1A1A1A;
+  --light-shade__97: #262626;
+  --light-shade__99: #333333;
+}
+
+.theme-slider {
+  position: relative;
+  /* margin-left: 12px; */
+  width: 70px;
+  height: 35px;
+}
+
+.theme-slider input[name="theme"] {
+  display: none;
+}
+
+.theme-slider .slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--grey-shade__15);
+  border-radius: 999px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  /* psqadding: 0 4px; */
+  font-size: 1.2rem;
+}
+
+.theme-slider label {
+  flex: 1;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+  line-height: 35px;
+  user-select: none;
+  position: relative;
+}
+
+.slider-indicator {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 8px);
+  height: calc(100% - 8px);
+  background: #703BF7;
+  border-radius: 999px;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+/* Коли dark активний — пересунути indicator */
+#theme-dark:checked~.slider .slider-indicator {
+  transform: translateX(100%);
+  left: auto;
+  right: calc(50% - 4px);
+}
+
 body {
   font-family: var(--main-font);
   font-size: .875rem;
@@ -632,8 +711,6 @@ div[class^="sparkle3"] {
   left: 0;
 }
 
-
-
 .sparkle2 {
   position: relative;
   background-color: var(--grey-shade__20);
@@ -664,8 +741,6 @@ div[class^="sparkle3"] {
   top: 100%;
   left: 0;
 }
-
-
 
 .sparkle3 {
   position: relative;
@@ -771,8 +846,6 @@ a .icon-boxes-item {
   width: 100%;
   margin-top: 40px;
   padding-top: 28px;
-  /* margin-left: auto;
-  gap: 10px; */
   justify-content: space-between;
   border-top: 1px solid var(--grey-shade__15);
 }
@@ -804,7 +877,6 @@ a .icon-boxes-item {
   position: absolute;
   left: 16px;
   bottom: 0;
-  /* transform: translateY(-100%); */
   z-index: 2;
 }
 
@@ -854,7 +926,6 @@ a .icon-boxes-item {
 
 .faq-answer {
   margin-top: .5rem;
-  /* transition: max-height 0.3s ease; */
 }
 
 div[class*=swipe-button]:not(.swiper-button-disabled) {
@@ -917,6 +988,10 @@ svg.no-star {
 
 .swiper3-slide h3 {
   height: 50px;
+}
+
+.mySwiper2 .swiper-slide {
+  width: 50%;
 }
 
 /* ------------------ End of Swiper-------------- */

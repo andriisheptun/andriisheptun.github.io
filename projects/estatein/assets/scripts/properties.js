@@ -339,7 +339,7 @@ async function renderPropertyCards(data) {
     let bathroomsText = `${item.bathrooms}-Bathroom${item.bathrooms !== 1 ? 's' : ''}`;
 
     slide.innerHTML = `
-            <img src="${item.images.exterior}" alt="Photo: ${item.title}">
+            <img src="${item.images[0]}" alt="Photo: ${item.title}">
             <div class="swiper-content">
               <h3>${item.title}</h3>
               <p class="obscured-text">
