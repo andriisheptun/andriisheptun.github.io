@@ -990,9 +990,6 @@ svg.no-star {
   height: 50px;
 }
 
-.mySwiper2 .swiper-slide {
-  width: 50%;
-}
 
 /* ------------------ End of Swiper-------------- */
 
@@ -1948,10 +1945,12 @@ input[type="checkbox"]:checked::after {
   aspect-ratio: 3 / 2;
   border-radius: 6px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .details-swipers .mySwiper2 .swiper-slide {
-  aspect-ratio: 5 / 4;
+  width: 50%;
+  aspect-ratio: 5 / 3;
   border-radius: 10px;
   overflow: hidden;
 }
