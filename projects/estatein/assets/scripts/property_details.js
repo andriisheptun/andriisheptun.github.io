@@ -324,7 +324,7 @@ async function renderSwipers() {
     const thumbsWrapper = document.getElementById("thumbsEl").querySelector(".swiper-wrapper");
     const mainWrapper = document.getElementById("mainSwiperEl").querySelector(".swiper-wrapper");
 
-    if (item) for (i = 0; i = item.images.length; i++) {
+    if (item) for (i = 0; i < item.images.length; i++) {
       let mainSlide = document.createElement("div");
       mainSlide.classList.add("swiper-slide");
       mainSlide.innerHTML = `<img src="${item.images[i]}" alt="Photo ${i + 1}" />`;
