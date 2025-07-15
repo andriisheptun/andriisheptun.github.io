@@ -321,8 +321,8 @@ async function renderSwipers() {
 
     const data = await response.json();
     const item = data.find(item => item.id == id);
-    const thumbsWrapper = getElementById("thumbsEl").querySelector(".swiper-wrapper");
-    const mainWrapper = getElementById("mainSwiperEl").querySelector(".swiper-wrapper");
+    const thumbsWrapper = document.getElementById("thumbsEl").querySelector(".swiper-wrapper");
+    const mainWrapper = document.getElementById("mainSwiperEl").querySelector(".swiper-wrapper");
 
     if (item) for (i = 0; i = item.images.length; i++) {
       let mainSlide = document.createElement("div");
