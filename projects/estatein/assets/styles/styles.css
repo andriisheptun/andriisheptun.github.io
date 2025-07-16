@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-/* @import url(_variables.css); */
 
 * {
   margin: 0;
@@ -68,7 +67,6 @@ body.light {
 
 .theme-slider {
   position: relative;
-  /* margin-left: 12px; */
   width: 70px;
   height: 35px;
 }
@@ -86,7 +84,6 @@ body.light {
   height: 100%;
   position: relative;
   overflow: hidden;
-  /* psqadding: 0 4px; */
   font-size: 1.2rem;
 }
 
@@ -260,16 +257,13 @@ ul {
 .modal {
   position: fixed;
   inset: 0;
-  /* top: 600px; */
   width: 100%;
-  /* height: 100%; */
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 35;
 }
 
 .modal-content {
   width: 80%;
-  /* height: 100%; */
   margin: 15vh auto;
   padding: 3vh;
   gap: 2vh;
@@ -1312,7 +1306,6 @@ div.search-btn {
   z-index: 5;
 }
 
-
 .drop-menu li {
   width: 80%;
   margin: 0 auto;
@@ -1973,7 +1966,6 @@ input[type="checkbox"]:checked::after {
   border-radius: 60px;
   background: var(--grey-shade__30);
   opacity: 1;
-  /* transition: opacity 0.3s, background 0.3s; */
   margin: 0 1.5px;
 }
 
@@ -2174,7 +2166,6 @@ input[type="checkbox"]:checked::after {
 .error {
   color: red;
   font-size: .75rem;
-  /* transform: scale(.85); */
 }
 
 .icon-clear {
@@ -2197,7 +2188,7 @@ input[type="checkbox"]:checked::after {
   }
 
   .big-btn-block a p {
-    font-size: 0.7rem;
+    font-size: .7rem;
   }
 
   .swiper-content p {
@@ -2567,7 +2558,6 @@ input[type="checkbox"]:checked::after {
     flex-direction: row;
     gap: 0;
   }
-
 
 }
 
@@ -3134,7 +3124,6 @@ input[type="checkbox"]:checked::after {
 
   form {
     padding: 50px;
-
   }
 
   .bg-section {
@@ -3160,7 +3149,6 @@ input[type="checkbox"]:checked::after {
   .sort-items {
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   }
-
 
 }
 
@@ -4066,7 +4054,6 @@ input[type="checkbox"]:checked::after {
   .stars {
     width: 44px;
     height: 44px;
-    ;
   }
 
   .swiper2-slide {
