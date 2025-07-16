@@ -1,6 +1,128 @@
 let faqData = [];
 let propertyData = [];
 
+const formEmail = document.getElementById("formEmail");
+const formTel = document.getElementById("formTel");
+
+const emailError = document.getElementById("emailError");
+const phoneError = document.getElementById("phoneError");
+
+document.querySelector('form[name="propertiesForm"]').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const submitError = document.getElementById('submitError')
+  const form = e.target;
+
+
+  const agreementCheckbox = form.querySelector('input[type="checkbox"]');
+  if (!agreementCheckbox.checked) {
+    submitError.classList.remove('hide');
+    submitError.textContent = 'Please agree to the Terms of Use and Privacy Policy before submitting.';
+    return;
+  }
+
+  const firstName = form.querySelector('input[name="firstName"]');
+  const lastName = form.querySelector('input[name="lastName"]');
+  if (!firstName.value.trim() || !lastName.value.trim()) {
+    submitError.classList.remove('hide');
+    submitError.textContent = 'Please fill out both First Name and Last Name.';
+    return;
+  }
+
+  if (!formEmail.value.trim()) {
+    submitError.classList.remove('hide');
+    submitError.textContent = 'Please enter your email.';
+    return;
+  }
+
+  if (!formTel.value.trim()) {
+    submitError.classList.remove('hide');
+    submitError.textContent = 'Please enter your phone number.';
+    return;
+  }
+
+  const formData = new FormData(form);
+  const jsonData = {};
+
+
+  formData.forEach((value, key) => {
+    if (jsonData[key]) {
+      if (!Array.isArray(jsonData[key])) {
+        jsonData[key] = [jsonData[key]];
+      }
+      jsonData[key].push(value);
+    } else {
+      jsonData[key] = value;
+    }
+  });
+
+  console.log('Form JSON:', JSON.stringify(jsonData, null, 2));
+
+  submitError.classList.add('hide');
+  form.reset();
+
+});
+
+function isValidEmail(email) {
+  const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  return pattern.test(email.trim());
+}
+
+formEmail.addEventListener("blur", () => {
+  if (!isValidEmail(formEmail.value)) {
+    emailError.classList.remove("hide");
+  } else {
+    emailError.classList.add("hide");
+  }
+});
+
+formEmail.addEventListener("focus", () => {
+  emailError.classList.add("hide");
+});
+
+// --------------- Input tel audit -----------------
+
+function formatAndValidatePhone(rawPhone) {
+  const phone = rawPhone.trim();
+
+  if (/^0\d{9}$/.test(phone)) {
+    return {
+      isValid: true,
+      formatted: "+38" + phone
+    };
+  }
+
+  if (/^\+\d{10,15}$/.test(phone)) {
+    return {
+      isValid: true,
+      formatted: phone
+    };
+  }
+
+  return {
+    isValid: false,
+    formatted: phone
+  };
+}
+
+formTel.addEventListener("blur", () => {
+  const result = formatAndValidatePhone(formTel.value);
+
+  if (result.isValid) {
+    phoneError.classList.add("hide");
+    formTel.value = result.formatted;
+  } else {
+    phoneError.classList.remove("hide");
+  }
+});
+
+formTel.addEventListener("focus", () => {
+  phoneError.classList.add("hide");
+});
+
+
+
+
 async function fetchUrl(url) {
   try {
     let response = await fetch(url);

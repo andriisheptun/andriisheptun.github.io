@@ -45,12 +45,12 @@
             </svg>
           </a>
           <div class="theme-slider">
-            <input type="radio" name="theme" id="theme-light" value="light" checked>
-            <input type="radio" name="theme" id="theme-dark" value="dark">
+            <input type="radio" name="theme" id="theme-dark" value="dark" checked>
+            <input type="radio" name="theme" id="theme-light" value="light">
 
             <div class="slider">
-              <label for="theme-light">☀️</label>
               <label for="theme-dark">🌙</label>
+              <label for="theme-light">☀️</label>
               <div class="slider-indicator"></div>
             </div>
           </div>
@@ -255,12 +255,14 @@
 
             <label class="grid-item-3">
               Email
-              <input type="email" name="Email" placeholder="Enter your Email">
+              <input id="formEmail" type="email" name="Email" placeholder="Enter your Email">
+              <p id="emailError" class="error hide">Please enter a valid Email.</p>
             </label>
 
             <label class="grid-item-4">
               Phone
-              <input type="tel" name="Phone" placeholder="Enter Phone Number">
+              <input id="formTel" type="tel" name="Phone" placeholder="Enter Phone Number">
+              <p id="phoneError" class="error hide">Please enter a valid phone number.</p>
             </label>
 
             <label class="grid-item-5 selected-property">
@@ -271,12 +273,12 @@
               </svg>
 
               <input id="titleAndLocation" type="text" name="selected-property"
-                value="Seaside Serenity Villa, Malibu, California" disabled>
+                value="Seaside Serenity Villa, Malibu, California" readonly>
             </label>
 
             <label class="grid-item-6">
               Message
-              <textarea name="" id="" rows="3" placeholder="Enter your Message here.."></textarea>
+              <textarea name="message" id="" rows="3" placeholder="Enter your Message here.."></textarea>
             </label>
 
           </div>
@@ -292,7 +294,7 @@
             </label>
             <input type="submit" class="btn btn-fill__main-color" value="Send Your Message">
           </div>
-
+          <p id="submitError" class="error hide"></p>
         </form>
       </div>
 

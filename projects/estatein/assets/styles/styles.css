@@ -112,8 +112,7 @@ body.light {
   z-index: 0;
 }
 
-/* Коли dark активний — пересунути indicator */
-#theme-dark:checked~.slider .slider-indicator {
+#theme-light:checked~.slider .slider-indicator {
   transform: translateX(100%);
   left: auto;
   right: calc(50% - 4px);
@@ -926,6 +925,7 @@ a .icon-boxes-item {
 
 .faq-answer {
   margin-top: .5rem;
+  padding: 0 1rem;
 }
 
 div[class*=swipe-button]:not(.swiper-button-disabled) {
